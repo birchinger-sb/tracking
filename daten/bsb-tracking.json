@@ -19,6 +19,16 @@
       "note": "",
       "active": true,
       "updatedAt": "2026-06-17T11:57:15.855Z"
+    },
+    {
+      "id": "mqi0oeavv5emr6",
+      "name": "Beispiel-Hilti",
+      "type": "Werkzeug",
+      "identifier": "",
+      "color": "#DC2626",
+      "note": "",
+      "active": true,
+      "updatedAt": "2026-06-17T11:58:00.295Z"
     }
   ],
   "bookings": [],
@@ -44,5 +54,5 @@
       "deletedAt": "2026-06-17T11:56:43.759Z"
     }
   ],
-  "updatedAt": "2026-06-17T11:57:42.977Z"
+  "updatedAt": "2026-06-17T11:58:00.817Z"
 }
