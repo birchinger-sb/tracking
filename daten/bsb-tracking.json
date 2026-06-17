@@ -87,6 +87,20 @@
       "_s": 1781863200000,
       "_e": 1781877600000,
       "_lane": 0
+    },
+    {
+      "id": "mqi0r2314acvzw",
+      "assetId": "mqi0ng0efr1a45",
+      "location": "Beispiel-Fahrt",
+      "responsible": "",
+      "note": "",
+      "start": "2026-06-23T10:00",
+      "end": "2026-06-23T16:00",
+      "allDay": false,
+      "updatedAt": "2026-06-17T12:00:04.429Z",
+      "_s": 1782201600000,
+      "_e": 1782223200000,
+      "_lane": 0
     }
   ],
   "tombstones": [
@@ -111,5 +125,5 @@
       "deletedAt": "2026-06-17T11:56:43.759Z"
     }
   ],
-  "updatedAt": "2026-06-17T11:59:08.796Z"
+  "updatedAt": "2026-06-17T12:00:05.137Z"
 }
