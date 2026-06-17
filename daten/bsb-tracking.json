@@ -29,6 +29,16 @@
       "note": "",
       "active": true,
       "updatedAt": "2026-06-17T11:58:00.295Z"
+    },
+    {
+      "id": "mqi44szht7rzce",
+      "name": "Test-Bagger",
+      "type": "Bagger",
+      "identifier": "",
+      "color": "#CA8A04",
+      "note": "",
+      "active": true,
+      "updatedAt": "2026-06-17T13:34:44.670Z"
     }
   ],
   "bookings": [
@@ -125,5 +135,5 @@
       "deletedAt": "2026-06-17T11:56:43.759Z"
     }
   ],
-  "updatedAt": "2026-06-17T12:00:05.137Z"
+  "updatedAt": "2026-06-17T13:34:45.109Z"
 }
