@@ -1,5 +1,16 @@
 {
-  "assets": [],
+  "assets": [
+    {
+      "id": "mqi0n3d4hit7rv",
+      "name": "Beispiel-Bagger",
+      "type": "LKW",
+      "identifier": "",
+      "color": "#CA8A04",
+      "note": "",
+      "active": true,
+      "updatedAt": "2026-06-17T11:56:59.464Z"
+    }
+  ],
   "bookings": [],
   "tombstones": [
     {
@@ -23,5 +34,5 @@
       "deletedAt": "2026-06-17T11:56:43.759Z"
     }
   ],
-  "updatedAt": "2026-06-17T11:56:44.074Z"
+  "updatedAt": "2026-06-17T11:56:59.794Z"
 }
