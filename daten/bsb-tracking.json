@@ -3,12 +3,12 @@
     {
       "id": "mqhyya5y7u6g2v",
       "name": "Bagger 5t",
-      "type": "LKW",
+      "type": "Bagger",
       "identifier": "",
       "color": "#CA8A04",
       "note": "",
       "active": true,
-      "updatedAt": "2026-06-17T11:09:42.262Z"
+      "updatedAt": "2026-06-17T11:27:32.139Z"
     },
     {
       "id": "mqhzkzzuqmxd84",
@@ -28,5 +28,5 @@
       "deletedAt": "2026-06-17T11:27:07.273Z"
     }
   ],
-  "updatedAt": "2026-06-17T11:27:22.525Z"
+  "updatedAt": "2026-06-17T11:27:32.819Z"
 }
