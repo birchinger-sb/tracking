@@ -9,6 +9,16 @@
       "note": "",
       "active": true,
       "updatedAt": "2026-06-17T11:09:42.262Z"
+    },
+    {
+      "id": "mqhzkzzuqmxd84",
+      "name": "Bagger 15t",
+      "type": "Bagger",
+      "identifier": "",
+      "color": "#CA8A04",
+      "note": "",
+      "active": true,
+      "updatedAt": "2026-06-17T11:27:22.170Z"
     }
   ],
   "bookings": [],
@@ -18,5 +28,5 @@
       "deletedAt": "2026-06-17T11:27:07.273Z"
     }
   ],
-  "updatedAt": "2026-06-17T11:27:07.568Z"
+  "updatedAt": "2026-06-17T11:27:22.525Z"
 }
