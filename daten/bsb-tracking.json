@@ -5,10 +5,12 @@
       "name": "Beispiel-Bagger",
       "type": "Bagger",
       "identifier": "",
-      "color": "#CA8A04",
+      "color": "#f0ac19",
       "note": "",
       "active": true,
-      "updatedAt": "2026-06-17T11:57:42.597Z"
+      "defect": false,
+      "defectNote": "",
+      "updatedAt": "2026-06-17T13:49:45.313Z"
     },
     {
       "id": "mqi0ng0efr1a45",
@@ -141,5 +143,5 @@
       "deletedAt": "2026-06-17T13:36:03.628Z"
     }
   ],
-  "updatedAt": "2026-06-17T13:49:34.871Z"
+  "updatedAt": "2026-06-17T13:49:45.732Z"
 }
