@@ -111,20 +111,6 @@
       "_s": 1782201600000,
       "_e": 1782223200000,
       "_lane": 0
-    },
-    {
-      "id": "mqi45zgq475qrk",
-      "assetId": "mqi44szht7rzce",
-      "location": "defekt",
-      "responsible": "",
-      "note": "",
-      "start": "2026-06-17",
-      "end": "2026-07-24",
-      "allDay": true,
-      "updatedAt": "2026-06-17T13:35:39.722Z",
-      "_s": 1781647200000,
-      "_e": 1784930400000,
-      "_lane": 0
     }
   ],
   "tombstones": [
@@ -147,7 +133,11 @@
     {
       "id": "mqhyya5y7u6g2v",
       "deletedAt": "2026-06-17T11:56:43.759Z"
+    },
+    {
+      "id": "mqi45zgq475qrk",
+      "deletedAt": "2026-06-17T13:36:03.628Z"
     }
   ],
-  "updatedAt": "2026-06-17T13:35:40.175Z"
+  "updatedAt": "2026-06-17T13:36:04.075Z"
 }
