@@ -1,32 +1,6 @@
 {
-  "assets": [
-    {
-      "id": "mqhyya5y7u6g2v",
-      "name": "Bagger 5t",
-      "type": "Bagger",
-      "identifier": "",
-      "color": "#CA8A04",
-      "note": "",
-      "active": true,
-      "updatedAt": "2026-06-17T11:27:32.139Z"
-    }
-  ],
-  "bookings": [
-    {
-      "id": "mqhzlyzk100g4s",
-      "assetId": "mqhyya5y7u6g2v",
-      "location": "Auf der Winzerer Höhe 19",
-      "responsible": "Hecht",
-      "note": "",
-      "start": "2026-06-18T08:00",
-      "end": "2026-06-25T12:00",
-      "allDay": false,
-      "updatedAt": "2026-06-17T11:28:44.195Z",
-      "_s": 1781762400000,
-      "_e": 1782381600000,
-      "_lane": 0
-    }
-  ],
+  "assets": [],
+  "bookings": [],
   "tombstones": [
     {
       "id": "mqhyyoz2apwww7",
@@ -39,7 +13,15 @@
     {
       "id": "mqhzkzzuqmxd84",
       "deletedAt": "2026-06-17T11:56:39.901Z"
+    },
+    {
+      "id": "mqhzlyzk100g4s",
+      "deletedAt": "2026-06-17T11:56:43.759Z"
+    },
+    {
+      "id": "mqhyya5y7u6g2v",
+      "deletedAt": "2026-06-17T11:56:43.759Z"
     }
   ],
-  "updatedAt": "2026-06-17T11:56:40.252Z"
+  "updatedAt": "2026-06-17T11:56:44.074Z"
 }
