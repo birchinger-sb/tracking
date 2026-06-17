@@ -1,1 +1,32 @@
-
+{
+  "assets": [
+    {
+      "id": "mqhyya5y7u6g2v",
+      "name": "Bagger 5t",
+      "type": "LKW",
+      "identifier": "",
+      "color": "#CA8A04",
+      "note": "",
+      "active": true,
+      "updatedAt": "2026-06-17T11:09:42.262Z"
+    }
+  ],
+  "bookings": [
+    {
+      "id": "mqhyyoz2apwww7",
+      "assetId": "mqhyya5y7u6g2v",
+      "location": "Werkhof",
+      "responsible": "",
+      "note": "",
+      "start": "2026-06-17",
+      "end": "2026-06-20",
+      "allDay": true,
+      "updatedAt": "2026-06-17T11:10:08.317Z",
+      "_s": 1781647200000,
+      "_e": 1781992800000,
+      "_lane": 0
+    }
+  ],
+  "tombstones": [],
+  "updatedAt": "2026-06-17T11:26:19.988Z"
+}
