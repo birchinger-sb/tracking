@@ -45,6 +45,20 @@
       "_s": 1781647200000,
       "_e": 1781906400000,
       "_lane": 0
+    },
+    {
+      "id": "mqi0p4noo4g6l4",
+      "assetId": "mqi0n3d4hit7rv",
+      "location": "Winzerer Höhe",
+      "responsible": "",
+      "note": "",
+      "start": "2026-06-22",
+      "end": "2026-06-26",
+      "allDay": true,
+      "updatedAt": "2026-06-17T11:58:34.452Z",
+      "_s": 1782079200000,
+      "_e": 1782511200000,
+      "_lane": 0
     }
   ],
   "tombstones": [
@@ -69,5 +83,5 @@
       "deletedAt": "2026-06-17T11:56:43.759Z"
     }
   ],
-  "updatedAt": "2026-06-17T11:58:19.909Z"
+  "updatedAt": "2026-06-17T11:58:34.774Z"
 }
