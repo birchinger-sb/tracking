@@ -9,16 +9,6 @@
       "note": "",
       "active": true,
       "updatedAt": "2026-06-17T11:27:32.139Z"
-    },
-    {
-      "id": "mqhzkzzuqmxd84",
-      "name": "Bagger 15t",
-      "type": "Bagger",
-      "identifier": "",
-      "color": "#CA8A04",
-      "note": "",
-      "active": true,
-      "updatedAt": "2026-06-17T11:27:22.170Z"
     }
   ],
   "bookings": [
@@ -35,27 +25,21 @@
       "_s": 1781762400000,
       "_e": 1782381600000,
       "_lane": 0
-    },
-    {
-      "id": "mqhzn4o70kjhdh",
-      "assetId": "mqhzkzzuqmxd84",
-      "location": "Weichser Schlossgasse",
-      "responsible": "",
-      "note": "",
-      "start": "2026-06-22",
-      "end": "2026-06-26",
-      "allDay": true,
-      "updatedAt": "2026-06-17T11:29:01.543Z",
-      "_s": 1782079200000,
-      "_e": 1782511200000,
-      "_lane": 0
     }
   ],
   "tombstones": [
     {
       "id": "mqhyyoz2apwww7",
       "deletedAt": "2026-06-17T11:27:07.273Z"
+    },
+    {
+      "id": "mqhzn4o70kjhdh",
+      "deletedAt": "2026-06-17T11:56:39.901Z"
+    },
+    {
+      "id": "mqhzkzzuqmxd84",
+      "deletedAt": "2026-06-17T11:56:39.901Z"
     }
   ],
-  "updatedAt": "2026-06-17T11:29:01.869Z"
+  "updatedAt": "2026-06-17T11:56:40.252Z"
 }
