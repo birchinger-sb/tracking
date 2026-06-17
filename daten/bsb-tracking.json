@@ -31,7 +31,22 @@
       "updatedAt": "2026-06-17T11:58:00.295Z"
     }
   ],
-  "bookings": [],
+  "bookings": [
+    {
+      "id": "mqi0ot66sciadt",
+      "assetId": "mqi0oeavv5emr6",
+      "location": "Untere Bachgasse",
+      "responsible": "",
+      "note": "",
+      "start": "2026-06-17",
+      "end": "2026-06-19",
+      "allDay": true,
+      "updatedAt": "2026-06-17T11:58:19.566Z",
+      "_s": 1781647200000,
+      "_e": 1781906400000,
+      "_lane": 0
+    }
+  ],
   "tombstones": [
     {
       "id": "mqhyyoz2apwww7",
@@ -54,5 +69,5 @@
       "deletedAt": "2026-06-17T11:56:43.759Z"
     }
   ],
-  "updatedAt": "2026-06-17T11:58:00.817Z"
+  "updatedAt": "2026-06-17T11:58:19.909Z"
 }
