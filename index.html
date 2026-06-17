@@ -1,0 +1,1160 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>BSB Tracking</title>
+<style>
+  :root{
+    --bg:#F1EFEC;
+    --panel:#FFFFFF;
+    --ink:#231F20;          /* BSB-Schwarz (CI) */
+    --ink-2:#5C5759;
+    --ink-3:#948F90;
+    --line:#DBD7D3;
+    --line-2:#ECE9E5;
+    --steel:#231F20;        /* Primär = CI-Schwarz */
+    --steel-2:#3D3839;
+    --hivis:#231F20;
+    --hivis-ink:#231F20;
+    --ok:#2C7A4B;
+    --warn:#B23B1E;
+    --weekend:#F5F3F0;
+    --today:#231F20;
+    --shadow:0 1px 2px rgba(20,23,28,.06), 0 8px 24px rgba(20,23,28,.08);
+    --mono:ui-monospace,"SF Mono","Cascadia Mono","Roboto Mono","JetBrains Mono",Menlo,monospace;
+    --sans:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    --day-w:44px;
+    --name-w:210px;
+    --radius:10px;
+  }
+  *{box-sizing:border-box}
+  html,body{margin:0;height:100%}
+  body{
+    background:var(--bg);color:var(--ink);font-family:var(--sans);
+    font-size:14px;line-height:1.45;-webkit-font-smoothing:antialiased;
+    display:flex;flex-direction:column;min-height:100dvh;
+  }
+  button{font-family:inherit;cursor:pointer}
+  input,select,textarea{font-family:inherit;font-size:14px}
+
+  /* ---------- Kopfzeile ---------- */
+  header{
+    background:var(--panel);color:var(--ink);display:flex;align-items:center;gap:16px;
+    padding:0 16px;height:62px;flex:0 0 auto;position:sticky;top:0;z-index:40;
+    border-bottom:1px solid var(--line);
+  }
+  .brand{display:flex;align-items:center;gap:13px;text-decoration:none;color:inherit}
+  .brand .logo{display:block;height:40px;color:var(--ink)}
+  .brand .logo-svg{height:40px;width:auto;display:block}
+  .brand-div{width:1px;height:30px;background:var(--line);flex:0 0 auto}
+  .brand-label{font-weight:700;font-size:14px;letter-spacing:.22em;text-transform:uppercase;color:var(--ink)}
+  nav.tabs{display:flex;gap:2px;margin-left:6px}
+  nav.tabs button{
+    background:transparent;border:0;color:var(--ink-2);padding:8px 14px;border-radius:8px;
+    font-weight:600;font-size:13px;transition:background .12s,color .12s;
+  }
+  nav.tabs button:hover{background:var(--bg);color:var(--ink)}
+  nav.tabs button[aria-selected="true"]{background:var(--ink);color:#fff}
+  .head-right{margin-left:auto;display:flex;align-items:center;gap:10px}
+  .sync{
+    display:flex;align-items:center;gap:8px;background:var(--panel);
+    border:1px solid var(--line);border-radius:999px;padding:5px 12px 5px 10px;
+    font-size:12px;color:var(--ink-2);cursor:pointer;font-weight:500;
+  }
+  .sync:hover{border-color:var(--ink-3)}
+  .sync .dot{width:9px;height:9px;border-radius:50%;background:var(--ink-3);flex:0 0 auto}
+  .sync.s-saved .dot,.sync.s-connected .dot{background:var(--ok);box-shadow:0 0 0 3px rgba(44,122,75,.22)}
+  .sync.s-saving .dot,.sync.s-loading .dot{background:var(--ink);animation:pulse 1s infinite}
+  .sync.s-error .dot{background:var(--warn)}
+  .sync.s-off .dot{background:var(--ink-3)}
+  @keyframes pulse{0%,100%{opacity:1}50%{opacity:.25}}
+  .icon-btn{
+    background:var(--panel);border:1px solid var(--line);color:var(--ink-2);
+    width:36px;height:36px;border-radius:8px;display:grid;place-items:center;font-size:16px;
+  }
+  .icon-btn:hover{border-color:var(--ink-3);color:var(--ink)}
+
+  /* ---------- Verbindungs-Banner ---------- */
+  .banner{
+    background:#F6F1E8;border-bottom:1px solid #E5DACA;color:#6E6457;
+    padding:9px 16px;font-size:13px;display:flex;align-items:center;gap:10px;flex:0 0 auto;
+  }
+  .banner b{color:var(--ink)}
+  .banner button{
+    margin-left:auto;background:var(--steel);color:#fff;border:0;border-radius:7px;
+    padding:6px 12px;font-weight:600;font-size:12px;
+  }
+
+  /* ---------- Werkzeugleiste ---------- */
+  .toolbar{
+    background:var(--panel);border-bottom:1px solid var(--line);
+    padding:10px 16px;display:flex;align-items:center;gap:10px;flex-wrap:wrap;flex:0 0 auto;
+  }
+  .nav-range{display:flex;align-items:center;gap:2px;background:var(--bg);border:1px solid var(--line);border-radius:8px;padding:2px}
+  .nav-range button{background:transparent;border:0;padding:6px 10px;border-radius:6px;font-weight:600;color:var(--ink-2)}
+  .nav-range button:hover{background:#fff}
+  .nav-range .today-btn{color:var(--steel)}
+  .seg{display:inline-flex;background:var(--bg);border:1px solid var(--line);border-radius:8px;padding:2px}
+  .seg button{background:transparent;border:0;padding:6px 11px;border-radius:6px;font-weight:600;font-size:13px;color:var(--ink-2)}
+  .seg button[aria-pressed="true"]{background:#fff;color:var(--ink);box-shadow:0 1px 2px rgba(0,0,0,.08)}
+  .field{display:flex;align-items:center;gap:7px;background:var(--bg);border:1px solid var(--line);border-radius:8px;padding:0 10px;height:36px}
+  .field input,.field select{border:0;background:transparent;outline:none;color:var(--ink);height:34px}
+  .field input::placeholder{color:var(--ink-3)}
+  .spacer{flex:1}
+  .btn{
+    border:1px solid var(--line);background:#fff;color:var(--ink);border-radius:8px;
+    padding:8px 13px;font-weight:600;font-size:13px;display:inline-flex;align-items:center;gap:7px;
+  }
+  .btn:hover{border-color:var(--ink-3)}
+  .btn.primary{background:var(--steel);border-color:var(--steel);color:#fff}
+  .btn.primary:hover{background:var(--steel-2)}
+  .btn.amber{background:var(--steel);border-color:var(--steel);color:#fff}
+  .btn.amber:hover{background:var(--steel-2)}
+  .btn.ghost{background:transparent;border-color:transparent;color:var(--ink-2)}
+  .btn.danger{color:var(--warn);border-color:#eccabf}
+  .btn.danger:hover{background:#fdf2ee}
+  .btn:disabled{opacity:.5;cursor:not-allowed}
+
+  /* ---------- Inhaltsbereich ---------- */
+  main{flex:1;min-height:0;display:flex;flex-direction:column}
+  .view{flex:1;min-height:0;display:none;flex-direction:column}
+  .view.active{display:flex}
+
+  /* ---------- Zeitstrahl ---------- */
+  .timeline{flex:1;min-height:0;overflow:auto;background:var(--panel);position:relative}
+  .tl-grid{display:grid;min-width:max-content}
+  .tl-corner{
+    position:sticky;left:0;top:0;z-index:30;background:var(--panel);
+    border-right:2px solid var(--line);border-bottom:1px solid var(--line);
+    width:var(--name-w);min-width:var(--name-w);display:flex;align-items:center;
+    padding:0 14px;font-size:11px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--ink-3);
+  }
+  .tl-head{position:sticky;top:0;z-index:20;display:flex;background:var(--panel);border-bottom:1px solid var(--line)}
+  .tl-day{
+    width:var(--day-w);min-width:var(--day-w);flex:0 0 var(--day-w);
+    padding:6px 0 5px;text-align:center;border-left:1px solid var(--line-2);
+    font-family:var(--mono);
+  }
+  .tl-day.weekend{background:var(--weekend)}
+  .tl-day .dow{font-size:10px;color:var(--ink-3);text-transform:uppercase;letter-spacing:.03em}
+  .tl-day .dnum{font-size:13px;font-weight:600;color:var(--ink-2);font-variant-numeric:tabular-nums}
+  .tl-day.today{background:rgba(35,31,32,.06)}
+  .tl-day.today .dnum{color:var(--hivis-ink)}
+  .tl-day.month-start{border-left:2px solid var(--ink-3)}
+  .tl-day .mon{font-size:9px;color:var(--steel);font-weight:700;height:11px}
+
+  .tl-rowname{
+    position:sticky;left:0;z-index:10;background:var(--panel);
+    border-right:2px solid var(--line);border-bottom:1px solid var(--line-2);
+    width:var(--name-w);min-width:var(--name-w);padding:8px 12px;display:flex;align-items:center;gap:10px;
+  }
+  .tl-rowname .swatch{width:11px;height:11px;border-radius:3px;flex:0 0 auto}
+  .tl-rowname .nm{font-weight:600;font-size:13px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+  .tl-rowname .tp{font-size:11px;color:var(--ink-3);font-family:var(--mono)}
+  .tl-track{
+    position:relative;border-bottom:1px solid var(--line-2);
+    background-image:repeating-linear-gradient(to right, transparent 0, transparent calc(var(--day-w) - 1px), var(--line-2) calc(var(--day-w) - 1px), var(--line-2) var(--day-w));
+    cursor:copy;
+  }
+  .tl-track .wk{position:absolute;top:0;bottom:0;background:var(--weekend);opacity:.7;pointer-events:none}
+  .tl-track .today-line{position:absolute;top:0;bottom:0;width:2px;background:var(--today);pointer-events:none;z-index:2}
+  .bar{
+    position:absolute;height:24px;border-radius:6px;display:flex;align-items:center;
+    padding:0 8px;color:#fff;font-size:12px;font-weight:600;overflow:hidden;white-space:nowrap;
+    box-shadow:0 1px 2px rgba(0,0,0,.18);cursor:pointer;z-index:3;
+    text-shadow:0 1px 1px rgba(0,0,0,.25);border:1px solid rgba(0,0,0,.08);
+  }
+  .bar:hover{filter:brightness(1.08);box-shadow:0 2px 8px rgba(0,0,0,.25)}
+  .bar .loc{overflow:hidden;text-overflow:ellipsis}
+  .bar.conflict{box-shadow:0 0 0 2px var(--warn),0 1px 2px rgba(0,0,0,.2)}
+  .bar .clip-l{border-top-left-radius:0;border-bottom-left-radius:0}
+  .empty-tl{padding:50px 20px;text-align:center;color:var(--ink-3);position:sticky;left:0;max-width:520px;margin:0 auto}
+  .empty-tl h3{color:var(--ink-2);margin:0 0 6px}
+
+  /* ---------- Listen / Karten ---------- */
+  .scroll{flex:1;min-height:0;overflow:auto;padding:18px 16px 60px}
+  .wrap{max-width:980px;margin:0 auto}
+  .section-h{display:flex;align-items:center;gap:10px;margin:4px 2px 14px}
+  .section-h h2{font-size:16px;margin:0}
+  .count{font-size:12px;color:var(--ink-3);background:var(--bg);border:1px solid var(--line);border-radius:999px;padding:2px 9px;font-family:var(--mono)}
+
+  .cards{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:12px}
+  .card{background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);padding:14px;box-shadow:var(--shadow)}
+  .card .top{display:flex;align-items:center;gap:10px;margin-bottom:10px}
+  .card .swatch{width:14px;height:14px;border-radius:4px;flex:0 0 auto}
+  .card .nm{font-weight:700;font-size:15px}
+  .card .badge{margin-left:auto;font-size:11px;font-family:var(--mono);color:var(--ink-2);background:var(--bg);border:1px solid var(--line);border-radius:6px;padding:2px 7px}
+  .card .meta{font-size:13px;color:var(--ink-2);display:grid;gap:4px}
+  .card .meta .k{color:var(--ink-3);font-size:11px;text-transform:uppercase;letter-spacing:.04em}
+  .card .row-actions{display:flex;gap:6px;margin-top:12px;padding-top:11px;border-top:1px solid var(--line-2)}
+  .pill{display:inline-flex;align-items:center;gap:6px;font-size:11px;font-family:var(--mono);padding:2px 8px;border-radius:999px;border:1px solid var(--line)}
+  .pill.now{background:#e9f6ee;border-color:#bfe3cd;color:#176a3a}
+  .pill.soon{background:#F4EFE6;border-color:#E3D8C6;color:#6E6457}
+  .pill.past{background:var(--bg);color:var(--ink-3)}
+
+  .blist{display:grid;gap:9px}
+  .brow{
+    background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);
+    padding:12px 14px;display:flex;align-items:center;gap:14px;box-shadow:var(--shadow);
+  }
+  .brow .bar-swatch{width:6px;align-self:stretch;border-radius:3px;flex:0 0 auto}
+  .brow .b-main{min-width:0;flex:1}
+  .brow .b-loc{font-weight:700;font-size:14px}
+  .brow .b-asset{font-size:12px;color:var(--ink-2)}
+  .brow .b-when{font-family:var(--mono);font-size:13px;text-align:right;color:var(--ink-2);white-space:nowrap}
+  .brow .b-when .days{font-size:11px;color:var(--ink-3)}
+  .brow .b-actions{display:flex;gap:6px}
+  .day-divider{font-size:11px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--ink-3);margin:14px 2px 4px}
+  .empty-state{text-align:center;color:var(--ink-3);padding:60px 20px}
+  .empty-state h3{color:var(--ink-2);margin:0 0 6px}
+
+  /* ---------- Modal ---------- */
+  .overlay{position:fixed;inset:0;background:rgba(14,17,22,.5);backdrop-filter:blur(2px);z-index:60;display:none;align-items:flex-start;justify-content:center;padding:24px 16px;overflow:auto}
+  .overlay.show{display:flex}
+  .modal{background:var(--panel);border-radius:14px;box-shadow:0 24px 60px rgba(0,0,0,.32);width:100%;max-width:520px;margin:auto;overflow:hidden;animation:pop .14s ease-out}
+  @keyframes pop{from{transform:translateY(8px);opacity:0}to{transform:none;opacity:1}}
+  .modal h2{margin:0;font-size:17px}
+  .modal-head{padding:16px 18px;border-bottom:1px solid var(--line-2);display:flex;align-items:center;gap:10px}
+  .modal-head .close{margin-left:auto;background:none;border:0;font-size:20px;color:var(--ink-3);width:30px;height:30px;border-radius:7px}
+  .modal-head .close:hover{background:var(--bg);color:var(--ink)}
+  .modal-body{padding:18px;display:grid;gap:14px;max-height:70vh;overflow:auto}
+  .modal-foot{padding:14px 18px;border-top:1px solid var(--line-2);display:flex;gap:8px;align-items:center}
+  label.f{display:grid;gap:5px;font-size:12px;font-weight:600;color:var(--ink-2)}
+  label.f .req{color:var(--warn)}
+  .control{
+    border:1px solid var(--line);border-radius:9px;padding:9px 11px;background:#fff;color:var(--ink);width:100%;outline:none;
+  }
+  .control:focus{border-color:var(--steel);box-shadow:0 0 0 3px rgba(31,58,95,.12)}
+  textarea.control{resize:vertical;min-height:62px}
+  .grid-2{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+  .hint{font-size:12px;color:var(--ink-3);line-height:1.5}
+  .hint a{color:var(--steel)}
+  .swatches{display:flex;gap:7px;flex-wrap:wrap}
+  .swatches button{width:26px;height:26px;border-radius:7px;border:2px solid transparent}
+  .swatches button[aria-pressed="true"]{border-color:var(--ink);box-shadow:0 0 0 2px #fff inset}
+  .conflict-note{background:#fdf2ee;border:1px solid #eccabf;color:var(--warn);border-radius:9px;padding:9px 11px;font-size:12.5px;display:flex;gap:8px;align-items:flex-start}
+  .ok-note{background:#eef8f1;border:1px solid #bfe3cd;color:#176a3a;border-radius:9px;padding:9px 11px;font-size:12.5px}
+  .kbd{font-family:var(--mono);font-size:11px;background:var(--bg);border:1px solid var(--line);border-radius:5px;padding:1px 6px}
+  .steps{counter-reset:s;display:grid;gap:9px;margin:0;padding:0;list-style:none}
+  .steps li{position:relative;padding-left:30px;font-size:12.5px;color:var(--ink-2)}
+  .steps li::before{counter-increment:s;content:counter(s);position:absolute;left:0;top:0;width:21px;height:21px;border-radius:50%;background:var(--steel);color:#fff;font-size:11px;font-weight:700;display:grid;place-items:center}
+
+  /* ---------- Toast ---------- */
+  .toast{position:fixed;bottom:18px;left:50%;transform:translateX(-50%) translateY(80px);background:var(--ink);color:#fff;padding:10px 16px;border-radius:10px;font-size:13px;font-weight:500;box-shadow:0 10px 30px rgba(0,0,0,.3);z-index:80;opacity:0;transition:.22s;display:flex;gap:9px;align-items:center}
+  .toast.show{transform:translateX(-50%);opacity:1}
+  .toast.err{background:var(--warn)}
+  .toast.ok{background:var(--ok)}
+
+.tl-corner.intraday-corner{font-family:var(--mono);font-size:12.5px;font-weight:700;color:var(--ink);letter-spacing:0;text-transform:none}
+  .tl-hour{width:var(--hour-w,60px);min-width:var(--hour-w,60px);flex:0 0 var(--hour-w,60px);padding:7px 0 6px;border-left:1px solid var(--line-2);font-family:var(--mono);color:var(--ink-3);font-size:11px}
+  .tl-hour span{padding-left:5px}
+  .tl-hour.now{background:rgba(35,31,32,.06);color:var(--ink)}
+  .tl-track.intraday{cursor:copy;background-image:repeating-linear-gradient(to right, transparent 0 calc(var(--hour-w,60px) - 1px), var(--line-2) calc(var(--hour-w,60px) - 1px), var(--line-2) var(--hour-w,60px))}
+  .tl-track.intraday .now-line{position:absolute;top:0;bottom:0;width:2px;background:var(--warn);z-index:4;pointer-events:none}
+  .bar.allday{background-image:repeating-linear-gradient(45deg, rgba(255,255,255,.16) 0 6px, transparent 6px 12px)}
+  .modal-seg{width:100%}
+  .modal-seg button{flex:1}
+  .quick-dur{display:flex;align-items:center;gap:6px;flex-wrap:wrap;margin-top:10px;font-size:12px;color:var(--ink-3)}
+  .quick-dur button{border:1px solid var(--line);background:var(--panel);border-radius:7px;padding:5px 9px;font-size:12px;font-weight:600;color:var(--ink-2)}
+  .quick-dur button:hover{border-color:var(--ink);color:var(--ink)}
+  .pill.tag{background:var(--bg);border-color:var(--line);color:var(--ink-2)}
+  @media (max-width:680px){
+    :root{--name-w:140px;--day-w:40px}
+    .brand-label,.brand-div{display:none}
+    .brand .logo,.brand .logo-svg{height:32px}
+    nav.tabs button{padding:7px 10px}
+    .toolbar{gap:7px}
+    .sync .label{display:none}
+    .grid-2{grid-template-columns:1fr}
+  }
+  @media (prefers-reduced-motion:reduce){*{animation:none !important;transition:none !important}}
+</style>
+</head>
+<body>
+
+<header>
+  <a class="brand" href="#" onclick="return false" title="BSB – Birchinger Sanieren &amp; Bauen GmbH">
+    <span class="logo"><svg class="logo-svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 141.732 99.2126"><defs><clipPath id="clip-0"><path clip-rule="nonzero" d="M 0.425781 59 L 24 59 L 24 75 L 0.425781 75 Z M 0.425781 59 "/></clipPath><clipPath id="clip-1"><path clip-rule="nonzero" d="M 128 59 L 141.042969 59 L 141.042969 75 L 128 75 Z M 128 59 "/></clipPath></defs><g clip-path="url(#clip-0)"><path fill-rule="nonzero" fill="currentColor" fill-opacity="1" d="M 17.679688 71.375 C 18.808594 71.375 19.386719 70.796875 19.386719 69.730469 C 19.386719 68.640625 18.808594 68.066406 17.679688 68.066406 L 4.054688 68.066406 L 4.054688 71.375 Z M 17.316406 65.226562 C 18.148438 65.226562 18.574219 64.714844 18.574219 63.753906 C 18.574219 62.773438 18.148438 62.28125 17.316406 62.28125 L 4.054688 62.28125 L 4.054688 65.226562 Z M 23.164062 69.878906 C 23.164062 72.804688 21.414062 74.300781 18.042969 74.300781 L 0.425781 74.300781 L 0.425781 59.355469 L 17.402344 59.355469 C 20.644531 59.355469 22.3125 60.722656 22.3125 63.371094 C 22.3125 64.734375 21.863281 65.738281 20.964844 66.273438 C 22.417969 66.957031 23.164062 68.171875 23.164062 69.878906 "/></g><path fill-rule="nonzero" fill="currentColor" fill-opacity="1" d="M 25.507812 59.355469 L 28.925781 59.355469 L 28.925781 74.300781 L 25.507812 74.300781 Z M 25.507812 59.355469 "/><path fill-rule="nonzero" fill="currentColor" fill-opacity="1" d="M 37.78125 67.019531 C 39.125 67.019531 39.9375 66.125 39.9375 64.671875 C 39.9375 63.21875 39.125 62.34375 37.78125 62.34375 L 35.539062 62.34375 L 35.539062 67.019531 Z M 32.125 59.355469 L 37.78125 59.355469 C 41.34375 59.355469 43.542969 61.363281 43.542969 64.628906 C 43.542969 66.59375 42.777344 68.109375 41.410156 69.027344 L 44.183594 74.296875 L 40.257812 74.296875 L 37.996094 70.007812 L 35.539062 70.007812 L 35.539062 74.296875 L 32.125 74.296875 Z M 32.125 59.355469 "/><path fill-rule="nonzero" fill="currentColor" fill-opacity="1" d="M 51.953125 59.035156 L 52.59375 59.035156 C 56.648438 59.035156 59.125 61.234375 59.125 64.800781 L 55.519531 64.800781 C 55.519531 63.113281 54.40625 62.089844 52.59375 62.089844 L 51.953125 62.089844 C 50.011719 62.089844 48.816406 63.882812 48.816406 66.828125 C 48.816406 69.773438 50.011719 71.566406 51.953125 71.566406 L 52.59375 71.566406 C 54.40625 71.566406 55.519531 70.542969 55.519531 68.855469 L 59.125 68.855469 C 59.125 72.421875 56.648438 74.617188 52.59375 74.617188 L 51.953125 74.617188 C 47.789062 74.617188 45.25 71.652344 45.25 66.828125 C 45.25 62.003906 47.789062 59.035156 51.953125 59.035156 "/><path fill-rule="nonzero" fill="currentColor" fill-opacity="1" d="M 74.277344 74.296875 L 70.863281 74.296875 L 70.863281 68.320312 L 65.3125 68.320312 L 65.3125 74.296875 L 61.898438 74.296875 L 61.898438 59.355469 L 65.3125 59.355469 L 65.3125 65.332031 L 70.863281 65.332031 L 70.863281 59.355469 L 74.277344 59.355469 Z M 74.277344 74.296875 "/><path fill-rule="nonzero" fill="currentColor" fill-opacity="1" d="M 77.480469 59.355469 L 80.894531 59.355469 L 80.894531 74.300781 L 77.480469 74.300781 Z M 77.480469 59.355469 "/><path fill-rule="nonzero" fill="currentColor" fill-opacity="1" d="M 84.09375 59.355469 L 87.511719 59.355469 L 93.167969 68.898438 L 93.167969 59.355469 L 96.476562 59.355469 L 96.476562 74.300781 L 93.0625 74.300781 L 87.402344 64.609375 L 87.402344 74.300781 L 84.09375 74.300781 Z M 84.09375 59.355469 "/><path fill-rule="nonzero" fill="currentColor" fill-opacity="1" d="M 105.761719 59.035156 L 106.398438 59.035156 C 110.5 59.035156 113.015625 61.085938 113.015625 64.375 L 109.410156 64.375 C 109.410156 62.964844 108.257812 62.109375 106.398438 62.109375 L 105.761719 62.109375 C 103.605469 62.109375 102.386719 63.902344 102.386719 66.828125 C 102.386719 69.773438 103.710938 71.566406 105.867188 71.566406 L 106.507812 71.566406 C 108.492188 71.566406 109.707031 70.5 109.707031 68.769531 L 105.226562 68.769531 L 105.226562 66.164062 L 113.253906 66.164062 L 113.253906 68.128906 C 113.253906 72.101562 110.691406 74.554688 106.507812 74.617188 L 105.867188 74.617188 C 101.492188 74.617188 98.824219 71.652344 98.824219 66.828125 C 98.824219 62.003906 101.382812 59.035156 105.761719 59.035156 "/><path fill-rule="nonzero" fill="currentColor" fill-opacity="1" d="M 119.441406 65.121094 L 125.351562 65.121094 L 125.351562 68.109375 L 119.441406 68.109375 L 119.441406 71.3125 L 126.207031 71.3125 L 126.207031 74.300781 L 116.027344 74.300781 L 116.027344 59.355469 L 126.207031 59.355469 L 126.207031 62.34375 L 119.441406 62.34375 Z M 119.441406 65.121094 "/><g clip-path="url(#clip-1)"><path fill-rule="nonzero" fill="currentColor" fill-opacity="1" d="M 134.636719 67.019531 C 135.980469 67.019531 136.792969 66.125 136.792969 64.671875 C 136.792969 63.21875 135.980469 62.34375 134.636719 62.34375 L 132.394531 62.34375 L 132.394531 67.019531 Z M 128.980469 59.355469 L 134.636719 59.355469 C 138.203125 59.355469 140.402344 61.363281 140.402344 64.628906 C 140.402344 66.59375 139.632812 68.109375 138.265625 69.027344 L 141.042969 74.296875 L 137.113281 74.296875 L 134.851562 70.007812 L 132.394531 70.007812 L 132.394531 74.296875 L 128.980469 74.296875 Z M 128.980469 59.355469 "/></g><path fill-rule="nonzero" fill="currentColor" fill-opacity="1" d="M 23.199219 85.507812 C 23.433594 86.425781 23.96875 86.828125 24.921875 86.828125 C 25.671875 86.828125 26.125 86.351562 26.125 85.625 C 26.125 84.003906 22.855469 84.640625 22.855469 82.644531 C 22.855469 81.75 23.476562 81.082031 24.59375 81.082031 C 25.546875 81.082031 26.25 81.597656 26.523438 82.527344 L 26.046875 82.667969 C 25.832031 82 25.363281 81.53125 24.59375 81.53125 C 23.894531 81.53125 23.410156 81.933594 23.410156 82.644531 C 23.410156 83.050781 23.527344 83.34375 24.636719 83.761719 C 26.332031 84.398438 26.675781 84.816406 26.675781 85.683594 C 26.675781 86.710938 25.8125 87.28125 24.835938 87.28125 C 23.683594 87.28125 23.023438 86.769531 22.691406 85.667969 Z M 23.199219 85.507812 "/><path fill-rule="nonzero" fill="currentColor" fill-opacity="1" d="M 31.96875 84.773438 L 30.96875 81.613281 L 30.949219 81.613281 L 29.957031 84.773438 Z M 30.539062 81.164062 L 31.382812 81.164062 L 33.289062 87.195312 L 32.703125 87.195312 L 32.09375 85.222656 L 29.8125 85.222656 L 29.195312 87.195312 L 28.609375 87.195312 Z M 30.539062 81.164062 "/><path fill-rule="nonzero" fill="currentColor" fill-opacity="1" d="M 35.675781 81.164062 L 36.605469 81.164062 L 39.46875 86.195312 L 39.488281 86.195312 L 39.488281 81.164062 L 40.039062 81.164062 L 40.039062 87.195312 L 39.46875 87.195312 L 36.246094 81.617188 L 36.226562 81.617188 L 36.226562 87.195312 L 35.675781 87.195312 Z M 35.675781 81.164062 "/><path fill-rule="nonzero" fill="currentColor" fill-opacity="1" d="M 43.09375 81.164062 L 43.644531 81.164062 L 43.644531 87.195312 L 43.09375 87.195312 Z M 43.09375 81.164062 "/><path fill-rule="nonzero" fill="currentColor" fill-opacity="1" d="M 46.703125 87.195312 L 46.703125 81.164062 L 50.144531 81.164062 L 50.144531 81.613281 L 47.25 81.613281 L 47.25 83.835938 L 49.332031 83.835938 L 49.332031 84.289062 L 47.25 84.289062 L 47.25 86.746094 L 50.300781 86.746094 L 50.300781 87.195312 Z M 46.703125 87.195312 "/><path fill-rule="nonzero" fill="currentColor" fill-opacity="1" d="M 53.234375 83.988281 L 54.71875 83.988281 C 55.519531 83.988281 56.023438 83.546875 56.023438 82.800781 C 56.023438 82.058594 55.585938 81.617188 54.71875 81.617188 L 53.234375 81.617188 Z M 56.800781 87.195312 L 56.199219 87.195312 L 54.796875 84.4375 L 53.234375 84.4375 L 53.234375 87.195312 L 52.679688 87.195312 L 52.679688 81.164062 L 54.71875 81.164062 C 55.90625 81.164062 56.574219 81.816406 56.574219 82.800781 C 56.574219 83.59375 56.179688 84.121094 55.320312 84.339844 Z M 56.800781 87.195312 "/><path fill-rule="nonzero" fill="currentColor" fill-opacity="1" d="M 59.589844 87.195312 L 59.589844 81.164062 L 63.03125 81.164062 L 63.03125 81.613281 L 60.136719 81.613281 L 60.136719 83.835938 L 62.21875 83.835938 L 62.21875 84.289062 L 60.136719 84.289062 L 60.136719 86.746094 L 63.1875 86.746094 L 63.1875 87.195312 Z M 59.589844 87.195312 "/><path fill-rule="nonzero" fill="currentColor" fill-opacity="1" d="M 65.566406 81.164062 L 66.496094 81.164062 L 69.359375 86.195312 L 69.378906 86.195312 L 69.378906 81.164062 L 69.929688 81.164062 L 69.929688 87.195312 L 69.359375 87.195312 L 66.136719 81.617188 L 66.121094 81.617188 L 66.121094 87.195312 L 65.566406 87.195312 Z M 65.566406 81.164062 "/><path fill-rule="nonzero" fill="currentColor" fill-opacity="1" d="M 77.945312 83.503906 C 78.496094 83.203125 78.914062 82.691406 78.914062 82.199219 C 78.914062 81.824219 78.707031 81.53125 78.238281 81.53125 C 77.84375 81.53125 77.578125 81.78125 77.578125 82.402344 C 77.578125 82.792969 77.71875 83.1875 77.945312 83.503906 M 77.953125 86.828125 C 78.664062 86.828125 79.097656 86.453125 79.300781 86.242188 C 78.890625 85.867188 78.09375 84.742188 77.761719 84.1875 C 77.09375 84.554688 76.667969 84.941406 76.667969 85.757812 C 76.667969 86.46875 77.320312 86.828125 77.953125 86.828125 M 80.777344 84.457031 C 80.636719 85.097656 80.375 85.707031 80.015625 86.234375 C 80.292969 86.519531 80.636719 86.753906 81.054688 86.777344 L 81.054688 87.277344 C 80.519531 87.253906 80.035156 86.996094 79.648438 86.621094 C 79.191406 87.035156 78.5625 87.277344 77.929688 87.277344 C 76.984375 87.277344 76.117188 86.769531 76.117188 85.726562 C 76.117188 84.839844 76.507812 84.421875 77.503906 83.746094 C 77.226562 83.335938 77.027344 82.828125 77.027344 82.34375 C 77.027344 81.539062 77.503906 81.082031 78.261719 81.082031 C 78.949219 81.082031 79.464844 81.507812 79.464844 82.234375 C 79.464844 83.050781 78.839844 83.511719 78.230469 83.960938 C 78.699219 84.625 79.117188 85.332031 79.632812 85.882812 C 79.933594 85.425781 80.152344 84.898438 80.257812 84.355469 Z M 80.777344 84.457031 "/><path fill-rule="nonzero" fill="currentColor" fill-opacity="1" d="M 87.707031 86.746094 L 89.136719 86.746094 C 90.199219 86.746094 90.671875 86.359375 90.671875 85.507812 C 90.671875 84.816406 90.171875 84.289062 88.960938 84.289062 L 87.707031 84.289062 Z M 87.707031 83.835938 L 89.019531 83.835938 C 89.730469 83.835938 90.429688 83.601562 90.429688 82.71875 C 90.429688 81.832031 89.878906 81.617188 88.792969 81.617188 L 87.707031 81.617188 Z M 87.15625 81.164062 L 88.84375 81.164062 C 90.332031 81.164062 90.984375 81.632812 90.984375 82.675781 C 90.984375 83.328125 90.730469 83.703125 90.132812 83.980469 C 90.789062 84.273438 91.226562 84.78125 91.226562 85.542969 C 91.226562 86.796875 90.382812 87.195312 89.078125 87.195312 L 87.15625 87.195312 Z M 87.15625 81.164062 "/><path fill-rule="nonzero" fill="currentColor" fill-opacity="1" d="M 96.796875 84.773438 L 95.792969 81.613281 L 95.777344 81.613281 L 94.78125 84.773438 Z M 95.367188 81.164062 L 96.210938 81.164062 L 98.117188 87.195312 L 97.53125 87.195312 L 96.921875 85.222656 L 94.640625 85.222656 L 94.023438 87.195312 L 93.4375 87.195312 Z M 95.367188 81.164062 "/><path fill-rule="nonzero" fill="currentColor" fill-opacity="1" d="M 101.054688 81.164062 L 101.054688 85.273438 C 101.054688 86.425781 101.613281 86.828125 102.683594 86.828125 C 103.753906 86.828125 104.3125 86.425781 104.3125 85.273438 L 104.3125 81.164062 L 104.863281 81.164062 L 104.863281 85.226562 C 104.863281 86.59375 104.144531 87.28125 102.683594 87.28125 C 101.222656 87.28125 100.503906 86.59375 100.503906 85.226562 L 100.503906 81.164062 Z M 101.054688 81.164062 "/><path fill-rule="nonzero" fill="currentColor" fill-opacity="1" d="M 107.871094 87.195312 L 107.871094 81.164062 L 111.3125 81.164062 L 111.3125 81.613281 L 108.421875 81.613281 L 108.421875 83.835938 L 110.5 83.835938 L 110.5 84.289062 L 108.421875 84.289062 L 108.421875 86.746094 L 111.46875 86.746094 L 111.46875 87.195312 Z M 107.871094 87.195312 "/><path fill-rule="nonzero" fill="currentColor" fill-opacity="1" d="M 113.847656 81.164062 L 114.777344 81.164062 L 117.640625 86.195312 L 117.660156 86.195312 L 117.660156 81.164062 L 118.210938 81.164062 L 118.210938 87.195312 L 117.640625 87.195312 L 114.417969 81.617188 L 114.402344 81.617188 L 114.402344 87.195312 L 113.847656 87.195312 Z M 113.847656 81.164062 "/><path fill-rule="nonzero" fill="currentColor" fill-opacity="1" d="M 125.578125 48.550781 C 123.945312 48.375 121.960938 48.160156 119.683594 47.910156 C 117.40625 47.671875 114.839844 47.382812 112.03125 47.148438 C 109.222656 46.894531 106.179688 46.613281 102.960938 46.375 C 101.347656 46.246094 99.695312 46.117188 98 45.984375 C 96.308594 45.882812 94.578125 45.78125 92.820312 45.675781 C 92.589844 45.660156 92.351562 45.648438 92.121094 45.636719 L 92.066406 33.433594 L 66.339844 11.152344 L 40.699219 32.761719 L 40.699219 35.683594 L 66.339844 18.609375 L 66.339844 25.835938 L 40.699219 38.921875 L 40.699219 41.945312 L 66.339844 32.703125 L 66.339844 40.417969 L 40.699219 44.824219 L 40.699219 46.109375 L 41.523438 46.109375 C 40.503906 46.183594 39.492188 46.257812 38.503906 46.335938 C 35.285156 46.605469 32.242188 46.839844 29.433594 47.097656 C 26.625 47.351562 24.054688 47.601562 21.777344 47.847656 C 19.5 48.097656 17.515625 48.316406 15.882812 48.496094 C 12.617188 48.875 10.753906 49.125 10.753906 49.125 C 10.753906 49.125 12.628906 48.996094 15.90625 48.761719 C 17.546875 48.652344 19.539062 48.515625 21.820312 48.363281 C 24.105469 48.21875 26.683594 48.054688 29.492188 47.875 C 32.304688 47.6875 35.351562 47.535156 38.570312 47.34375 C 41.792969 47.191406 45.191406 47.03125 48.703125 46.863281 C 52.21875 46.703125 55.851562 46.628906 59.542969 46.480469 C 61.386719 46.453125 63.246094 46.425781 65.113281 46.398438 C 66.046875 46.386719 66.984375 46.375 67.917969 46.363281 C 68.863281 46.347656 69.78125 46.332031 70.722656 46.355469 C 72.601562 46.375 74.480469 46.394531 76.351562 46.414062 C 77.285156 46.421875 78.21875 46.433594 79.148438 46.441406 C 80.078125 46.46875 81.003906 46.496094 81.925781 46.523438 C 85.613281 46.652344 89.242188 46.707031 92.757812 46.898438 C 94.515625 46.976562 96.242188 47.050781 97.933594 47.125 C 99.625 47.214844 101.28125 47.300781 102.890625 47.386719 C 106.113281 47.542969 109.15625 47.746094 111.96875 47.929688 C 117.589844 48.296875 122.273438 48.605469 125.554688 48.820312 C 127.195312 48.9375 128.484375 48.996094 129.363281 49.050781 C 130.242188 49.101562 130.710938 49.125 130.710938 49.125 C 130.710938 49.125 128.847656 48.917969 125.578125 48.550781 "/></svg></span>
+    <span class="brand-div"></span>
+    <span class="brand-label">Tracking</span>
+  </a>
+  <nav class="tabs" id="tabs">
+    <button data-view="timeline" aria-selected="true">Zeitstrahl</button>
+    <button data-view="bookings" aria-selected="false">Einsätze</button>
+    <button data-view="assets" aria-selected="false">Geräte</button>
+  </nav>
+  <div class="head-right">
+    <button class="sync s-off" id="syncBtn" title="GitHub-Status – klicken zum Aktualisieren">
+      <span class="dot"></span><span class="label" id="syncLabel">Nicht verbunden</span>
+    </button>
+    <button class="icon-btn" id="settingsBtn" title="GitHub-Einstellungen">⚙</button>
+  </div>
+</header>
+
+<div class="banner" id="banner" style="display:none">
+  <span>⚠</span>
+  <span><b>Nicht mit GitHub verbunden.</b> Änderungen bleiben nur auf diesem Gerät und werden nicht geteilt.</span>
+  <button id="bannerConnect">Verbinden</button>
+</div>
+
+<main>
+  <!-- ZEITSTRAHL -->
+  <section class="view active" id="view-timeline">
+    <div class="toolbar">
+      <div class="nav-range">
+        <button id="navPrev" title="Zurück">‹</button>
+        <button class="today-btn" id="navToday">Heute</button>
+        <button id="navNext" title="Vor">›</button>
+      </div>
+      <div class="seg" id="rangeSeg">
+        <button data-mode="intraday">Tag</button>
+        <button data-days="14">2&nbsp;Wo</button>
+        <button data-days="28" aria-pressed="true">4&nbsp;Wo</button>
+        <button data-days="90">3&nbsp;Mon</button>
+      </div>
+      <div class="field">
+        <span style="color:var(--ink-3)">🔎</span>
+        <input id="tlSearch" placeholder="Gerät / Ort suchen" style="width:150px">
+      </div>
+      <div class="field">
+        <select id="tlType"><option value="">Alle Typen</option></select>
+      </div>
+      <div class="spacer"></div>
+      <button class="btn" id="addAssetBtn">+ Gerät</button>
+      <button class="btn amber" id="addBookingBtn">+ Einsatz</button>
+    </div>
+    <div class="timeline" id="timeline"></div>
+  </section>
+
+  <!-- EINSÄTZE -->
+  <section class="view" id="view-bookings">
+    <div class="toolbar">
+      <div class="seg" id="bookingFilter">
+        <button data-f="active" aria-pressed="true">Aktuell &amp; geplant</button>
+        <button data-f="all">Alle</button>
+        <button data-f="past">Vergangen</button>
+      </div>
+      <div class="field">
+        <span style="color:var(--ink-3)">🔎</span>
+        <input id="bSearch" placeholder="Ort / Gerät / Person" style="width:170px">
+      </div>
+      <div class="spacer"></div>
+      <button class="btn amber" id="addBookingBtn2">+ Einsatz</button>
+    </div>
+    <div class="scroll"><div class="wrap" id="bookingList"></div></div>
+  </section>
+
+  <!-- GERÄTE -->
+  <section class="view" id="view-assets">
+    <div class="toolbar">
+      <div class="field">
+        <span style="color:var(--ink-3)">🔎</span>
+        <input id="aSearch" placeholder="Gerät suchen" style="width:170px">
+      </div>
+      <div class="field">
+        <select id="aType"><option value="">Alle Typen</option></select>
+      </div>
+      <div class="spacer"></div>
+      <button class="btn amber" id="addAssetBtn2">+ Gerät</button>
+    </div>
+    <div class="scroll"><div class="wrap" id="assetList"></div></div>
+  </section>
+</main>
+
+<!-- ===== MODALS ===== -->
+<div class="overlay" id="overlay">
+  <div class="modal" id="modal"></div>
+</div>
+
+<div class="toast" id="toast"></div>
+
+<script>
+"use strict";
+/* ============================================================
+   BSB Tracking – Zustand, GitHub-Sync, Rendering
+   Daten liegen als JSON-Datei im GitHub-Repo (nicht lokal).
+   ============================================================ */
+
+const CFG_KEY = "bsb_tracking_config_v1";
+const PENDING_KEY = "bsb_tracking_pending_v1"; // Sicherheitspuffer für noch nicht nach GitHub geschriebene Änderungen
+const PALETTE = ["#2563EB","#0D9488","#D97706","#DC2626","#7C3AED","#0891B2","#65A30D","#DB2777","#475569","#CA8A04"];
+const TYPES   = ["LKW","Bagger","Radlader","Putzmaschine","Estrichmaschine","Anhänger","Gerüst","Container","Werkzeug","Sonstiges"];
+const MONTHS  = ["Jan","Feb","Mär","Apr","Mai","Jun","Jul","Aug","Sep","Okt","Nov","Dez"];
+const DOW     = ["So","Mo","Di","Mi","Do","Fr","Sa"];
+
+let state = { assets: [], bookings: [], tombstones: [], updatedAt: null };
+let cfg   = { owner:"", repo:"", path:"daten/bsb-tracking.json", branch:"main", token:"" };
+let remoteSha = null;
+let lastPull  = 0;
+let connected = false;
+
+let tl = { start: startOfDay(addDays(new Date(),-3)), days: 28, mode:"days" };
+let ui = { tlSearch:"", tlType:"", bFilter:"active", bSearch:"", aSearch:"", aType:"" };
+
+/* ---------- Hilfsfunktionen: Datum ---------- */
+function startOfDay(d){ const x=new Date(d); x.setHours(0,0,0,0); return x; }
+function addDays(d,n){ const x=new Date(d); x.setDate(x.getDate()+n); return x; }
+function diffDays(a,b){ return Math.round((startOfDay(b)-startOfDay(a))/86400000); }
+function todayStr(){ return toISO(new Date()); }
+function toISO(d){ const x=startOfDay(d); const m=String(x.getMonth()+1).padStart(2,"0"); const day=String(x.getDate()).padStart(2,"0"); return x.getFullYear()+"-"+m+"-"+day; }
+function fromISO(s){ const [y,m,d]=s.split("-").map(Number); return new Date(y,m-1,d); }
+function fmtDE(s){ const d=fromISO(s); return String(d.getDate()).padStart(2,"0")+"."+String(d.getMonth()+1).padStart(2,"0")+"."+d.getFullYear(); }
+function fmtShort(s){ const d=fromISO(s); return String(d.getDate()).padStart(2,"0")+"."+String(d.getMonth()+1).padStart(2,"0")+"."; }
+function uid(){ return Date.now().toString(36)+Math.random().toString(36).slice(2,8); }
+function esc(s){ return String(s==null?"":s).replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;","\"":"&quot;","'":"&#39;"}[c])); }
+function now(){ return new Date().toISOString(); }
+function pad2(n){ return String(n).padStart(2,"0"); }
+/* ---------- Buchungshelfer: ganztägig ODER mit Uhrzeit ---------- */
+function timed(b){ return b.allDay===false || (b.start||"").includes("T"); }
+function startMs(b){ const s=b.start||""; return s.includes("T")? new Date(s).getTime() : fromISO(s).getTime(); }
+function endMs(b){ const e=b.end||""; return e.includes("T")? new Date(e).getTime() : fromISO(e).getTime()+86400000; }
+function sd(b){ return (b.start||"").slice(0,10); }
+function ed(b){ return (b.end||"").slice(0,10); }
+function hhmm(dt){ const d=new Date(dt); return pad2(d.getHours())+":"+pad2(d.getMinutes()); }
+function fmtRange(b){
+  if(timed(b)){ return sd(b)===ed(b)
+    ? fmtShort(sd(b))+" "+hhmm(b.start)+"–"+hhmm(b.end)
+    : fmtShort(sd(b))+" "+hhmm(b.start)+" – "+fmtShort(ed(b))+" "+hhmm(b.end); }
+  return sd(b)===ed(b)? fmtShort(sd(b)) : fmtShort(sd(b))+"–"+fmtShort(ed(b));
+}
+function fmtStartShort(b){ return timed(b)? fmtShort(sd(b))+" "+hhmm(b.start) : fmtShort(sd(b)); }
+function durLabel(b){
+  if(timed(b)){ const h=(endMs(b)-startMs(b))/3600000;
+    return h<24? (Math.round(h*10)/10).toString().replace(".",",")+" Std"
+               : (Math.round(h/24*10)/10).toString().replace(".",",")+" Tage"; }
+  const d=diffDays(fromISO(sd(b)),fromISO(ed(b)))+1; return d+" Tag"+(d>1?"e":"");
+}
+
+/* ---------- Base64 (UTF-8-sicher) ---------- */
+function utf8ToB64(str){
+  const bytes=new TextEncoder().encode(str); let bin=""; const ch=0x8000;
+  for(let i=0;i<bytes.length;i+=ch){ bin+=String.fromCharCode.apply(null,bytes.subarray(i,i+ch)); }
+  return btoa(bin);
+}
+function b64ToUtf8(b64){
+  const clean=b64.replace(/\s/g,""); const bin=atob(clean);
+  const bytes=Uint8Array.from(bin,c=>c.charCodeAt(0));
+  return new TextDecoder().decode(bytes);
+}
+
+/* ---------- GitHub-API ---------- */
+function ghUrl(){
+  return "https://api.github.com/repos/"+encodeURIComponent(cfg.owner)+"/"+encodeURIComponent(cfg.repo)
+       + "/contents/"+cfg.path.split("/").map(encodeURIComponent).join("/");
+}
+function ghHeaders(){
+  return {
+    "Authorization":"Bearer "+cfg.token,
+    "Accept":"application/vnd.github+json",
+    "X-GitHub-Api-Version":"2022-11-28"
+  };
+}
+async function ghGet(){
+  const res = await fetch(ghUrl()+"?ref="+encodeURIComponent(cfg.branch)+"&t="+Date.now(), { headers: ghHeaders(), cache:"no-store" });
+  if(res.status===404) return { status:404 };
+  if(res.status===401 || res.status===403) throw new Error("Zugriff verweigert – Token oder Berechtigungen prüfen ("+res.status+").");
+  if(!res.ok) throw new Error("Laden fehlgeschlagen ("+res.status+").");
+  const body = await res.json();
+  return { status:200, content:b64ToUtf8(body.content), sha:body.sha };
+}
+async function ghPut(content, sha){
+  const payload = { message:"BSB Tracking – Aktualisierung "+now(), content:utf8ToB64(content), branch:cfg.branch };
+  if(sha) payload.sha = sha;
+  const res = await fetch(ghUrl(), { method:"PUT", headers:{...ghHeaders(),"Content-Type":"application/json"}, body:JSON.stringify(payload) });
+  if(res.status===409) return { conflict:true };
+  if(res.status===401 || res.status===403) throw new Error("Speichern verweigert – Token braucht Schreibrecht (Contents: read/write).");
+  if(!res.ok){ let m=""; try{ m=(await res.json()).message||""; }catch(e){} throw new Error("Speichern fehlgeschlagen ("+res.status+") "+m); }
+  return await res.json();
+}
+
+/* ---------- Merge (mehrere Geräte, letzte Änderung gewinnt) ---------- */
+function emptyData(){ return { assets:[], bookings:[], tombstones:[], updatedAt:null }; }
+function parseData(txt){
+  const t=(txt||"").trim();
+  if(!t) return emptyData();                       // neu angelegte / leere Datei
+  try { return {...emptyData(), ...JSON.parse(t)}; }
+  catch(e){ throw new Error("Die Datei "+cfg.path+" enthält kein gültiges JSON. Bitte den Inhalt prüfen oder die Datei komplett leeren – sie wird dann automatisch neu befüllt."); }
+}
+function mergeStates(a,b){
+  const tomb={};
+  [...(a.tombstones||[]),...(b.tombstones||[])].forEach(t=>{ if(!tomb[t.id]||t.deletedAt>tomb[t.id]) tomb[t.id]=t.deletedAt; });
+  function mergeList(la,lb){
+    const m={};
+    [...(la||[]),...(lb||[])].forEach(it=>{ const ex=m[it.id]; if(!ex||(it.updatedAt||"")>(ex.updatedAt||"")) m[it.id]=it; });
+    return Object.values(m).filter(it=> !(tomb[it.id] && tomb[it.id] >= (it.updatedAt||"")));
+  }
+  return {
+    assets: mergeList(a.assets,b.assets),
+    bookings: mergeList(a.bookings,b.bookings),
+    tombstones: Object.entries(tomb).map(([id,deletedAt])=>({id,deletedAt})),
+    updatedAt: now()
+  };
+}
+
+/* ---------- Laden / Speichern ---------- */
+function loadConfig(){
+  try{ const s=JSON.parse(localStorage.getItem(CFG_KEY)||"{}"); cfg={...cfg,...s}; }catch(e){}
+}
+function saveConfig(){ localStorage.setItem(CFG_KEY, JSON.stringify(cfg)); }
+function isConfigured(){ return cfg.owner && cfg.repo && cfg.path && cfg.token; }
+
+async function pull(silent){
+  if(!isConfigured()) return;
+  if(!silent) setSync("loading","Lädt …");
+  try{
+    const r = await ghGet();
+    if(r.status===404){ state=emptyData(); remoteSha=null; }
+    else { state=parseData(r.content); remoteSha=r.sha; }
+    connected=true; lastPull=Date.now();
+    // Aus einem früheren Versuch übrig gebliebene, noch nicht gesendete Änderungen jetzt übertragen
+    if(recoverPending()){ renderAll(); pushNow(); return; }
+    setSync("connected","Verbunden");
+    renderAll();
+  }catch(e){
+    connected=false; setSync("error", e.message);
+    if(!silent) toast(e.message,"err");
+  }
+}
+function recoverPending(){
+  try{
+    const raw=localStorage.getItem(PENDING_KEY); if(!raw) return false;
+    const p=JSON.parse(raw); if(!p||!p.state) return false;
+    state = mergeStates(state, p.state);   // gepufferte Änderungen über den GitHub-Stand legen
+    return true;
+  }catch(e){ return false; }
+}
+
+let saveQueued=false, saving=false, retryTimer=null;
+function markDirty(){ try{ localStorage.setItem(PENDING_KEY, JSON.stringify({state, at:now()})); }catch(e){} }
+function clearDirty(){ try{ localStorage.removeItem(PENDING_KEY); }catch(e){} }
+function hasPending(){ try{ return !!localStorage.getItem(PENDING_KEY); }catch(e){ return false; } }
+
+// Jede Änderung wird sofort lokal gesichert UND sofort nach GitHub geschrieben.
+function save(){
+  renderAll();
+  markDirty();
+  if(!isConfigured()){ updateBanner(); setSync("off","Nicht verbunden – Änderung gemerkt"); return; }
+  pushNow();
+}
+
+async function pushNow(){
+  if(!isConfigured()) return;
+  if(saving){ saveQueued=true; return; }
+  clearTimeout(retryTimer);
+  saving=true; setSync("saving","Speichert …");
+  try{
+    let tries=0;
+    while(true){
+      tries++;
+      const r = await ghGet();
+      let remote = emptyData(), sha=null;
+      if(r.status===200){ remote=parseData(r.content); sha=r.sha; }
+      const merged = mergeStates(remote, state);
+      state = merged;
+      const put = await ghPut(JSON.stringify(merged,null,2), sha);
+      if(put.conflict){ if(tries<4) continue; throw new Error("conflict"); }
+      remoteSha = put.content.sha; lastPull=Date.now(); connected=true;
+      break;
+    }
+    clearDirty();
+    setSync("saved","Gespeichert");
+    renderAll();
+  }catch(e){
+    connected = isConfigured();
+    setSync("error","Nicht gespeichert – neuer Versuch …");
+    scheduleRetry();
+  } finally {
+    saving=false;
+    if(saveQueued){ saveQueued=false; pushNow(); }
+  }
+}
+function scheduleRetry(){
+  clearTimeout(retryTimer);
+  retryTimer=setTimeout(()=>{ if(isConfigured() && !saving) pushNow(); }, 7000);
+}
+
+/* ---------- Sync-Anzeige ---------- */
+function setSync(stateName,label){
+  const b=document.getElementById("syncBtn");
+  b.className="sync s-"+stateName;
+  document.getElementById("syncLabel").textContent=label||"";
+  updateBanner();
+}
+function updateBanner(){
+  document.getElementById("banner").style.display = isConfigured()? "none":"flex";
+}
+
+/* ============================================================
+   RENDERING
+   ============================================================ */
+function assetById(id){ return state.assets.find(a=>a.id===id); }
+function activeAssets(){ return state.assets.filter(a=>a.active!==false); }
+
+function bookingConflicts(bk){
+  const s=startMs(bk), e=endMs(bk);
+  return state.bookings.some(o=> o.id!==bk.id && o.assetId===bk.assetId && startMs(o)<e && s<endMs(o));
+}
+
+function renderAll(){
+  populateTypeSelects();
+  renderTimeline();
+  renderBookings();
+  renderAssets();
+}
+
+/* ---------- Zeitstrahl ---------- */
+function tlAssets(){
+  let assets=activeAssets();
+  if(ui.tlType) assets=assets.filter(a=>a.type===ui.tlType);
+  if(ui.tlSearch){ const q=ui.tlSearch.toLowerCase();
+    assets=assets.filter(a=>(a.name||"").toLowerCase().includes(q) ||
+      state.bookings.some(b=>b.assetId===a.id && (b.location||"").toLowerCase().includes(q))); }
+  return assets;
+}
+function tlRowName(a){
+  return '<div class="tl-rowname"><span class="swatch" style="background:'+(a.color||'#475569')+'"></span>'
+    + '<div style="min-width:0"><div class="nm">'+esc(a.name)+'</div><div class="tp">'+esc(a.type||"")+(a.identifier?' · '+esc(a.identifier):'')+'</div></div></div>';
+}
+function tlEmptyAssets(){ return '<div class="empty-tl"><h3>Noch keine Geräte angelegt</h3><p>Lege LKWs, Bagger oder Maschinen an, um ihre Einsätze auf dem Zeitstrahl zu sehen.</p><button class="btn amber" onclick="openAssetModal()">+ Erstes Gerät anlegen</button></div>'; }
+function tlEmptyFilter(){ return '<div class="empty-tl"><h3>Keine Treffer</h3><p>Filter oder Suche anpassen, um Geräte anzuzeigen.</p></div>'; }
+
+function laneify(bks){
+  bks.forEach(b=>{ b._s=startMs(b); b._e=endMs(b); });
+  bks.sort((x,y)=> x._s-y._s);
+  const lanes=[];
+  bks.forEach(b=>{ let placed=false;
+    for(const l of lanes){ if(l[l.length-1]._e<=b._s){ l.push(b); b._lane=lanes.indexOf(l); placed=true; break; } }
+    if(!placed){ b._lane=lanes.length; lanes.push([b]); } });
+  return Math.max(1,lanes.length);
+}
+
+function renderTimeline(){
+  if(tl.mode==="intraday") return renderIntraday();
+  const root=document.getElementById("timeline");
+  document.documentElement.style.setProperty("--name-w", tl.days>=90? "180px":"210px");
+  if(state.assets.length===0){ root.innerHTML=tlEmptyAssets(); return; }
+  const assets=tlAssets();
+
+  const days=[]; for(let i=0;i<tl.days;i++){ days.push(addDays(tl.start,i)); }
+  const dayW = tl.days>=90?28:44;
+  document.documentElement.style.setProperty("--day-w", dayW+"px");
+  const today=todayStr();
+
+  let head='<div class="tl-corner">Gerät / Fahrzeug</div><div class="tl-head">';
+  days.forEach(d=>{
+    const iso=toISO(d), dow=d.getDay(), wknd=(dow===0||dow===6), monStart=d.getDate()===1;
+    head+='<div class="tl-day'+(wknd?' weekend':'')+(iso===today?' today':'')+(monStart?' month-start':'')+'">'
+        + '<div class="mon">'+(monStart||d.getDate()<=1?MONTHS[d.getMonth()]:'')+'</div>'
+        + '<div class="dow">'+DOW[dow]+'</div>'
+        + '<div class="dnum">'+pad2(d.getDate())+'</div></div>';
+  });
+  head+='</div>';
+
+  let rows="";
+  assets.forEach(a=>{
+    let bks=state.bookings.filter(b=>b.assetId===a.id)
+      .filter(b=> fromISO(ed(b))>=tl.start && fromISO(sd(b))<addDays(tl.start,tl.days));
+    const laneCount=laneify(bks);
+    const rowH=laneCount*28+10;
+
+    let bars="";
+    days.forEach((d,i)=>{ if(d.getDay()===0||d.getDay()===6) bars+='<div class="wk" style="left:'+(i*dayW)+'px;width:'+dayW+'px"></div>'; });
+    const tIdx=diffDays(tl.start,fromISO(today));
+    if(tIdx>=0 && tIdx<tl.days) bars+='<div class="today-line" style="left:'+(tIdx*dayW+(new Date().getHours()/24*dayW))+'px"></div>';
+
+    bks.forEach(b=>{
+      const sOff=Math.max(0,diffDays(tl.start,fromISO(sd(b))));
+      const eOff=Math.min(tl.days-1,diffDays(tl.start,fromISO(ed(b))));
+      const left=sOff*dayW;
+      const width=Math.max(dayW-3,(eOff-sOff+1)*dayW-3);
+      const clippedLeft=fromISO(sd(b))<tl.start;
+      const conf=bookingConflicts(b), tm=timed(b);
+      const label=(conf?'⚠ ':'')+(tm? hhmm(b.start)+' ':'')+esc(b.location||"—");
+      bars+='<div class="bar'+(conf?' conflict':'')+(clippedLeft?' clip-l':'')+(tm?' timed':'')+'" '
+          + 'style="left:'+left+'px;width:'+width+'px;top:'+(b._lane*28+5)+'px;background:'+(a.color||'#475569')+'" '
+          + 'onclick="event.stopPropagation();openBookingModal(\''+b.id+'\')" '
+          + 'title="'+esc(b.location)+' · '+fmtRange(b)+(b.responsible?' · '+esc(b.responsible):'')+(conf?' · DOPPELBELEGUNG':'')+'">'
+          + '<span class="loc">'+label+'</span></div>';
+    });
+
+    rows+=tlRowName(a)
+        + '<div class="tl-track" style="height:'+rowH+'px;width:'+(tl.days*dayW)+'px" data-asset="'+a.id+'" onclick="trackClick(event,\''+a.id+'\')">'+bars+'</div>';
+  });
+
+  root.innerHTML = assets.length===0 ? tlEmptyFilter()
+    : '<div class="tl-grid" style="grid-template-columns:var(--name-w) 1fr">'+head+rows+'</div>';
+
+  if(!root._scrolled){ root.scrollLeft=Math.max(0,(diffDays(tl.start,new Date())*dayW)-120); root._scrolled=true; }
+}
+
+/* ---------- Tagesansicht mit Stundenraster (Intraday) ---------- */
+function renderIntraday(){
+  const root=document.getElementById("timeline");
+  document.documentElement.style.setProperty("--name-w","180px");
+  if(state.assets.length===0){ root.innerHTML=tlEmptyAssets(); return; }
+  const assets=tlAssets();
+  const dayStart=tl.start.getTime(), dayEnd=dayStart+86400000, dayISO=toISO(tl.start);
+  const hourW=60; document.documentElement.style.setProperty("--hour-w", hourW+"px");
+  const isToday=dayISO===todayStr(), nowMs=Date.now();
+
+  let head='<div class="tl-corner intraday-corner">'+DOW[tl.start.getDay()]+' '+fmtDE(dayISO)+'</div><div class="tl-head">';
+  for(let h=0;h<24;h++){ head+='<div class="tl-hour'+(isToday&&h===new Date().getHours()?' now':'')+'"><span>'+pad2(h)+'</span></div>'; }
+  head+='</div>';
+
+  let rows="";
+  assets.forEach(a=>{
+    let bks=state.bookings.filter(b=>b.assetId===a.id).filter(b=> endMs(b)>dayStart && startMs(b)<dayEnd);
+    const laneCount=laneify(bks);
+    const rowH=laneCount*30+10;
+
+    let bars="";
+    if(isToday && nowMs>=dayStart && nowMs<dayEnd) bars+='<div class="now-line" style="left:'+(((nowMs-dayStart)/3600000)*hourW)+'px"></div>';
+    bks.forEach(b=>{
+      const s=Math.max(dayStart,b._s), e=Math.min(dayEnd,b._e);
+      const left=((s-dayStart)/3600000)*hourW;
+      const width=Math.max(16,((e-s)/3600000)*hourW-2);
+      const conf=bookingConflicts(b), tm=timed(b);
+      const label=(conf?'⚠ ':'')+(tm? hhmm(b.start)+'–'+hhmm(b.end)+' ' : 'Ganztägig ')+esc(b.location||"—");
+      bars+='<div class="bar'+(conf?' conflict':'')+(tm?' timed':' allday')+'" '
+          + 'style="left:'+left+'px;width:'+width+'px;top:'+(b._lane*30+5)+'px;background:'+(a.color||'#475569')+'" '
+          + 'onclick="event.stopPropagation();openBookingModal(\''+b.id+'\')" '
+          + 'title="'+esc(b.location)+' · '+fmtRange(b)+(b.responsible?' · '+esc(b.responsible):'')+(conf?' · DOPPELBELEGUNG':'')+'">'
+          + '<span class="loc">'+label+'</span></div>';
+    });
+
+    rows+=tlRowName(a)
+        + '<div class="tl-track intraday" style="height:'+rowH+'px;width:'+(24*hourW)+'px" onclick="intradayClick(event,\''+a.id+'\')">'+bars+'</div>';
+  });
+
+  root.innerHTML = assets.length===0 ? tlEmptyFilter()
+    : '<div class="tl-grid" style="grid-template-columns:var(--name-w) 1fr">'+head+rows+'</div>';
+
+  if(!root._scrolled){ const sh=isToday? Math.max(0,new Date().getHours()-1):6; root.scrollLeft=sh*hourW; root._scrolled=true; }
+}
+function intradayClick(ev,assetId){
+  const track=ev.currentTarget, x=ev.clientX-track.getBoundingClientRect().left, hourW=60;
+  let mins=Math.round(((x/hourW)*60)/30)*30; mins=Math.max(0,Math.min(23*60+30,mins));
+  const dayISO=toISO(tl.start);
+  const start=dayISO+'T'+pad2(Math.floor(mins/60))+':'+pad2(mins%60);
+  const e=new Date(tl.start.getTime()+mins*60000+3600000);
+  const end=toISO(e)+'T'+pad2(e.getHours())+':'+pad2(e.getMinutes());
+  openBookingModal(null,{assetId,timed:true,start,end});
+}
+
+function trackClick(ev,assetId){
+  const track=ev.currentTarget;
+  const x=ev.clientX-track.getBoundingClientRect().left;
+  const dayW=tl.days>=90?28:44;
+  const dayOffset=Math.floor(x/dayW);
+  const iso=toISO(addDays(tl.start,dayOffset));
+  openBookingModal(null,{assetId,start:iso,end:iso});
+}
+
+/* ---------- Einsätze-Liste ---------- */
+function renderBookings(){
+  const root=document.getElementById("bookingList");
+  const nowMs=Date.now();
+  let list=state.bookings.slice();
+  if(ui.bFilter==="active") list=list.filter(b=>endMs(b)>nowMs);
+  else if(ui.bFilter==="past") list=list.filter(b=>endMs(b)<=nowMs);
+  if(ui.bSearch){ const q=ui.bSearch.toLowerCase();
+    list=list.filter(b=>{ const a=assetById(b.assetId);
+      return (b.location||"").toLowerCase().includes(q) || (b.responsible||"").toLowerCase().includes(q) || (a&&(a.name||"").toLowerCase().includes(q)); }); }
+  list.sort((a,b)=> startMs(a)-startMs(b));
+  if(ui.bFilter==="past") list.reverse();
+
+  if(list.length===0){
+    root.innerHTML='<div class="empty-state"><h3>Keine Einsätze</h3><p>Lege einen neuen Einsatz an, um einen Verwendungsort und -zeitraum festzuhalten.</p><button class="btn amber" style="margin-top:10px" onclick="openBookingModal()">+ Einsatz anlegen</button></div>';
+    return;
+  }
+
+  let html='<div class="section-h"><h2>'+(ui.bFilter==="past"?"Vergangene Einsätze":ui.bFilter==="all"?"Alle Einsätze":"Aktuelle & geplante Einsätze")+'</h2><span class="count">'+list.length+'</span></div><div class="blist">';
+  list.forEach(b=>{
+    const a=assetById(b.assetId)||{name:"(gelöschtes Gerät)",color:"#8A93A0"};
+    const conf=bookingConflicts(b);
+    const s=startMs(b), e=endMs(b);
+    let pill="", pc="";
+    if(s<=nowMs && nowMs<e){ pill="Im Einsatz"; pc="now"; }
+    else if(s>nowMs){ const hrs=(s-nowMs)/3600000;
+      pill = hrs<24 ? ("in "+Math.max(1,Math.round(hrs))+" Std") : ("in "+Math.round(hrs/24)+" T");
+      pc = hrs<=24*7 ? "soon" : ""; }
+    else { pill="erledigt"; pc="past"; }
+    html+='<div class="brow">'
+      + '<div class="bar-swatch" style="background:'+a.color+'"></div>'
+      + '<div class="b-main"><div class="b-loc">'+(conf?'⚠ ':'')+esc(b.location||"—")+(timed(b)?' <span class="pill tag">Uhrzeit</span>':'')+(pc?' <span class="pill '+pc+'">'+pill+'</span>':'')+'</div>'
+      + '<div class="b-asset">'+esc(a.name)+(b.responsible?' · '+esc(b.responsible):'')+(b.note?' · '+esc(b.note):'')+'</div></div>'
+      + '<div class="b-when">'+fmtRange(b)+'<div class="days">'+durLabel(b)+'</div></div>'
+      + '<div class="b-actions"><button class="btn ghost" title="Bearbeiten" onclick="openBookingModal(\''+b.id+'\')">✏️</button></div></div>';
+  });
+  html+='</div>';
+  root.innerHTML=html;
+}
+
+/* ---------- Geräte-Liste ---------- */
+function renderAssets(){
+  const root=document.getElementById("assetList");
+  let list=state.assets.slice();
+  if(ui.aType) list=list.filter(a=>a.type===ui.aType);
+  if(ui.aSearch){ const q=ui.aSearch.toLowerCase(); list=list.filter(a=>(a.name||"").toLowerCase().includes(q)||(a.identifier||"").toLowerCase().includes(q)); }
+  list.sort((a,b)=> (a.name||"").localeCompare(b.name||"","de"));
+
+  if(list.length===0){
+    root.innerHTML='<div class="empty-state"><h3>Keine Geräte</h3><p>Lege dein erstes Gerät oder Fahrzeug an.</p><button class="btn amber" style="margin-top:10px" onclick="openAssetModal()">+ Gerät anlegen</button></div>';
+    return;
+  }
+  const nowMs=Date.now();
+  let html='<div class="section-h"><h2>Geräte & Fahrzeuge</h2><span class="count">'+list.length+'</span></div><div class="cards">';
+  list.forEach(a=>{
+    const bks=state.bookings.filter(b=>b.assetId===a.id);
+    const current=bks.find(b=> startMs(b)<=nowMs && nowMs<endMs(b));
+    const upcoming=bks.filter(b=> startMs(b)>nowMs).sort((x,y)=> startMs(x)-startMs(y))[0];
+    let status='<span class="pill past">frei</span>';
+    if(current) status='<span class="pill now">im Einsatz: '+esc(current.location)+'</span>';
+    else if(upcoming) status='<span class="pill soon">ab '+fmtStartShort(upcoming)+': '+esc(upcoming.location)+'</span>';
+    html+='<div class="card"><div class="top"><span class="swatch" style="background:'+(a.color||'#475569')+'"></span>'
+      + '<span class="nm">'+esc(a.name)+'</span><span class="badge">'+esc(a.type||"—")+'</span></div>'
+      + '<div class="meta">'
+      + (a.identifier?'<div><span class="k">Kennung</span><br>'+esc(a.identifier)+'</div>':'')
+      + '<div>'+status+'</div>'
+      + '<div><span class="k">Einsätze gesamt</span><br>'+bks.length+'</div>'
+      + (a.note?'<div><span class="k">Notiz</span><br>'+esc(a.note)+'</div>':'')
+      + '</div>'
+      + '<div class="row-actions"><button class="btn ghost" onclick="openBookingModal(null,{assetId:\''+a.id+'\'})">+ Einsatz</button>'
+      + '<button class="btn ghost" onclick="openAssetModal(\''+a.id+'\')">Bearbeiten</button></div></div>';
+  });
+  html+='</div>';
+  root.innerHTML=html;
+}
+
+function populateTypeSelects(){
+  const used=[...new Set([...TYPES, ...state.assets.map(a=>a.type).filter(Boolean)])];
+  ["tlType","aType"].forEach(id=>{
+    const sel=document.getElementById(id); const cur=sel.value;
+    sel.innerHTML='<option value="">Alle Typen</option>'+used.map(t=>'<option>'+esc(t)+'</option>').join("");
+    sel.value=cur;
+  });
+}
+
+/* ============================================================
+   MODALS
+   ============================================================ */
+const overlay=document.getElementById("overlay");
+const modal=document.getElementById("modal");
+function closeModal(){ overlay.classList.remove("show"); modal.innerHTML=""; }
+overlay.addEventListener("click",e=>{ if(e.target===overlay) closeModal(); });
+document.addEventListener("keydown",e=>{ if(e.key==="Escape") closeModal(); });
+
+/* ---------- Gerät ---------- */
+function openAssetModal(id){
+  const a = id? assetById(id) : null;
+  const color = a? a.color : PALETTE[state.assets.length%PALETTE.length];
+  modal.innerHTML=`
+    <div class="modal-head"><h2>${a?"Gerät bearbeiten":"Neues Gerät / Fahrzeug"}</h2>
+      <button class="close" onclick="closeModal()">×</button></div>
+    <div class="modal-body">
+      <label class="f">Bezeichnung <span class="req">*</span>
+        <input class="control" id="aName" placeholder="z. B. LKW MAN TGS / Bagger CAT 308" value="${a?esc(a.name):''}"></label>
+      <div class="grid-2">
+        <label class="f">Typ
+          <select class="control" id="aTypeSel">${TYPES.map(t=>'<option'+((a&&a.type===t)?' selected':'')+'>'+t+'</option>').join("")}</select></label>
+        <label class="f">Kennung / Inventar-Nr.
+          <input class="control" id="aIdent" placeholder="z. B. R-BSB 123 / Inv. 04" value="${a?esc(a.identifier||''):''}"></label>
+      </div>
+      <label class="f">Farbe im Zeitstrahl
+        <div class="swatches" id="aSwatches">${PALETTE.map(c=>'<button type="button" data-c="'+c+'" style="background:'+c+'" aria-pressed="'+(c===color)+'"></button>').join("")}</div></label>
+      <label class="f">Notiz
+        <textarea class="control" id="aNote" placeholder="optional – z. B. Anhängerkupplung, max. Reichweite, Wartung fällig">${a?esc(a.note||''):''}</textarea></label>
+      <label class="f" style="flex-direction:row;align-items:center;gap:8px">
+        <input type="checkbox" id="aActive" ${(!a||a.active!==false)?'checked':''} style="width:auto"> Aktiv (im Zeitstrahl anzeigen)</label>
+    </div>
+    <div class="modal-foot">
+      ${a?'<button class="btn danger" onclick="deleteAsset(\''+a.id+'\')">Löschen</button>':''}
+      <div class="spacer" style="flex:1"></div>
+      <button class="btn" onclick="closeModal()">Abbrechen</button>
+      <button class="btn primary" onclick="saveAsset('${a?a.id:''}')">Speichern</button>
+    </div>`;
+  overlay.classList.add("show");
+  modal.querySelector("#aSwatches").addEventListener("click",e=>{
+    const b=e.target.closest("button[data-c]"); if(!b) return;
+    modal.querySelectorAll("#aSwatches button").forEach(x=>x.setAttribute("aria-pressed","false"));
+    b.setAttribute("aria-pressed","true");
+  });
+  setTimeout(()=>modal.querySelector("#aName").focus(),30);
+}
+function saveAsset(id){
+  const name=modal.querySelector("#aName").value.trim();
+  if(!name){ toast("Bitte eine Bezeichnung angeben.","err"); return; }
+  const color=(modal.querySelector('#aSwatches [aria-pressed="true"]')||{}).getAttribute? modal.querySelector('#aSwatches [aria-pressed="true"]').dataset.c : PALETTE[0];
+  const obj={
+    id: id||uid(), name,
+    type: modal.querySelector("#aTypeSel").value,
+    identifier: modal.querySelector("#aIdent").value.trim(),
+    color, note: modal.querySelector("#aNote").value.trim(),
+    active: modal.querySelector("#aActive").checked,
+    updatedAt: now()
+  };
+  if(id){ const i=state.assets.findIndex(a=>a.id===id); state.assets[i]=obj; }
+  else state.assets.push(obj);
+  closeModal(); toast(id?"Gerät aktualisiert":"Gerät angelegt","ok"); save();
+}
+function deleteAsset(id){
+  const bk=state.bookings.filter(b=>b.assetId===id).length;
+  if(!confirm("Gerät wirklich löschen?"+(bk?(" Es bestehen "+bk+" Einsätze, die ebenfalls entfernt werden."):""))) return;
+  state.bookings.filter(b=>b.assetId===id).forEach(b=> state.tombstones.push({id:b.id,deletedAt:now()}));
+  state.bookings=state.bookings.filter(b=>b.assetId!==id);
+  state.assets=state.assets.filter(a=>a.id!==id);
+  state.tombstones.push({id,deletedAt:now()});
+  closeModal(); toast("Gerät gelöscht","ok"); save();
+}
+
+/* ---------- Einsatz ---------- */
+function openBookingModal(id,preset){
+  const b = id? state.bookings.find(x=>x.id===id) : null;
+  const p = preset||{};
+  if(state.assets.length===0){ toast("Bitte zuerst ein Gerät anlegen.","err"); openAssetModal(); return; }
+  const selAsset = b? b.assetId : (p.assetId||state.assets[0].id);
+  const isTimed = b? timed(b) : (p.timed!==undefined? p.timed : tl.mode==="intraday");
+  const dStart = b? sd(b) : (p.start? p.start.slice(0,10) : todayStr());
+  const dEnd   = b? ed(b) : (p.end? p.end.slice(0,10) : dStart);
+  let tStart, tEnd;
+  if(b && timed(b)){ tStart=b.start; tEnd=b.end; }
+  else if(p.timed && p.start){ tStart=p.start; tEnd=p.end||p.start; }
+  else { tStart=dStart+"T08:00"; tEnd=dStart+"T10:00"; }
+  modal.innerHTML=`
+    <div class="modal-head"><h2>${b?"Einsatz bearbeiten":"Neuer Einsatz"}</h2>
+      <button class="close" onclick="closeModal()">×</button></div>
+    <div class="modal-body">
+      <label class="f">Gerät / Fahrzeug <span class="req">*</span>
+        <select class="control" id="bAsset">${state.assets.map(a=>'<option value="'+a.id+'"'+(a.id===selAsset?' selected':'')+'>'+esc(a.name)+(a.type?' ('+esc(a.type)+')':'')+'</option>').join("")}</select></label>
+      <label class="f">Verwendungsort / Ziel / Baustelle <span class="req">*</span>
+        <input class="control" id="bLoc" placeholder="z. B. BV Untere Bachgasse 8 / Fahrt Kieswerk → Baustelle" value="${b?esc(b.location):''}"></label>
+      <div class="seg modal-seg" id="bModeSeg">
+        <button type="button" data-m="day" aria-pressed="${!isTimed}">Ganztägig</button>
+        <button type="button" data-m="time" aria-pressed="${isTimed}">Mit Uhrzeit</button>
+      </div>
+      <div id="bDayFields" class="grid-2"${isTimed?' style="display:none"':''}>
+        <label class="f">Von <span class="req">*</span><input type="date" class="control" id="bStart" value="${dStart}"></label>
+        <label class="f">Bis <span class="req">*</span><input type="date" class="control" id="bEnd" value="${dEnd}"></label>
+      </div>
+      <div id="bTimeFields"${isTimed?'':' style="display:none"'}>
+        <div class="grid-2">
+          <label class="f">Beginn <span class="req">*</span><input type="datetime-local" class="control" id="bStartDT" value="${tStart}"></label>
+          <label class="f">Ende <span class="req">*</span><input type="datetime-local" class="control" id="bEndDT" value="${tEnd}"></label>
+        </div>
+        <div class="quick-dur" id="bQuickDur"><span>Dauer ab Beginn:</span>
+          <button type="button" data-min="30">30 Min</button>
+          <button type="button" data-min="60">1 Std</button>
+          <button type="button" data-min="120">2 Std</button>
+          <button type="button" data-min="240">4 Std</button>
+          <button type="button" data-min="480">8 Std</button>
+        </div>
+      </div>
+      <label class="f">Verantwortlich / Fahrer
+        <input class="control" id="bResp" placeholder="z. B. Polier, Fahrername" value="${b?esc(b.responsible||''):''}"></label>
+      <label class="f">Notiz
+        <textarea class="control" id="bNote" placeholder="optional – z. B. Ladung, Tour, Auftrag">${b?esc(b.note||''):''}</textarea></label>
+      <div id="bConflict"></div>
+    </div>
+    <div class="modal-foot">
+      ${b?'<button class="btn danger" onclick="deleteBooking(\''+b.id+'\')">Löschen</button>':''}
+      <div class="spacer" style="flex:1"></div>
+      <button class="btn" onclick="closeModal()">Abbrechen</button>
+      <button class="btn primary" onclick="saveBooking('${b?b.id:''}')">Speichern</button>
+    </div>`;
+  overlay.classList.add("show");
+  const check=()=>checkBookingConflict(id);
+  modal.querySelector("#bModeSeg").addEventListener("click",e=>{
+    const btn=e.target.closest("button[data-m]"); if(!btn) return;
+    const toTime=btn.dataset.m==="time";
+    modal.querySelectorAll("#bModeSeg button").forEach(x=>x.setAttribute("aria-pressed", x===btn?"true":"false"));
+    if(toTime){ const ds=modal.querySelector("#bStart").value||todayStr(), de=modal.querySelector("#bEnd").value||ds;
+      if(!modal.querySelector("#bStartDT").value) modal.querySelector("#bStartDT").value=ds+"T08:00";
+      if(!modal.querySelector("#bEndDT").value) modal.querySelector("#bEndDT").value=de+"T10:00"; }
+    else { const dt=modal.querySelector("#bStartDT").value;
+      if(dt){ modal.querySelector("#bStart").value=dt.slice(0,10);
+        modal.querySelector("#bEnd").value=(modal.querySelector("#bEndDT").value||dt).slice(0,10); } }
+    modal.querySelector("#bDayFields").style.display=toTime?"none":"";
+    modal.querySelector("#bTimeFields").style.display=toTime?"":"none";
+    check();
+  });
+  modal.querySelector("#bQuickDur").addEventListener("click",e=>{
+    const btn=e.target.closest("button[data-min]"); if(!btn) return;
+    const sv=modal.querySelector("#bStartDT").value; if(!sv) return;
+    const end=new Date(new Date(sv).getTime()+parseInt(btn.dataset.min,10)*60000);
+    modal.querySelector("#bEndDT").value=toISO(end)+"T"+pad2(end.getHours())+":"+pad2(end.getMinutes());
+    check();
+  });
+  ["bAsset","bStart","bEnd","bStartDT","bEndDT"].forEach(f=>{ const el=modal.querySelector("#"+f); if(el) el.addEventListener("change",check); });
+  check();
+  setTimeout(()=>modal.querySelector("#bLoc").focus(),30);
+}
+function modalRange(){
+  const mode=modal.querySelector('#bModeSeg [aria-pressed="true"]').dataset.m;
+  if(mode==="day"){ const s=modal.querySelector("#bStart").value, e=modal.querySelector("#bEnd").value;
+    return {mode,start:s,end:e,sMs:s?fromISO(s).getTime():NaN,eMs:e?fromISO(e).getTime()+86400000:NaN}; }
+  const s=modal.querySelector("#bStartDT").value, e=modal.querySelector("#bEndDT").value;
+  return {mode,start:s,end:e,sMs:s?new Date(s).getTime():NaN,eMs:e?new Date(e).getTime():NaN};
+}
+function checkBookingConflict(id){
+  const box=modal.querySelector("#bConflict"); if(!box) return;
+  const assetId=modal.querySelector("#bAsset").value;
+  const r=modalRange();
+  if(isNaN(r.sMs)||isNaN(r.eMs)||r.eMs<=r.sMs){
+    box.innerHTML='<div class="conflict-note"><span>⚠</span><span>'+(r.mode==="day"?"Das Enddatum darf nicht vor dem Startdatum liegen.":"Das Ende muss nach dem Beginn liegen.")+'</span></div>'; return; }
+  const clash=state.bookings.filter(o=>o.id!==id && o.assetId===assetId && startMs(o)<r.eMs && r.sMs<endMs(o));
+  if(clash.length){ const a=assetById(assetId);
+    box.innerHTML='<div class="conflict-note"><span>⚠</span><span><b>Doppelbelegung:</b> '+esc(a?a.name:"")+' ist in diesem Zeitraum bereits verplant – '
+      + clash.map(c=>esc(c.location)+' ('+fmtRange(c)+')').join(", ")+'. Du kannst trotzdem speichern.</span></div>';
+  } else box.innerHTML='';
+}
+function saveBooking(id){
+  const assetId=modal.querySelector("#bAsset").value;
+  const location=modal.querySelector("#bLoc").value.trim();
+  if(!location){ toast("Bitte einen Verwendungsort / ein Ziel angeben.","err"); return; }
+  const r=modalRange();
+  if(!r.start||!r.end){ toast("Bitte Zeitraum angeben.","err"); return; }
+  if(isNaN(r.sMs)||isNaN(r.eMs)||r.eMs<=r.sMs){ toast(r.mode==="day"?"Enddatum liegt vor dem Startdatum.":"Ende liegt vor dem Beginn.","err"); return; }
+  const obj={ id:id||uid(), assetId, location,
+    responsible: modal.querySelector("#bResp").value.trim(),
+    note: modal.querySelector("#bNote").value.trim(),
+    start:r.start, end:r.end, allDay:(r.mode==="day"), updatedAt: now() };
+  if(id){ const i=state.bookings.findIndex(b=>b.id===id); state.bookings[i]=obj; }
+  else state.bookings.push(obj);
+  closeModal(); toast(id?"Einsatz aktualisiert":"Einsatz angelegt","ok"); save();
+}
+function deleteBooking(id){
+  if(!confirm("Diesen Einsatz wirklich löschen?")) return;
+  state.bookings=state.bookings.filter(b=>b.id!==id);
+  state.tombstones.push({id,deletedAt:now()});
+  closeModal(); toast("Einsatz gelöscht","ok"); save();
+}
+
+/* ---------- GitHub-Einstellungen ---------- */
+function openSettings(){
+  modal.innerHTML=`
+    <div class="modal-head"><h2>GitHub-Verbindung</h2><button class="close" onclick="closeModal()">×</button></div>
+    <div class="modal-body">
+      <div class="hint">Alle Daten werden in <b>einer JSON-Datei in deinem GitHub-Repo</b> gespeichert – so sehen alle Geräte denselben Stand.</div>
+      <div class="grid-2">
+        <label class="f">Benutzer / Organisation <span class="req">*</span>
+          <input class="control" id="cOwner" placeholder="rustikalopal" value="${esc(cfg.owner)}"></label>
+        <label class="f">Repository <span class="req">*</span>
+          <input class="control" id="cRepo" placeholder="bsb-tracking-daten" value="${esc(cfg.repo)}"></label>
+      </div>
+      <div class="grid-2">
+        <label class="f">Datei-Pfad
+          <input class="control" id="cPath" value="${esc(cfg.path)}"></label>
+        <label class="f">Branch
+          <input class="control" id="cBranch" value="${esc(cfg.branch)}"></label>
+      </div>
+      <label class="f">Personal Access Token <span class="req">*</span>
+        <input class="control" id="cToken" type="password" placeholder="${cfg.token?'•••••••• (gespeichert)':'github_pat_…'}" value=""></label>
+      <div class="hint">Fine-grained Token mit Berechtigung <span class="kbd">Contents: Read and write</span> nur für dieses Repo.
+        <a href="https://github.com/settings/personal-access-tokens/new" target="_blank" rel="noopener">Token erstellen →</a></div>
+      <details><summary style="cursor:pointer;font-size:12.5px;color:var(--steel);font-weight:600">Einrichtung Schritt für Schritt</summary>
+        <ol class="steps" style="margin-top:10px">
+          <li>Privates Repo anlegen (z. B. <span class="kbd">bsb-tracking-daten</span>) – hier liegen nur die Einsatzdaten.</li>
+          <li>Fine-grained Token erstellen, Repository-Zugriff auf genau dieses Repo, Permission <span class="kbd">Contents: read/write</span>.</li>
+          <li>Felder oben ausfüllen, Token einfügen, <b>Verbinden &amp; laden</b>.</li>
+          <li>Die Datei wird beim ersten Speichern automatisch angelegt.</li>
+        </ol>
+      </details>
+      <div class="hint" style="border-top:1px solid var(--line-2);padding-top:10px">
+        <b>Hinweis:</b> Der Token wird nur in diesem Browser gespeichert (nicht im Code, nicht öffentlich). Auf einem geteilten Lager-Rechner entsprechend bedenken.</div>
+    </div>
+    <div class="modal-foot">
+      ${cfg.token?'<button class="btn danger" onclick="disconnect()">Trennen</button>':''}
+      <div class="spacer" style="flex:1"></div>
+      <button class="btn" onclick="closeModal()">Schließen</button>
+      <button class="btn primary" id="cConnect">Verbinden &amp; laden</button>
+    </div>`;
+  overlay.classList.add("show");
+  modal.querySelector("#cConnect").addEventListener("click", async ()=>{
+    cfg.owner=modal.querySelector("#cOwner").value.trim();
+    cfg.repo=modal.querySelector("#cRepo").value.trim();
+    cfg.path=modal.querySelector("#cPath").value.trim()||"daten/bsb-tracking.json";
+    cfg.branch=modal.querySelector("#cBranch").value.trim()||"main";
+    const tk=modal.querySelector("#cToken").value.trim();
+    if(tk) cfg.token=tk;
+    if(!isConfigured()){ toast("Bitte Benutzer, Repository und Token ausfüllen.","err"); return; }
+    saveConfig();
+    const btn=modal.querySelector("#cConnect"); btn.disabled=true; btn.textContent="Verbinde …";
+    await pull();
+    btn.disabled=false; btn.textContent="Verbinden & laden";
+    if(connected){ toast("Verbunden – "+state.assets.length+" Geräte, "+state.bookings.length+" Einsätze","ok"); closeModal(); }
+  });
+}
+function disconnect(){
+  if(!confirm("Token aus diesem Browser entfernen? Die Daten in GitHub bleiben erhalten.")) return;
+  cfg.token=""; saveConfig(); connected=false; setSync("off","Nicht verbunden");
+  closeModal(); toast("Getrennt","ok");
+}
+
+/* ---------- Toast ---------- */
+let toastT;
+function toast(msg,kind){
+  const t=document.getElementById("toast");
+  t.className="toast"+(kind?" "+kind:""); t.textContent=msg; t.classList.add("show");
+  clearTimeout(toastT); toastT=setTimeout(()=>t.classList.remove("show"), kind==="err"?4200:2400);
+}
+
+/* ============================================================
+   EVENTS / INIT
+   ============================================================ */
+document.getElementById("tabs").addEventListener("click",e=>{
+  const b=e.target.closest("button[data-view]"); if(!b) return;
+  document.querySelectorAll("#tabs button").forEach(x=>x.setAttribute("aria-selected", x===b?"true":"false"));
+  document.querySelectorAll(".view").forEach(v=>v.classList.remove("active"));
+  document.getElementById("view-"+b.dataset.view).classList.add("active");
+});
+document.getElementById("settingsBtn").onclick=openSettings;
+document.getElementById("bannerConnect").onclick=openSettings;
+document.getElementById("syncBtn").onclick=()=>{ if(isConfigured()) pull(); else openSettings(); };
+document.getElementById("addAssetBtn").onclick=()=>openAssetModal();
+document.getElementById("addAssetBtn2").onclick=()=>openAssetModal();
+document.getElementById("addBookingBtn").onclick=()=>openBookingModal();
+document.getElementById("addBookingBtn2").onclick=()=>openBookingModal();
+
+document.getElementById("navPrev").onclick=()=>{ tl.start=addDays(tl.start, tl.mode==="intraday"?-1:-Math.round(tl.days/2)); document.getElementById("timeline")._scrolled=false; renderTimeline(); };
+document.getElementById("navNext").onclick=()=>{ tl.start=addDays(tl.start, tl.mode==="intraday"?1:Math.round(tl.days/2)); document.getElementById("timeline")._scrolled=false; renderTimeline(); };
+document.getElementById("navToday").onclick=()=>{ tl.start=startOfDay(tl.mode==="intraday"?new Date():addDays(new Date(),-3)); document.getElementById("timeline")._scrolled=false; renderTimeline(); };
+document.getElementById("rangeSeg").addEventListener("click",e=>{
+  const b=e.target.closest("button"); if(!b) return;
+  document.querySelectorAll("#rangeSeg button").forEach(x=>x.setAttribute("aria-pressed", x===b?"true":"false"));
+  if(b.dataset.mode==="intraday"){ tl.mode="intraday"; tl.start=startOfDay(new Date()); }
+  else { tl.mode="days"; tl.days=parseInt(b.dataset.days,10); }
+  document.getElementById("timeline")._scrolled=false; renderTimeline();
+});
+document.getElementById("bookingFilter").addEventListener("click",e=>{
+  const b=e.target.closest("button[data-f]"); if(!b) return;
+  document.querySelectorAll("#bookingFilter button").forEach(x=>x.setAttribute("aria-pressed", x===b?"true":"false"));
+  ui.bFilter=b.dataset.f; renderBookings();
+});
+document.getElementById("tlSearch").addEventListener("input",e=>{ ui.tlSearch=e.target.value; renderTimeline(); });
+document.getElementById("tlType").addEventListener("change",e=>{ ui.tlType=e.target.value; renderTimeline(); });
+document.getElementById("bSearch").addEventListener("input",e=>{ ui.bSearch=e.target.value; renderBookings(); });
+document.getElementById("aSearch").addEventListener("input",e=>{ ui.aSearch=e.target.value; renderAssets(); });
+document.getElementById("aType").addEventListener("change",e=>{ ui.aType=e.target.value; renderAssets(); });
+
+// Bei Rückkehr zum Tab aktuellen Stand holen (Multi-Device)
+window.addEventListener("focus",()=>{
+  if(!isConfigured()||saving) return;
+  if(hasPending()) pushNow();
+  else if(Date.now()-lastPull>8000) pull(true);
+});
+window.addEventListener("online",()=>{ if(isConfigured() && hasPending() && !saving) pushNow(); });
+window.addEventListener("beforeunload",e=>{ if(hasPending()){ e.preventDefault(); e.returnValue=""; } });
+
+function init(){
+  loadConfig();
+  recoverPending();          // gemerkte, noch nicht gesendete Änderungen sofort anzeigen
+  renderAll();
+  updateBanner();
+  if(isConfigured()){ setSync("loading","Lädt …"); pull(); }
+  else { setSync("off", hasPending()?"Nicht verbunden – Änderung gemerkt":"Nicht verbunden"); }
+}
+init();
+</script>
+</body>
+</html>
