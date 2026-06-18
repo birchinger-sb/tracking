@@ -91,20 +91,6 @@
       "_lane": 0
     },
     {
-      "id": "mqi0r2314acvzw",
-      "assetId": "mqi0ng0efr1a45",
-      "location": "Beispiel-Fahrt",
-      "responsible": "",
-      "note": "",
-      "start": "2026-06-23T10:00",
-      "end": "2026-06-23T16:00",
-      "allDay": false,
-      "updatedAt": "2026-06-17T12:00:04.429Z",
-      "_s": 1782201600000,
-      "_e": 1782223200000,
-      "_lane": 0
-    },
-    {
       "id": "mqjc2ya1dyeyj0",
       "assetId": "mqi0oeavv5emr6",
       "location": "Nürnberger Straße",
@@ -148,7 +134,11 @@
     {
       "id": "mqi0ot66sciadt",
       "deletedAt": "2026-06-18T10:10:24.543Z"
+    },
+    {
+      "id": "mqi0r2314acvzw",
+      "deletedAt": "2026-06-18T10:11:57.038Z"
     }
   ],
-  "updatedAt": "2026-06-18T10:10:24.993Z"
+  "updatedAt": "2026-06-18T10:11:57.693Z"
 }
