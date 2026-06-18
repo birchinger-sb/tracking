@@ -20,9 +20,9 @@
       "color": "#475569",
       "note": "",
       "active": true,
-      "defect": false,
-      "defectNote": "",
-      "updatedAt": "2026-06-18T10:01:42.965Z"
+      "defect": true,
+      "defectNote": "defekt Turboladerkrümmer",
+      "updatedAt": "2026-06-18T11:11:57.934Z"
     },
     {
       "id": "mqi0oeavv5emr6",
@@ -264,5 +264,5 @@
       "deletedAt": "2026-06-18T10:26:02.895Z"
     }
   ],
-  "updatedAt": "2026-06-18T11:11:25.387Z"
+  "updatedAt": "2026-06-18T11:11:58.330Z"
 }
