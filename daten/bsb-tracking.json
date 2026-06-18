@@ -216,12 +216,12 @@
     },
     {
       "id": "mqjgypf4v9no1i",
-      "name": "Stefan",
+      "name": "Stefan Weickl",
       "role": "Meister",
       "phone": "0172/5480571",
       "email": "",
       "note": "",
-      "updatedAt": "2026-06-18T12:21:41.296Z"
+      "updatedAt": "2026-06-18T12:22:01.692Z"
     }
   ],
   "categories": [
@@ -314,5 +314,5 @@
       "deletedAt": "2026-06-18T11:17:31.331Z"
     }
   ],
-  "updatedAt": "2026-06-18T12:21:41.683Z"
+  "updatedAt": "2026-06-18T12:22:02.028Z"
 }
