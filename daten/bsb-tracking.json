@@ -178,21 +178,6 @@
       "_s": 1781762400000,
       "_e": 1781856000000,
       "_lane": 2
-    },
-    {
-      "id": "mqjei30zybht4r",
-      "assetId": "mqi0ng0efr1a45",
-      "location": "Werkstatt - Semmelmann Erpfenzell",
-      "responsibleId": "mqjegc3g94zrmw",
-      "responsible": "Stefan Adler",
-      "note": "",
-      "start": "2026-06-15",
-      "end": "2026-06-22",
-      "allDay": true,
-      "updatedAt": "2026-06-18T11:12:46.547Z",
-      "_s": 1781474400000,
-      "_e": 1782165600000,
-      "_lane": 0
     }
   ],
   "responsibles": [
@@ -277,7 +262,11 @@
     {
       "id": "mqi0pftid5hwdg",
       "deletedAt": "2026-06-18T10:26:02.895Z"
+    },
+    {
+      "id": "mqjei30zybht4r",
+      "deletedAt": "2026-06-18T11:13:04.175Z"
     }
   ],
-  "updatedAt": "2026-06-18T11:12:46.894Z"
+  "updatedAt": "2026-06-18T11:13:04.496Z"
 }
