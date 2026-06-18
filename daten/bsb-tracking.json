@@ -768,15 +768,6 @@
   ],
   "responsibles": [
     {
-      "id": "mqjczu8vbur896",
-      "name": "Lorenz",
-      "role": "",
-      "phone": "",
-      "email": "",
-      "note": "",
-      "updatedAt": "2026-06-18T10:30:35.743Z"
-    },
-    {
       "id": "mqjdn82mqw69bu",
       "name": "Thomas Blomenhofer",
       "role": "Bauleiter",
@@ -937,7 +928,11 @@
     {
       "id": "mqjcwg23ot1k14",
       "deletedAt": "2026-06-18T11:17:31.331Z"
+    },
+    {
+      "id": "mqjczu8vbur896",
+      "deletedAt": "2026-06-18T14:53:45.959Z"
     }
   ],
-  "updatedAt": "2026-06-18T14:53:29.330Z"
+  "updatedAt": "2026-06-18T14:53:46.443Z"
 }
