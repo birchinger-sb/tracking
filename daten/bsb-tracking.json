@@ -2,15 +2,15 @@
   "assets": [
     {
       "id": "mqi0n3d4hit7rv",
-      "name": "Beispiel-Bagger",
-      "type": "Bagger",
+      "name": "Liebherr Lader 506 Stereo",
+      "type": "Radlader",
       "identifier": "",
       "color": "#f0ac19",
       "note": "",
       "active": true,
       "defect": false,
       "defectNote": "",
-      "updatedAt": "2026-06-17T13:49:45.313Z"
+      "updatedAt": "2026-06-18T10:16:46.243Z"
     },
     {
       "id": "mqi0ng0efr1a45",
@@ -140,5 +140,5 @@
       "deletedAt": "2026-06-18T10:11:57.038Z"
     }
   ],
-  "updatedAt": "2026-06-18T10:11:57.693Z"
+  "updatedAt": "2026-06-18T10:16:46.565Z"
 }
