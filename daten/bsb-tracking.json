@@ -222,6 +222,15 @@
       "email": "",
       "note": "",
       "updatedAt": "2026-06-18T12:22:01.692Z"
+    },
+    {
+      "id": "mqjgzttsmv8l0u",
+      "name": "Johann Hecht",
+      "role": "Polier",
+      "phone": "0172/5480575",
+      "email": "",
+      "note": "",
+      "updatedAt": "2026-06-18T12:22:33.664Z"
     }
   ],
   "categories": [
@@ -314,5 +323,5 @@
       "deletedAt": "2026-06-18T11:17:31.331Z"
     }
   ],
-  "updatedAt": "2026-06-18T12:22:02.028Z"
+  "updatedAt": "2026-06-18T12:22:34.067Z"
 }
