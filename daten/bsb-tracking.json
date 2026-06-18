@@ -73,18 +73,6 @@
       "updatedAt": "2026-06-18T11:02:02.833Z"
     },
     {
-      "id": "mqjcwg23ot1k14",
-      "name": "Locher",
-      "type": "Werkzeug",
-      "identifier": "",
-      "color": "#4f8a3f",
-      "note": "",
-      "active": true,
-      "defect": false,
-      "defectNote": "",
-      "updatedAt": "2026-06-18T10:27:57.387Z"
-    },
-    {
       "id": "mqjcwupni1dxxe",
       "name": "Luftentfeuchter (grau Kauf Blomenhofer)",
       "type": "Sonstiges",
@@ -163,21 +151,6 @@
       "_s": 1781733600000,
       "_e": 1782511200000,
       "_lane": 0
-    },
-    {
-      "id": "mqjd0s3p5bgg12",
-      "assetId": "mqjcwg23ot1k14",
-      "location": "Büro",
-      "responsibleId": "mqjczu8vbur896",
-      "responsible": "Lorenz",
-      "note": "",
-      "start": "2026-06-18T08:00",
-      "end": "2026-06-19T10:00",
-      "allDay": false,
-      "updatedAt": "2026-06-18T10:31:19.621Z",
-      "_s": 1781762400000,
-      "_e": 1781856000000,
-      "_lane": 2
     },
     {
       "id": "mqjejxj44rhols",
@@ -281,7 +254,15 @@
     {
       "id": "mqjei30zybht4r",
       "deletedAt": "2026-06-18T11:13:04.175Z"
+    },
+    {
+      "id": "mqjd0s3p5bgg12",
+      "deletedAt": "2026-06-18T11:17:31.331Z"
+    },
+    {
+      "id": "mqjcwg23ot1k14",
+      "deletedAt": "2026-06-18T11:17:31.331Z"
     }
   ],
-  "updatedAt": "2026-06-18T11:14:13.141Z"
+  "updatedAt": "2026-06-18T11:17:31.704Z"
 }
