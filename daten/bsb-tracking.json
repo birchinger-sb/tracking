@@ -148,6 +148,15 @@
       "email": "",
       "note": "",
       "updatedAt": "2026-06-18T10:30:35.743Z"
+    },
+    {
+      "id": "mqjdn82mqw69bu",
+      "name": "Thomas Blomenhofer",
+      "role": "Bauleiter",
+      "phone": "0172/5480570",
+      "email": "t.blombenhofer@birchinger-sb.de",
+      "note": "",
+      "updatedAt": "2026-06-18T10:48:46.750Z"
     }
   ],
   "tombstones": [
@@ -196,5 +205,5 @@
       "deletedAt": "2026-06-18T10:26:02.895Z"
     }
   ],
-  "updatedAt": "2026-06-18T10:31:20.201Z"
+  "updatedAt": "2026-06-18T10:48:47.156Z"
 }
