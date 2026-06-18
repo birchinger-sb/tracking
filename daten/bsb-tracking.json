@@ -108,6 +108,20 @@
       "end": "2026-06-18",
       "allDay": true,
       "updatedAt": "2026-06-18T10:05:01.321Z"
+    },
+    {
+      "id": "mqjcya232leojm",
+      "assetId": "mqjcwupni1dxxe",
+      "location": "wurde gem. Anw. Blomenhofer zur Baustelle Donaustauf gefahren",
+      "responsible": "Blomenhofer",
+      "note": "",
+      "start": "2026-06-18",
+      "end": "2026-06-26",
+      "allDay": true,
+      "updatedAt": "2026-06-18T10:29:22.923Z",
+      "_s": 1781733600000,
+      "_e": 1782511200000,
+      "_lane": 0
     }
   ],
   "tombstones": [
@@ -156,5 +170,5 @@
       "deletedAt": "2026-06-18T10:26:02.895Z"
     }
   ],
-  "updatedAt": "2026-06-18T10:28:16.832Z"
+  "updatedAt": "2026-06-18T10:29:23.314Z"
 }
