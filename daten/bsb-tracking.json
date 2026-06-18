@@ -53,12 +53,12 @@
       "name": "Mercedes 5 Tonner",
       "type": "LKW",
       "identifier": "",
-      "color": "#3e6fb0",
+      "color": "#5e6b7c",
       "note": "",
       "active": true,
       "defect": false,
       "defectNote": "",
-      "updatedAt": "2026-06-18T09:53:20.841Z"
+      "updatedAt": "2026-06-18T09:53:28.453Z"
     }
   ],
   "bookings": [
@@ -149,5 +149,5 @@
       "deletedAt": "2026-06-18T09:48:26.368Z"
     }
   ],
-  "updatedAt": "2026-06-18T09:53:21.444Z"
+  "updatedAt": "2026-06-18T09:53:28.807Z"
 }
