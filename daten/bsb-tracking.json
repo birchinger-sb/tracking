@@ -207,6 +207,15 @@
       "email": "",
       "note": "",
       "updatedAt": "2026-06-18T11:08:09.356Z"
+    },
+    {
+      "id": "mqjegc3g94zrmw",
+      "name": "Stefan Adler",
+      "role": "Lagerist",
+      "phone": "0172/5480577",
+      "email": "s.adler@birchinger-sb.de",
+      "note": "",
+      "updatedAt": "2026-06-18T11:11:24.989Z"
     }
   ],
   "tombstones": [
@@ -255,5 +264,5 @@
       "deletedAt": "2026-06-18T10:26:02.895Z"
     }
   ],
-  "updatedAt": "2026-06-18T11:10:42.567Z"
+  "updatedAt": "2026-06-18T11:11:25.387Z"
 }
