@@ -117,6 +117,17 @@
       "_s": 1782201600000,
       "_e": 1782223200000,
       "_lane": 0
+    },
+    {
+      "id": "mqjc2ya1dyeyj0",
+      "assetId": "mqi0oeavv5emr6",
+      "location": "Nürnberger Straße",
+      "responsible": "Laußer Andreas",
+      "note": "",
+      "start": "2026-06-18",
+      "end": "2026-06-18",
+      "allDay": true,
+      "updatedAt": "2026-06-18T10:05:01.321Z"
     }
   ],
   "tombstones": [
@@ -149,5 +160,5 @@
       "deletedAt": "2026-06-18T09:48:26.368Z"
     }
   ],
-  "updatedAt": "2026-06-18T10:04:27.483Z"
+  "updatedAt": "2026-06-18T10:05:01.734Z"
 }
