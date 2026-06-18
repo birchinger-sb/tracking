@@ -71,6 +71,18 @@
       "defect": false,
       "defectNote": "",
       "updatedAt": "2026-06-18T10:24:43.132Z"
+    },
+    {
+      "id": "mqjcwg23ot1k14",
+      "name": "Locher",
+      "type": "Werkzeug",
+      "identifier": "",
+      "color": "#4f8a3f",
+      "note": "",
+      "active": true,
+      "defect": false,
+      "defectNote": "",
+      "updatedAt": "2026-06-18T10:27:57.387Z"
     }
   ],
   "bookings": [
@@ -152,5 +164,5 @@
       "deletedAt": "2026-06-18T10:26:02.895Z"
     }
   ],
-  "updatedAt": "2026-06-18T10:27:25.301Z"
+  "updatedAt": "2026-06-18T10:27:57.812Z"
 }
