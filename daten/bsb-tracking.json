@@ -206,6 +206,33 @@
       "updatedAt": "2026-06-18T11:11:24.989Z"
     }
   ],
+  "categories": [
+    {
+      "id": "mqjes84dw4f691",
+      "name": "Bagger",
+      "updatedAt": "2026-06-18T11:20:39.709Z"
+    },
+    {
+      "id": "mqjes84dh9xhp0",
+      "name": "LKW",
+      "updatedAt": "2026-06-18T11:20:39.709Z"
+    },
+    {
+      "id": "mqjes84ducp9ov",
+      "name": "Radlader",
+      "updatedAt": "2026-06-18T11:20:39.709Z"
+    },
+    {
+      "id": "mqjes84dwhgwpd",
+      "name": "Sonstiges",
+      "updatedAt": "2026-06-18T11:20:39.709Z"
+    },
+    {
+      "id": "mqjes84d9aehw8",
+      "name": "Werkzeug",
+      "updatedAt": "2026-06-18T11:20:39.709Z"
+    }
+  ],
   "tombstones": [
     {
       "id": "mqhyyoz2apwww7",
@@ -264,5 +291,5 @@
       "deletedAt": "2026-06-18T11:17:31.331Z"
     }
   ],
-  "updatedAt": "2026-06-18T11:17:31.704Z"
+  "updatedAt": "2026-06-18T11:20:40.011Z"
 }
