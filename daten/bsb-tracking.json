@@ -119,6 +119,18 @@
       "defect": false,
       "defectNote": "",
       "updatedAt": "2026-06-18T11:05:12.004Z"
+    },
+    {
+      "id": "mqjeejc3fdg6r4",
+      "name": "Komatsu Bagger PC16R HS / 1,7 to",
+      "type": "Bagger",
+      "identifier": "",
+      "color": "#fb5c18",
+      "note": "",
+      "active": true,
+      "defect": false,
+      "defectNote": "",
+      "updatedAt": "2026-06-18T11:10:01.059Z"
     }
   ],
   "bookings": [
@@ -243,5 +255,5 @@
       "deletedAt": "2026-06-18T10:26:02.895Z"
     }
   ],
-  "updatedAt": "2026-06-18T11:08:26.858Z"
+  "updatedAt": "2026-06-18T11:10:01.370Z"
 }
