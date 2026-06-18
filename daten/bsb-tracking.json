@@ -124,6 +124,17 @@
       "_lane": 0
     }
   ],
+  "responsibles": [
+    {
+      "id": "mqjczu8vbur896",
+      "name": "Lorenz",
+      "role": "",
+      "phone": "",
+      "email": "",
+      "note": "",
+      "updatedAt": "2026-06-18T10:30:35.743Z"
+    }
+  ],
   "tombstones": [
     {
       "id": "mqhyyoz2apwww7",
@@ -170,5 +181,5 @@
       "deletedAt": "2026-06-18T10:26:02.895Z"
     }
   ],
-  "updatedAt": "2026-06-18T10:29:23.314Z"
+  "updatedAt": "2026-06-18T10:30:36.296Z"
 }
