@@ -83,6 +83,18 @@
       "defect": false,
       "defectNote": "",
       "updatedAt": "2026-06-18T10:27:57.387Z"
+    },
+    {
+      "id": "mqjcwupni1dxxe",
+      "name": "Luftentfeuchter (grau Kauf Blomenhofer)",
+      "type": "Sonstiges",
+      "identifier": "",
+      "color": "#5e6b7c",
+      "note": "",
+      "active": true,
+      "defect": false,
+      "defectNote": "",
+      "updatedAt": "2026-06-18T10:28:16.379Z"
     }
   ],
   "bookings": [
@@ -96,26 +108,6 @@
       "end": "2026-06-18",
       "allDay": true,
       "updatedAt": "2026-06-18T10:05:01.321Z"
-    }
-  ],
-  "responsibles": [
-    {
-      "id": "mqjcvj0m6lgc5t",
-      "name": "Stefan Adler",
-      "role": "Lagerist",
-      "phone": "",
-      "email": "",
-      "note": "",
-      "updatedAt": "2026-06-18T10:27:14.566Z"
-    },
-    {
-      "id": "mqjcvqzindcke8",
-      "name": "Zdenko",
-      "role": "Fahrer",
-      "phone": "",
-      "email": "",
-      "note": "",
-      "updatedAt": "2026-06-18T10:27:24.894Z"
     }
   ],
   "tombstones": [
@@ -164,5 +156,5 @@
       "deletedAt": "2026-06-18T10:26:02.895Z"
     }
   ],
-  "updatedAt": "2026-06-18T10:27:57.812Z"
+  "updatedAt": "2026-06-18T10:28:16.832Z"
 }
