@@ -86,6 +86,17 @@
       "updatedAt": "2026-06-18T10:05:01.321Z"
     }
   ],
+  "responsibles": [
+    {
+      "id": "mqjcvj0m6lgc5t",
+      "name": "Stefan Adler",
+      "role": "Lagerist",
+      "phone": "",
+      "email": "",
+      "note": "",
+      "updatedAt": "2026-06-18T10:27:14.566Z"
+    }
+  ],
   "tombstones": [
     {
       "id": "mqhyyoz2apwww7",
@@ -132,5 +143,5 @@
       "deletedAt": "2026-06-18T10:26:02.895Z"
     }
   ],
-  "updatedAt": "2026-06-18T10:26:03.404Z"
+  "updatedAt": "2026-06-18T10:27:14.865Z"
 }
