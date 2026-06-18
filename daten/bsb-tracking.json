@@ -231,6 +231,11 @@
       "id": "mqjes84d9aehw8",
       "name": "Werkzeug",
       "updatedAt": "2026-06-18T11:20:39.709Z"
+    },
+    {
+      "id": "mqjgrzevjoeqd5",
+      "name": "Kettensäge",
+      "updatedAt": "2026-06-18T12:16:27.655Z"
     }
   ],
   "tombstones": [
@@ -291,5 +296,5 @@
       "deletedAt": "2026-06-18T11:17:31.331Z"
     }
   ],
-  "updatedAt": "2026-06-18T11:20:40.011Z"
+  "updatedAt": "2026-06-18T12:16:28.076Z"
 }
