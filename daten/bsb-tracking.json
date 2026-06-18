@@ -95,6 +95,18 @@
       "defect": false,
       "defectNote": "",
       "updatedAt": "2026-06-18T10:28:16.379Z"
+    },
+    {
+      "id": "mqje6k1iidn4s1",
+      "name": "Kubota Microbagger K008-3-1 to",
+      "type": "Bagger",
+      "identifier": "",
+      "color": "#fb5c18",
+      "note": "",
+      "active": true,
+      "defect": false,
+      "defectNote": "",
+      "updatedAt": "2026-06-18T11:03:48.726Z"
     }
   ],
   "bookings": [
@@ -206,5 +218,5 @@
       "deletedAt": "2026-06-18T10:26:02.895Z"
     }
   ],
-  "updatedAt": "2026-06-18T11:02:03.330Z"
+  "updatedAt": "2026-06-18T11:03:49.066Z"
 }
