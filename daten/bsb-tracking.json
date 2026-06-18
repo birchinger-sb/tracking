@@ -609,10 +609,10 @@
       "identifier": "TP 0002",
       "color": "#4789a0",
       "note": "S/N: 06952-1801-0389 · Beschaffung: unbekannt · Baujahr 2018 12500 l/h - Förderhöhe  max. 8 m - GEKA-Anschluss · ausgemustert 12/2025 - von Baustelle zurück - Kabel abgerissen, Förderrad defekt wegen mit Sand versetzten Fördermedium",
-      "active": true,
+      "active": false,
       "defect": false,
       "defectNote": "",
-      "updatedAt": "2026-06-18T14:53:22.403Z"
+      "updatedAt": "2026-06-18T14:53:28.949Z"
     },
     {
       "id": "wz0039",
@@ -939,5 +939,5 @@
       "deletedAt": "2026-06-18T11:17:31.331Z"
     }
   ],
-  "updatedAt": "2026-06-18T14:53:22.781Z"
+  "updatedAt": "2026-06-18T14:53:29.330Z"
 }
