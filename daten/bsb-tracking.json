@@ -26,13 +26,15 @@
     },
     {
       "id": "mqi0oeavv5emr6",
-      "name": "Beispiel-Hilti",
+      "name": "HILTI Kernbohrgerät Ständergeführt",
       "type": "Werkzeug",
       "identifier": "",
-      "color": "#DC2626",
+      "color": "#dc2626",
       "note": "",
       "active": true,
-      "updatedAt": "2026-06-17T11:58:00.295Z"
+      "defect": false,
+      "defectNote": "",
+      "updatedAt": "2026-06-18T09:52:13.885Z"
     },
     {
       "id": "mqi44szht7rzce",
@@ -135,5 +137,5 @@
       "deletedAt": "2026-06-18T09:48:26.368Z"
     }
   ],
-  "updatedAt": "2026-06-18T09:50:56.472Z"
+  "updatedAt": "2026-06-18T09:52:14.303Z"
 }
