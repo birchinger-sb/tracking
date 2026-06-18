@@ -56,9 +56,9 @@
       "color": "#475569",
       "note": "",
       "active": true,
-      "defect": false,
+      "defect": true,
       "defectNote": "",
-      "updatedAt": "2026-06-18T10:01:28.501Z"
+      "updatedAt": "2026-06-18T11:10:42.143Z"
     },
     {
       "id": "mqjcsa64dyxrra",
@@ -255,5 +255,5 @@
       "deletedAt": "2026-06-18T10:26:02.895Z"
     }
   ],
-  "updatedAt": "2026-06-18T11:10:01.370Z"
+  "updatedAt": "2026-06-18T11:10:42.567Z"
 }
