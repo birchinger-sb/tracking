@@ -605,14 +605,14 @@
       "id": "wz0038",
       "name": "Gardener KSP 12500",
       "type": "Tauchpumpe",
+      "group": "werkzeug",
       "identifier": "TP 0002",
-      "color": "#4789A0",
+      "color": "#4789a0",
       "note": "S/N: 06952-1801-0389 · Beschaffung: unbekannt · Baujahr 2018 12500 l/h - Förderhöhe  max. 8 m - GEKA-Anschluss · ausgemustert 12/2025 - von Baustelle zurück - Kabel abgerissen, Förderrad defekt wegen mit Sand versetzten Fördermedium",
       "active": false,
       "defect": false,
       "defectNote": "",
-      "group": "werkzeug",
-      "updatedAt": "2026-06-18T14:25:01.316Z"
+      "updatedAt": "2026-06-18T14:53:09.478Z"
     },
     {
       "id": "wz0039",
@@ -939,5 +939,5 @@
       "deletedAt": "2026-06-18T11:17:31.331Z"
     }
   ],
-  "updatedAt": "2026-06-18T14:25:01.662Z"
+  "updatedAt": "2026-06-18T14:53:09.880Z"
 }
