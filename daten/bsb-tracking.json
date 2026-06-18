@@ -38,7 +38,7 @@
     },
     {
       "id": "mqi44szht7rzce",
-      "name": "Kubota Bagger U55-4 / 5to",
+      "name": "Kubota Bagger U55-4 / 5 to",
       "type": "Bagger",
       "identifier": "",
       "color": "#fb5c18",
@@ -46,7 +46,7 @@
       "active": true,
       "defect": false,
       "defectNote": "",
-      "updatedAt": "2026-06-18T11:05:40.371Z"
+      "updatedAt": "2026-06-18T11:06:04.285Z"
     },
     {
       "id": "mqjbnxs9zssp1r",
@@ -230,5 +230,5 @@
       "deletedAt": "2026-06-18T10:26:02.895Z"
     }
   ],
-  "updatedAt": "2026-06-18T11:05:52.251Z"
+  "updatedAt": "2026-06-18T11:06:04.609Z"
 }
