@@ -65,12 +65,12 @@
       "name": "Kubota Bagger KX 101-3 /  3,5 to",
       "type": "Bagger",
       "identifier": "",
-      "color": "#4f8a3f",
+      "color": "#fb5c18",
       "note": "",
       "active": true,
       "defect": false,
       "defectNote": "",
-      "updatedAt": "2026-06-18T10:24:43.132Z"
+      "updatedAt": "2026-06-18T11:02:02.833Z"
     },
     {
       "id": "mqjcwg23ot1k14",
@@ -206,5 +206,5 @@
       "deletedAt": "2026-06-18T10:26:02.895Z"
     }
   ],
-  "updatedAt": "2026-06-18T10:49:04.780Z"
+  "updatedAt": "2026-06-18T11:02:03.330Z"
 }
