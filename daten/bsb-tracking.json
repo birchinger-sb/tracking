@@ -50,15 +50,15 @@
     },
     {
       "id": "mqjbnxs9zssp1r",
-      "name": "Mercedes 5 Tonner",
+      "name": "Mercedes 5 Tonner R-BS 1045",
       "type": "LKW",
-      "identifier": "",
+      "identifier": "R-BS 1045",
       "color": "#475569",
       "note": "",
       "active": true,
       "defect": false,
       "defectNote": "",
-      "updatedAt": "2026-06-18T09:54:15.064Z"
+      "updatedAt": "2026-06-18T10:01:18.542Z"
     }
   ],
   "bookings": [
@@ -149,5 +149,5 @@
       "deletedAt": "2026-06-18T09:48:26.368Z"
     }
   ],
-  "updatedAt": "2026-06-18T10:00:50.257Z"
+  "updatedAt": "2026-06-18T10:01:19.082Z"
 }
