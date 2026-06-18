@@ -122,6 +122,21 @@
       "_s": 1781733600000,
       "_e": 1782511200000,
       "_lane": 0
+    },
+    {
+      "id": "mqjd0s3p5bgg12",
+      "assetId": "mqjcwg23ot1k14",
+      "location": "Büro",
+      "responsibleId": "mqjczu8vbur896",
+      "responsible": "Lorenz",
+      "note": "",
+      "start": "2026-06-18T08:00",
+      "end": "2026-06-19T10:00",
+      "allDay": false,
+      "updatedAt": "2026-06-18T10:31:19.621Z",
+      "_s": 1781762400000,
+      "_e": 1781856000000,
+      "_lane": 2
     }
   ],
   "responsibles": [
@@ -181,5 +196,5 @@
       "deletedAt": "2026-06-18T10:26:02.895Z"
     }
   ],
-  "updatedAt": "2026-06-18T10:30:36.296Z"
+  "updatedAt": "2026-06-18T10:31:20.201Z"
 }
