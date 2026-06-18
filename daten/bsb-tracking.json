@@ -113,12 +113,13 @@
       "id": "mqjcya232leojm",
       "assetId": "mqjcwupni1dxxe",
       "location": "wurde gem. Anw. Blomenhofer zur Baustelle Donaustauf gefahren",
-      "responsible": "Blomenhofer",
+      "responsibleId": "mqjdn82mqw69bu",
+      "responsible": "Thomas Blomenhofer",
       "note": "",
       "start": "2026-06-18",
       "end": "2026-06-26",
       "allDay": true,
-      "updatedAt": "2026-06-18T10:29:22.923Z",
+      "updatedAt": "2026-06-18T10:49:04.458Z",
       "_s": 1781733600000,
       "_e": 1782511200000,
       "_lane": 0
@@ -205,5 +206,5 @@
       "deletedAt": "2026-06-18T10:26:02.895Z"
     }
   ],
-  "updatedAt": "2026-06-18T10:48:47.156Z"
+  "updatedAt": "2026-06-18T10:49:04.780Z"
 }
