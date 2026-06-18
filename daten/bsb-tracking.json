@@ -231,6 +231,15 @@
       "email": "",
       "note": "",
       "updatedAt": "2026-06-18T12:22:33.664Z"
+    },
+    {
+      "id": "mqjh0mz6al8lm1",
+      "name": "Bernhard Eigenstetter",
+      "role": "Vorarbeiter",
+      "phone": "0172/5480578",
+      "email": "",
+      "note": "",
+      "updatedAt": "2026-06-18T12:23:11.442Z"
     }
   ],
   "categories": [
@@ -323,5 +332,5 @@
       "deletedAt": "2026-06-18T11:17:31.331Z"
     }
   ],
-  "updatedAt": "2026-06-18T12:22:34.067Z"
+  "updatedAt": "2026-06-18T12:23:11.845Z"
 }
