@@ -240,6 +240,15 @@
       "email": "",
       "note": "",
       "updatedAt": "2026-06-18T12:23:11.442Z"
+    },
+    {
+      "id": "mqjh2692q0caw0",
+      "name": "Jakob Schiller",
+      "role": "Bauleiter",
+      "phone": "0172/5480219",
+      "email": "j.schiller@birchinger-sb.de",
+      "note": "",
+      "updatedAt": "2026-06-18T12:24:23.078Z"
     }
   ],
   "categories": [
@@ -332,5 +341,5 @@
       "deletedAt": "2026-06-18T11:17:31.331Z"
     }
   ],
-  "updatedAt": "2026-06-18T12:23:11.845Z"
+  "updatedAt": "2026-06-18T12:24:23.477Z"
 }
