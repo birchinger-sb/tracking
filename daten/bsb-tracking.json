@@ -204,6 +204,15 @@
       "email": "s.adler@birchinger-sb.de",
       "note": "",
       "updatedAt": "2026-06-18T11:11:24.989Z"
+    },
+    {
+      "id": "mqjgxfvsl7fbcq",
+      "name": "Oliver Birchinger",
+      "role": "Chef",
+      "phone": "0172/5480570",
+      "email": "o.birchinger@birchinger-sb.de",
+      "note": "",
+      "updatedAt": "2026-06-18T12:20:42.281Z"
     }
   ],
   "categories": [
@@ -296,5 +305,5 @@
       "deletedAt": "2026-06-18T11:17:31.331Z"
     }
   ],
-  "updatedAt": "2026-06-18T12:16:28.076Z"
+  "updatedAt": "2026-06-18T12:20:42.701Z"
 }
