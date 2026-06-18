@@ -16,13 +16,13 @@
       "id": "mqi0ng0efr1a45",
       "name": "LKW Scania R-W 5626",
       "type": "LKW",
-      "identifier": "",
+      "identifier": "R-W 5626",
       "color": "#475569",
       "note": "",
       "active": true,
       "defect": false,
       "defectNote": "",
-      "updatedAt": "2026-06-18T10:00:49.824Z"
+      "updatedAt": "2026-06-18T10:01:42.965Z"
     },
     {
       "id": "mqi0oeavv5emr6",
@@ -149,5 +149,5 @@
       "deletedAt": "2026-06-18T09:48:26.368Z"
     }
   ],
-  "updatedAt": "2026-06-18T10:01:28.824Z"
+  "updatedAt": "2026-06-18T10:01:43.305Z"
 }
