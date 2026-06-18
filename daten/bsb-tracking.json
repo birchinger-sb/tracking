@@ -89,20 +89,6 @@
       "_lane": 0
     },
     {
-      "id": "mqi0puw0l11b24",
-      "assetId": "mqi0ng0efr1a45",
-      "location": "Werkhof",
-      "responsible": "",
-      "note": "",
-      "start": "2026-06-19T12:00",
-      "end": "2026-06-19T16:00",
-      "allDay": false,
-      "updatedAt": "2026-06-17T11:59:08.448Z",
-      "_s": 1781863200000,
-      "_e": 1781877600000,
-      "_lane": 0
-    },
-    {
       "id": "mqjc2ya1dyeyj0",
       "assetId": "mqi0oeavv5emr6",
       "location": "Nürnberger Straße",
@@ -150,7 +136,11 @@
     {
       "id": "mqi0r2314acvzw",
       "deletedAt": "2026-06-18T10:11:57.038Z"
+    },
+    {
+      "id": "mqi0puw0l11b24",
+      "deletedAt": "2026-06-18T10:25:55.397Z"
     }
   ],
-  "updatedAt": "2026-06-18T10:25:28.617Z"
+  "updatedAt": "2026-06-18T10:25:55.733Z"
 }
