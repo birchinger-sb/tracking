@@ -98,7 +98,7 @@
     },
     {
       "id": "mqje6k1iidn4s1",
-      "name": "Kubota Microbagger K008-3-1 to",
+      "name": "Kubota Microbagger K008-3 / 1 to",
       "type": "Bagger",
       "identifier": "",
       "color": "#fb5c18",
@@ -106,7 +106,7 @@
       "active": true,
       "defect": false,
       "defectNote": "",
-      "updatedAt": "2026-06-18T11:03:48.726Z"
+      "updatedAt": "2026-06-18T11:05:29.353Z"
     },
     {
       "id": "mqje8cas2pbqsv",
@@ -230,5 +230,5 @@
       "deletedAt": "2026-06-18T10:26:02.895Z"
     }
   ],
-  "updatedAt": "2026-06-18T11:05:12.338Z"
+  "updatedAt": "2026-06-18T11:05:29.681Z"
 }
