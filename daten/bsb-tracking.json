@@ -107,6 +107,18 @@
       "defect": false,
       "defectNote": "",
       "updatedAt": "2026-06-18T11:03:48.726Z"
+    },
+    {
+      "id": "mqje8cas2pbqsv",
+      "name": "Kubota Bagger KX 101-3 / 3,5 to",
+      "type": "Bagger",
+      "identifier": "",
+      "color": "#fb5c18",
+      "note": "",
+      "active": true,
+      "defect": false,
+      "defectNote": "",
+      "updatedAt": "2026-06-18T11:05:12.004Z"
     }
   ],
   "bookings": [
@@ -218,5 +230,5 @@
       "deletedAt": "2026-06-18T10:26:02.895Z"
     }
   ],
-  "updatedAt": "2026-06-18T11:03:49.066Z"
+  "updatedAt": "2026-06-18T11:05:12.338Z"
 }
