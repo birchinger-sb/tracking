@@ -95,6 +95,15 @@
       "email": "",
       "note": "",
       "updatedAt": "2026-06-18T10:27:14.566Z"
+    },
+    {
+      "id": "mqjcvqzindcke8",
+      "name": "Zdenko",
+      "role": "Fahrer",
+      "phone": "",
+      "email": "",
+      "note": "",
+      "updatedAt": "2026-06-18T10:27:24.894Z"
     }
   ],
   "tombstones": [
@@ -143,5 +152,5 @@
       "deletedAt": "2026-06-18T10:26:02.895Z"
     }
   ],
-  "updatedAt": "2026-06-18T10:27:14.865Z"
+  "updatedAt": "2026-06-18T10:27:25.301Z"
 }
