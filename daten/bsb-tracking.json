@@ -213,6 +213,15 @@
       "email": "o.birchinger@birchinger-sb.de",
       "note": "",
       "updatedAt": "2026-06-18T12:20:42.281Z"
+    },
+    {
+      "id": "mqjgypf4v9no1i",
+      "name": "Stefan",
+      "role": "Meister",
+      "phone": "0172/5480571",
+      "email": "",
+      "note": "",
+      "updatedAt": "2026-06-18T12:21:41.296Z"
     }
   ],
   "categories": [
@@ -305,5 +314,5 @@
       "deletedAt": "2026-06-18T11:17:31.331Z"
     }
   ],
-  "updatedAt": "2026-06-18T12:20:42.701Z"
+  "updatedAt": "2026-06-18T12:21:41.683Z"
 }
