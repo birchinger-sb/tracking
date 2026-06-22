@@ -57,9 +57,9 @@
       "color": "#475569",
       "note": "15. bis 20.06.26 Werkstatt (Turbolader-Krümmer defekt und hintere Bremsen erneuert)",
       "active": true,
-      "defect": true,
+      "defect": false,
       "defectNote": "",
-      "updatedAt": "2026-06-22T07:40:20.241Z"
+      "updatedAt": "2026-06-22T07:40:31.439Z"
     },
     {
       "id": "mqjcsa64dyxrra",
@@ -935,5 +935,5 @@
       "deletedAt": "2026-06-18T14:53:45.959Z"
     }
   ],
-  "updatedAt": "2026-06-22T07:40:20.670Z"
+  "updatedAt": "2026-06-22T07:40:31.773Z"
 }
