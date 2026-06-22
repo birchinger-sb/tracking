@@ -759,11 +759,12 @@
       "responsible": "Stefan Adler",
       "note": "Werkstatt Semmelmann",
       "start": "2026-06-15",
-      "end": "2026-06-22",
+      "end": "2026-06-20",
       "allDay": true,
-      "updatedAt": "2026-06-18T11:14:12.736Z",
+      "returnedAt": null,
+      "updatedAt": "2026-06-22T07:41:02.431Z",
       "_s": 1781474400000,
-      "_e": 1782165600000,
+      "_e": 1781992800000,
       "_lane": 0
     }
   ],
@@ -935,5 +936,5 @@
       "deletedAt": "2026-06-18T14:53:45.959Z"
     }
   ],
-  "updatedAt": "2026-06-22T07:40:43.486Z"
+  "updatedAt": "2026-06-22T07:41:02.767Z"
 }
