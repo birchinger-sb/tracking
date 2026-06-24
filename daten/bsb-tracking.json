@@ -902,6 +902,11 @@
       "id": "mqjgrzevjoeqd5",
       "name": "Kettensäge",
       "updatedAt": "2026-06-18T12:16:27.655Z"
+    },
+    {
+      "id": "mqroehbf1dobhl",
+      "name": "Pritschenwagen",
+      "updatedAt": "2026-06-24T06:12:04.011Z"
     }
   ],
   "tombstones": [
@@ -966,5 +971,5 @@
       "deletedAt": "2026-06-18T14:53:45.959Z"
     }
   ],
-  "updatedAt": "2026-06-24T06:11:11.518Z"
+  "updatedAt": "2026-06-24T06:12:04.683Z"
 }
