@@ -780,6 +780,22 @@
       "_s": 1781474400000,
       "_e": 1781992800000,
       "_lane": 0
+    },
+    {
+      "id": "mqrodcgia64ii1",
+      "assetId": "mqroc1q0o7my3v",
+      "location": "Service HU und neue Scheibe",
+      "responsibleId": "mqjgzttsmv8l0u",
+      "responsible": "Johann Hecht",
+      "note": "",
+      "start": "2026-06-26",
+      "end": "2026-06-30",
+      "allDay": true,
+      "returnedAt": null,
+      "updatedAt": "2026-06-24T06:11:11.058Z",
+      "_s": 1782424800000,
+      "_e": 1782856800000,
+      "_lane": 0
     }
   ],
   "responsibles": [
@@ -950,5 +966,5 @@
       "deletedAt": "2026-06-18T14:53:45.959Z"
     }
   ],
-  "updatedAt": "2026-06-24T06:10:27.704Z"
+  "updatedAt": "2026-06-24T06:11:11.518Z"
 }
