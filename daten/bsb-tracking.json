@@ -718,6 +718,19 @@
       "defectNote": "",
       "group": "werkzeug",
       "updatedAt": "2026-06-18T14:25:01.316Z"
+    },
+    {
+      "id": "mqroc1q0o7my3v",
+      "name": "Pritschenwagen / Hecht",
+      "type": "",
+      "group": "fahrzeug",
+      "identifier": "R-BS 1043",
+      "color": "#050505",
+      "note": "",
+      "active": true,
+      "defect": false,
+      "defectNote": "",
+      "updatedAt": "2026-06-24T06:10:10.488Z"
     }
   ],
   "bookings": [
@@ -937,5 +950,5 @@
       "deletedAt": "2026-06-18T14:53:45.959Z"
     }
   ],
-  "updatedAt": "2026-06-24T05:20:24.806Z"
+  "updatedAt": "2026-06-24T06:10:10.950Z"
 }
