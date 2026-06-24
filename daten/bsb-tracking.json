@@ -722,7 +722,7 @@
     {
       "id": "mqroc1q0o7my3v",
       "name": "Pritschenwagen / Hecht",
-      "type": "",
+      "type": "Pritschenwagen",
       "group": "fahrzeug",
       "identifier": "R-BS 1043",
       "color": "#050505",
@@ -730,7 +730,7 @@
       "active": true,
       "defect": false,
       "defectNote": "",
-      "updatedAt": "2026-06-24T06:10:27.385Z"
+      "updatedAt": "2026-06-24T06:12:38.281Z"
     }
   ],
   "bookings": [
@@ -971,5 +971,5 @@
       "deletedAt": "2026-06-18T14:53:45.959Z"
     }
   ],
-  "updatedAt": "2026-06-24T06:12:04.683Z"
+  "updatedAt": "2026-06-24T06:12:38.722Z"
 }
