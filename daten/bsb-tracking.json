@@ -294,14 +294,14 @@
       "id": "wz0014",
       "name": "Heylo DE 9 XL",
       "type": "Heizlüfter",
+      "group": "werkzeug",
       "identifier": "HL 0005",
-      "color": "#7E57C2",
+      "color": "#c9603c",
       "note": "S/N: M00058 · Beschaffung: 2023 · Lieferant: Raab Karcher · Leistung 9 KW",
       "active": true,
       "defect": false,
       "defectNote": "",
-      "group": "werkzeug",
-      "updatedAt": "2026-06-18T14:25:01.316Z"
+      "updatedAt": "2026-06-24T05:19:30.847Z"
     },
     {
       "id": "wz0015",
@@ -937,5 +937,5 @@
       "deletedAt": "2026-06-18T14:53:45.959Z"
     }
   ],
-  "updatedAt": "2026-06-24T05:13:23.838Z"
+  "updatedAt": "2026-06-24T05:19:31.264Z"
 }
