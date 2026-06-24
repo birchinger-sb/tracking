@@ -671,14 +671,14 @@
       "id": "wz0043",
       "name": "Stihl MS 291",
       "type": "Kettensäge",
+      "group": "werkzeug",
       "identifier": "KS 0001",
-      "color": "#C9603C",
+      "color": "#c9603c",
       "note": "S/N: TS6161 · Beschaffung: 2016 · Zubehör: 37 cm Schwert · 21.05.2025 - lt Semmelmann springt nicht an - getestet durch AS - springt ohne Probleme an Gerhard Schinabeck war dabei · Zuordnung: Semmelmann",
       "active": true,
       "defect": false,
       "defectNote": "",
-      "group": "werkzeug",
-      "updatedAt": "2026-06-18T14:25:01.316Z"
+      "updatedAt": "2026-06-24T05:20:24.261Z"
     },
     {
       "id": "wz0044",
@@ -937,5 +937,5 @@
       "deletedAt": "2026-06-18T14:53:45.959Z"
     }
   ],
-  "updatedAt": "2026-06-24T05:19:44.522Z"
+  "updatedAt": "2026-06-24T05:20:24.806Z"
 }
