@@ -842,6 +842,22 @@
       "_s": 1783461600000,
       "_e": 1784930400000,
       "_lane": 0
+    },
+    {
+      "id": "mrc47dyrm4t5to",
+      "assetId": "mqi0ng0efr1a45",
+      "location": "Service Scania",
+      "responsibleId": "mqjegc3g94zrmw",
+      "responsible": "Stefan Adler",
+      "note": "Öl-Service fällig",
+      "start": "2026-07-10",
+      "end": "2026-07-13",
+      "allDay": true,
+      "returnedAt": null,
+      "updatedAt": "2026-07-08T13:29:50.451Z",
+      "_s": 1783634400000,
+      "_e": 1783980000000,
+      "_lane": 1
     }
   ],
   "responsibles": [
@@ -1022,5 +1038,5 @@
       "deletedAt": "2026-06-18T14:53:45.959Z"
     }
   ],
-  "updatedAt": "2026-07-08T13:28:47.721Z"
+  "updatedAt": "2026-07-08T13:29:50.956Z"
 }
