@@ -731,6 +731,19 @@
       "defect": false,
       "defectNote": "",
       "updatedAt": "2026-07-08T13:19:23.924Z"
+    },
+    {
+      "id": "mrc400ftfmyany",
+      "name": "Mercedes Citan (ehm. Herlinger)",
+      "type": "PKW",
+      "group": "fahrzeug",
+      "identifier": "R-BS 1047",
+      "color": "#4789a0",
+      "note": "KW 28/2026 Bremsen vorne und hinten erneuert",
+      "active": true,
+      "defect": false,
+      "defectNote": "",
+      "updatedAt": "2026-07-08T13:24:06.329Z"
     }
   ],
   "bookings": [
@@ -977,5 +990,5 @@
       "deletedAt": "2026-06-18T14:53:45.959Z"
     }
   ],
-  "updatedAt": "2026-07-08T13:20:58.575Z"
+  "updatedAt": "2026-07-08T13:24:06.789Z"
 }
