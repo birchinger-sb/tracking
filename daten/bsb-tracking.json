@@ -810,6 +810,22 @@
       "_s": 1782424800000,
       "_e": 1782856800000,
       "_lane": 1
+    },
+    {
+      "id": "mrc42ez5uh6vtj",
+      "assetId": "mrc400ftfmyany",
+      "location": "Kfz Werkstatt Martin Semmelmann",
+      "responsibleId": "mqjegc3g94zrmw",
+      "responsible": "Stefan Adler",
+      "note": "in Werkstatt bei Semmelmann wegen Erneuerung Bremsen",
+      "start": "2026-07-01",
+      "end": "2026-07-08",
+      "allDay": true,
+      "returnedAt": null,
+      "updatedAt": "2026-07-08T13:25:58.481Z",
+      "_s": 1782856800000,
+      "_e": 1783548000000,
+      "_lane": 1
     }
   ],
   "responsibles": [
@@ -990,5 +1006,5 @@
       "deletedAt": "2026-06-18T14:53:45.959Z"
     }
   ],
-  "updatedAt": "2026-07-08T13:24:22.300Z"
+  "updatedAt": "2026-07-08T13:25:58.955Z"
 }
