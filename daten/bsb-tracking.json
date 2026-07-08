@@ -726,11 +726,11 @@
       "group": "fahrzeug",
       "identifier": "R-BS 1043",
       "color": "#050505",
-      "note": "",
+      "note": "KW27/2026 neue Scheibe eingesetzt, Tüv, Bremsen und Service gemacht",
       "active": true,
       "defect": false,
       "defectNote": "",
-      "updatedAt": "2026-06-24T06:12:38.281Z"
+      "updatedAt": "2026-07-08T13:19:23.924Z"
     }
   ],
   "bookings": [
@@ -972,5 +972,5 @@
       "deletedAt": "2026-06-18T14:53:45.959Z"
     }
   ],
-  "updatedAt": "2026-06-30T05:32:39.449Z"
+  "updatedAt": "2026-07-08T13:19:24.411Z"
 }
