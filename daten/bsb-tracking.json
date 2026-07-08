@@ -16,13 +16,14 @@
       "id": "mqi0ng0efr1a45",
       "name": "LKW Scania R-W 5626",
       "type": "LKW",
+      "group": "fahrzeug",
       "identifier": "R-W 5626",
       "color": "#475569",
-      "note": "",
+      "note": "09.07.2026 Reifen links vorne erneuert - Vergölst",
       "active": true,
       "defect": false,
       "defectNote": "defekt Turboladerkrümmer",
-      "updatedAt": "2026-06-18T11:13:20.675Z"
+      "updatedAt": "2026-07-08T13:48:45.794Z"
     },
     {
       "id": "mqi0oeavv5emr6",
@@ -1054,5 +1055,5 @@
       "deletedAt": "2026-06-18T14:53:45.959Z"
     }
   ],
-  "updatedAt": "2026-07-08T13:48:09.567Z"
+  "updatedAt": "2026-07-08T13:48:46.360Z"
 }
