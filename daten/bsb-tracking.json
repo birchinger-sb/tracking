@@ -748,7 +748,7 @@
     },
     {
       "id": "mrdi9kxdunhdk3",
-      "name": "Tsurumi Pump",
+      "name": "Tsurumi Pump Model LSC1.4S -51",
       "type": "Tauchpumpe",
       "group": "werkzeug",
       "identifier": "TP 0004",
@@ -757,7 +757,7 @@
       "active": true,
       "defect": false,
       "defectNote": "",
-      "updatedAt": "2026-07-09T12:51:52.106Z"
+      "updatedAt": "2026-07-09T12:53:28.698Z"
     }
   ],
   "bookings": [
@@ -1097,5 +1097,5 @@
       "deletedAt": "2026-06-18T14:53:45.959Z"
     }
   ],
-  "updatedAt": "2026-07-09T12:52:49.047Z"
+  "updatedAt": "2026-07-09T12:53:29.309Z"
 }
