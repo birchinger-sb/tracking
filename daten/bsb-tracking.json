@@ -745,6 +745,19 @@
       "defect": false,
       "defectNote": "",
       "updatedAt": "2026-07-08T13:24:21.919Z"
+    },
+    {
+      "id": "mrdi9kxdunhdk3",
+      "name": "Tsurumi Pump",
+      "type": "Tauchpumpe",
+      "group": "werkzeug",
+      "identifier": "TP 0003",
+      "color": "#a8463c",
+      "note": "wurde durch Andreas Laußer beschafft 03/2026",
+      "active": true,
+      "defect": false,
+      "defectNote": "",
+      "updatedAt": "2026-07-09T12:51:13.585Z"
     }
   ],
   "bookings": [
@@ -1068,5 +1081,5 @@
       "deletedAt": "2026-06-18T14:53:45.959Z"
     }
   ],
-  "updatedAt": "2026-07-09T12:49:50.875Z"
+  "updatedAt": "2026-07-09T12:51:14.107Z"
 }
