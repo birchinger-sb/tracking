@@ -820,12 +820,12 @@
       "responsible": "Stefan Adler",
       "note": "in Werkstatt bei Semmelmann wegen Erneuerung Bremsen",
       "start": "2026-07-01",
-      "end": "2026-07-08",
+      "end": "2026-07-09",
       "allDay": true,
-      "returnedAt": null,
-      "updatedAt": "2026-07-08T13:25:58.481Z",
+      "returnedAt": "2026-07-09T03:54:14.401Z",
+      "updatedAt": "2026-07-09T03:54:14.401Z",
       "_s": 1782856800000,
-      "_e": 1783548000000,
+      "_e": 1783634400000,
       "_lane": 1
     },
     {
@@ -1055,5 +1055,5 @@
       "deletedAt": "2026-06-18T14:53:45.959Z"
     }
   ],
-  "updatedAt": "2026-07-08T13:48:46.360Z"
+  "updatedAt": "2026-07-09T03:54:14.841Z"
 }
