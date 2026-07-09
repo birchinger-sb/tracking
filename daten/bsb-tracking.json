@@ -901,6 +901,22 @@
       "_s": 1783893600000,
       "_e": 1784325600000,
       "_lane": 2
+    },
+    {
+      "id": "mrdibm7tkwpn00",
+      "assetId": "mrdi9kxdunhdk3",
+      "location": "Donaustauf",
+      "responsibleId": "mqjdn82mqw69bu",
+      "responsible": "Thomas Blomenhofer",
+      "note": "wurde von TB für Donaustauf reserviert für Hugo",
+      "start": "2026-07-13",
+      "end": "2026-07-17",
+      "allDay": true,
+      "returnedAt": null,
+      "updatedAt": "2026-07-09T12:52:48.569Z",
+      "_s": 1783893600000,
+      "_e": 1784325600000,
+      "_lane": 3
     }
   ],
   "responsibles": [
@@ -1081,5 +1097,5 @@
       "deletedAt": "2026-06-18T14:53:45.959Z"
     }
   ],
-  "updatedAt": "2026-07-09T12:51:58.289Z"
+  "updatedAt": "2026-07-09T12:52:49.047Z"
 }
