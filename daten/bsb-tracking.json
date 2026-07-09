@@ -620,14 +620,14 @@
       "id": "wz0039",
       "name": "Tsurumi Pump HS 2.4S",
       "type": "Tauchpumpe",
+      "group": "werkzeug",
       "identifier": "TP 0003",
-      "color": "#A8463C",
+      "color": "#3e6fb0",
       "note": "S/N: 20652210307 · Beschaffung: unbekannt · 0,2 m³/min - Förderhöhe max. 12 m - C-Kuplung",
       "active": true,
       "defect": false,
       "defectNote": "",
-      "group": "werkzeug",
-      "updatedAt": "2026-06-18T14:25:01.316Z"
+      "updatedAt": "2026-07-09T12:51:57.912Z"
     },
     {
       "id": "wz0040",
@@ -1081,5 +1081,5 @@
       "deletedAt": "2026-06-18T14:53:45.959Z"
     }
   ],
-  "updatedAt": "2026-07-09T12:51:52.478Z"
+  "updatedAt": "2026-07-09T12:51:58.289Z"
 }
