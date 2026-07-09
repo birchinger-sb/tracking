@@ -865,12 +865,12 @@
       "responsible": "Stefan Adler",
       "note": "Defekter Reifen links vorne",
       "start": "2026-07-09T08:00",
-      "end": "2026-07-09T10:00",
+      "end": "2026-07-09T14:47",
       "allDay": false,
-      "returnedAt": null,
-      "updatedAt": "2026-07-08T13:48:08.997Z",
+      "returnedAt": "2026-07-09T12:47:15.117Z",
+      "updatedAt": "2026-07-09T12:47:15.117Z",
       "_s": 1783576800000,
-      "_e": 1783584000000,
+      "_e": 1783601220000,
       "_lane": 1
     },
     {
@@ -1068,5 +1068,5 @@
       "deletedAt": "2026-06-18T14:53:45.959Z"
     }
   ],
-  "updatedAt": "2026-07-09T12:46:59.943Z"
+  "updatedAt": "2026-07-09T12:47:15.679Z"
 }
