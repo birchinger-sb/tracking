@@ -609,12 +609,12 @@
       "type": "Tauchpumpe",
       "group": "werkzeug",
       "identifier": "TP 0002",
-      "color": "#4789a0",
+      "color": "#3e6fb0",
       "note": "S/N: 06952-1801-0389 · Beschaffung: unbekannt · Baujahr 2018 12500 l/h - Förderhöhe  max. 8 m - GEKA-Anschluss · ausgemustert 12/2025 - von Baustelle zurück - Kabel abgerissen, Förderrad defekt wegen mit Sand versetzten Fördermedium",
       "active": false,
       "defect": false,
       "defectNote": "",
-      "updatedAt": "2026-06-18T14:53:28.949Z"
+      "updatedAt": "2026-07-09T12:51:46.726Z"
     },
     {
       "id": "wz0039",
@@ -1081,5 +1081,5 @@
       "deletedAt": "2026-06-18T14:53:45.959Z"
     }
   ],
-  "updatedAt": "2026-07-09T12:51:41.414Z"
+  "updatedAt": "2026-07-09T12:51:47.164Z"
 }
