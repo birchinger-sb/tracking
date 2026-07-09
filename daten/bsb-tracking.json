@@ -542,14 +542,14 @@
       "id": "wz0033",
       "name": "Wacker DPU6055",
       "type": "Rüttelplatte",
-      "identifier": "RP 0001",
-      "color": "#C9603C",
-      "note": "S/N: ohne Seriennummer · Lieferant: unbekannt",
-      "active": true,
-      "defect": false,
-      "defectNote": "",
       "group": "werkzeug",
-      "updatedAt": "2026-06-18T14:25:01.316Z"
+      "identifier": "RP 0001",
+      "color": "#e8f901",
+      "note": "S/N: 0732304084087, BJ 06/2004, Lieferant: unbekannt\n09.07.26 Dieselleitungen durchgescheuert - wurden erneuert AS",
+      "active": true,
+      "defect": true,
+      "defectNote": "",
+      "updatedAt": "2026-07-09T12:46:00.549Z"
     },
     {
       "id": "wz0034",
@@ -1052,5 +1052,5 @@
       "deletedAt": "2026-06-18T14:53:45.959Z"
     }
   ],
-  "updatedAt": "2026-07-09T03:55:36.771Z"
+  "updatedAt": "2026-07-09T12:46:01.026Z"
 }
