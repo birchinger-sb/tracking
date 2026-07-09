@@ -752,12 +752,12 @@
       "type": "Tauchpumpe",
       "group": "werkzeug",
       "identifier": "TP 0004",
-      "color": "#a8463c",
+      "color": "#3e6fb0",
       "note": "wurde durch Andreas Laußer beschafft 03/2026",
       "active": true,
       "defect": false,
       "defectNote": "",
-      "updatedAt": "2026-07-09T12:51:31.935Z"
+      "updatedAt": "2026-07-09T12:51:52.106Z"
     }
   ],
   "bookings": [
@@ -1081,5 +1081,5 @@
       "deletedAt": "2026-06-18T14:53:45.959Z"
     }
   ],
-  "updatedAt": "2026-07-09T12:51:47.164Z"
+  "updatedAt": "2026-07-09T12:51:52.478Z"
 }
