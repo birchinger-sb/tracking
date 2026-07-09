@@ -594,14 +594,14 @@
       "id": "wz0037",
       "name": "Tsurmumi MFG.CO.,LTD. Family-12",
       "type": "Tauchpumpe",
+      "group": "werkzeug",
       "identifier": "TP 0001",
-      "color": "#B07A24",
+      "color": "#b07a24",
       "note": "S/N: 00833 · Beschaffung: unbekannt · Lieferant: unbekannt · 80 l/Min - Förderhöhe max. 6 m - GEKA-Anschluss",
       "active": true,
-      "defect": false,
-      "defectNote": "",
-      "group": "werkzeug",
-      "updatedAt": "2026-06-18T14:25:01.316Z"
+      "defect": true,
+      "defectNote": "unsachgemäße Anwendung, Kabelbruch im Gehäuse, es wird versucht eine Ersatzzuleitung zu finden mit dem richtigen Lochabstand",
+      "updatedAt": "2026-07-09T12:49:50.246Z"
     },
     {
       "id": "wz0038",
@@ -1068,5 +1068,5 @@
       "deletedAt": "2026-06-18T14:53:45.959Z"
     }
   ],
-  "updatedAt": "2026-07-09T12:47:15.679Z"
+  "updatedAt": "2026-07-09T12:49:50.875Z"
 }
