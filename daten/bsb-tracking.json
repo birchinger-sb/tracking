@@ -910,22 +910,6 @@
       "_lane": 2
     },
     {
-      "id": "mrj112arx0mh6l",
-      "assetId": "mqi0oeavv5emr6",
-      "location": "Nürnberger Straße",
-      "responsibleId": "mqjec5589bumxj",
-      "responsible": "Andreas Laußer",
-      "note": "",
-      "start": "2026-07-13",
-      "end": "2026-07-14",
-      "allDay": true,
-      "returnedAt": null,
-      "updatedAt": "2026-07-13T09:35:19.779Z",
-      "_s": 1783893600000,
-      "_e": 1784066400000,
-      "_lane": 3
-    },
-    {
       "id": "mrj12gzjtbep0k",
       "assetId": "mqi0n3d4hit7rv",
       "location": "Baustellen Donaustauf",
@@ -1202,7 +1186,11 @@
     {
       "id": "mqje8cas2pbqsv",
       "deletedAt": "2026-07-13T11:26:00.545Z"
+    },
+    {
+      "id": "mrj112arx0mh6l",
+      "deletedAt": "2026-07-13T11:27:50.672Z"
     }
   ],
-  "updatedAt": "2026-07-13T11:27:31.176Z"
+  "updatedAt": "2026-07-13T11:27:51.506Z"
 }
