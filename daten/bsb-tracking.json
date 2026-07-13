@@ -988,6 +988,22 @@
       "_s": 1783918800000,
       "_e": 1783956600000,
       "_lane": 9
+    },
+    {
+      "id": "mrj54n3jyxiep2",
+      "assetId": "mqjbnxs9zssp1r",
+      "location": "Baustellen Hecht",
+      "responsibleId": "mqjgzttsmv8l0u",
+      "responsible": "Johann Hecht",
+      "note": "",
+      "start": "2026-07-13T07:00",
+      "end": "2026-07-15T17:30",
+      "allDay": false,
+      "returnedAt": null,
+      "updatedAt": "2026-07-13T11:30:05.168Z",
+      "_s": 1783918800000,
+      "_e": 1784129400000,
+      "_lane": 8
     }
   ],
   "responsibles": [
@@ -1180,5 +1196,5 @@
       "deletedAt": "2026-07-13T11:28:24.158Z"
     }
   ],
-  "updatedAt": "2026-07-13T11:28:29.419Z"
+  "updatedAt": "2026-07-13T11:30:05.683Z"
 }
