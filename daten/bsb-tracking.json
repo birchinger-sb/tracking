@@ -917,6 +917,22 @@
       "_s": 1783893600000,
       "_e": 1784325600000,
       "_lane": 2
+    },
+    {
+      "id": "mrj112arx0mh6l",
+      "assetId": "mqi0oeavv5emr6",
+      "location": "Nürnberger Straße",
+      "responsibleId": "mqjec5589bumxj",
+      "responsible": "Andreas Laußer",
+      "note": "",
+      "start": "2026-07-13",
+      "end": "2026-07-14",
+      "allDay": true,
+      "returnedAt": null,
+      "updatedAt": "2026-07-13T09:35:19.779Z",
+      "_s": 1783893600000,
+      "_e": 1784066400000,
+      "_lane": 3
     }
   ],
   "responsibles": [
@@ -1097,5 +1113,5 @@
       "deletedAt": "2026-06-18T14:53:45.959Z"
     }
   ],
-  "updatedAt": "2026-07-09T12:56:42.637Z"
+  "updatedAt": "2026-07-13T09:35:20.325Z"
 }
