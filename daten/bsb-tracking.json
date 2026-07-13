@@ -4,13 +4,14 @@
       "id": "mqi0n3d4hit7rv",
       "name": "Liebherr Lader 506 Stereo",
       "type": "Radlader",
-      "identifier": "",
+      "group": "fahrzeug",
+      "identifier": "SN.: VATZ0776PZB020392",
       "color": "#f0ac19",
       "note": "",
       "active": true,
       "defect": false,
       "defectNote": "",
-      "updatedAt": "2026-06-18T10:16:46.243Z"
+      "updatedAt": "2026-07-13T11:23:20.848Z"
     },
     {
       "id": "mqi0ng0efr1a45",
@@ -1146,5 +1147,5 @@
       "deletedAt": "2026-06-18T14:53:45.959Z"
     }
   ],
-  "updatedAt": "2026-07-13T11:20:54.735Z"
+  "updatedAt": "2026-07-13T11:23:21.376Z"
 }
