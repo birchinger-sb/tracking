@@ -39,7 +39,7 @@
     },
     {
       "id": "mqi44szht7rzce",
-      "name": "Kubota Bagger U55-4 /   5 to",
+      "name": "Kubota Bagger U55-4 /     5 to",
       "type": "Bagger",
       "group": "fahrzeug",
       "identifier": "",
@@ -48,7 +48,7 @@
       "active": true,
       "defect": false,
       "defectNote": "",
-      "updatedAt": "2026-07-13T11:19:45.769Z"
+      "updatedAt": "2026-07-13T11:19:54.259Z"
     },
     {
       "id": "mqjbnxs9zssp1r",
@@ -1146,5 +1146,5 @@
       "deletedAt": "2026-06-18T14:53:45.959Z"
     }
   ],
-  "updatedAt": "2026-07-13T11:19:46.237Z"
+  "updatedAt": "2026-07-13T11:19:54.963Z"
 }
