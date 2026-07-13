@@ -957,14 +957,14 @@
       "responsibleId": "mqjgypf4v9no1i",
       "responsible": "Stefan Weikl",
       "note": "",
-      "start": "2026-07-13",
-      "end": "2026-07-13",
+      "start": "2026-07-01",
+      "end": "2026-07-24",
       "allDay": true,
       "returnedAt": null,
-      "updatedAt": "2026-07-13T09:38:27.308Z",
-      "_s": 1783893600000,
-      "_e": 1783980000000,
-      "_lane": 5
+      "updatedAt": "2026-07-13T09:39:04.261Z",
+      "_s": 1782856800000,
+      "_e": 1784930400000,
+      "_lane": 0
     }
   ],
   "responsibles": [
@@ -1145,5 +1145,5 @@
       "deletedAt": "2026-06-18T14:53:45.959Z"
     }
   ],
-  "updatedAt": "2026-07-13T09:38:28.435Z"
+  "updatedAt": "2026-07-13T09:39:04.818Z"
 }
