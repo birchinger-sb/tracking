@@ -967,6 +967,22 @@
       "_s": 1782856800000,
       "_e": 1784930400000,
       "_lane": 0
+    },
+    {
+      "id": "mrj4wtivq6ddub",
+      "assetId": "mqi0n3d4hit7rv",
+      "location": "Baustellen Donaustauf",
+      "responsibleId": "mqjdn82mqw69bu",
+      "responsible": "Thomas Blomenhofer",
+      "note": "",
+      "start": "2026-07-10",
+      "end": "2026-07-17",
+      "allDay": true,
+      "returnedAt": null,
+      "updatedAt": "2026-07-13T11:24:00.247Z",
+      "_s": 1783634400000,
+      "_e": 1784325600000,
+      "_lane": 3
     }
   ],
   "responsibles": [
@@ -1147,5 +1163,5 @@
       "deletedAt": "2026-06-18T14:53:45.959Z"
     }
   ],
-  "updatedAt": "2026-07-13T11:23:21.376Z"
+  "updatedAt": "2026-07-13T11:24:00.754Z"
 }
