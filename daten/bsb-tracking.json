@@ -943,12 +943,12 @@
       "responsibleId": "mqjdn82mqw69bu",
       "responsible": "Thomas Blomenhofer",
       "note": "",
-      "start": "2026-07-10",
+      "start": "2026-07-13",
       "end": "2026-07-20",
       "allDay": true,
       "returnedAt": null,
-      "updatedAt": "2026-07-13T09:36:25.471Z",
-      "_s": 1783634400000,
+      "updatedAt": "2026-07-13T11:24:44.161Z",
+      "_s": 1783893600000,
       "_e": 1784584800000,
       "_lane": 1
     },
@@ -1163,5 +1163,5 @@
       "deletedAt": "2026-06-18T14:53:45.959Z"
     }
   ],
-  "updatedAt": "2026-07-13T11:24:00.754Z"
+  "updatedAt": "2026-07-13T11:24:44.921Z"
 }
