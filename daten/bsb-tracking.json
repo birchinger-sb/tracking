@@ -116,13 +116,14 @@
       "id": "mqjeejc3fdg6r4",
       "name": "Komatsu Bagger PC16R HS / 1,7 to",
       "type": "Bagger",
+      "group": "fahrzeug",
       "identifier": "",
-      "color": "#fb5c18",
+      "color": "#fbf418",
       "note": "",
       "active": true,
       "defect": false,
       "defectNote": "",
-      "updatedAt": "2026-06-18T11:10:01.059Z"
+      "updatedAt": "2026-07-13T11:25:26.297Z"
     },
     {
       "id": "wz0001",
@@ -1163,5 +1164,5 @@
       "deletedAt": "2026-06-18T14:53:45.959Z"
     }
   ],
-  "updatedAt": "2026-07-13T11:24:44.921Z"
+  "updatedAt": "2026-07-13T11:25:35.355Z"
 }
