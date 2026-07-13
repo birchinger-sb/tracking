@@ -101,18 +101,6 @@
       "updatedAt": "2026-06-18T11:05:51.923Z"
     },
     {
-      "id": "mqje8cas2pbqsv",
-      "name": "Kubota Bagger KX 101-3 / 3,5 to",
-      "type": "Bagger",
-      "identifier": "",
-      "color": "#fb5c18",
-      "note": "",
-      "active": true,
-      "defect": false,
-      "defectNote": "",
-      "updatedAt": "2026-06-18T11:05:12.004Z"
-    },
-    {
       "id": "mqjeejc3fdg6r4",
       "name": "Komatsu Bagger PC16R HS / 1,7 to",
       "type": "Bagger",
@@ -1178,7 +1166,11 @@
     {
       "id": "mqjczu8vbur896",
       "deletedAt": "2026-06-18T14:53:45.959Z"
+    },
+    {
+      "id": "mqje8cas2pbqsv",
+      "deletedAt": "2026-07-13T11:26:00.545Z"
     }
   ],
-  "updatedAt": "2026-07-13T11:25:55.890Z"
+  "updatedAt": "2026-07-13T11:26:01.276Z"
 }
