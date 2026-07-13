@@ -942,22 +942,6 @@
       "_lane": 0
     },
     {
-      "id": "mrj4wtivq6ddub",
-      "assetId": "mqi0n3d4hit7rv",
-      "location": "Baustellen Donaustauf",
-      "responsibleId": "mqjdn82mqw69bu",
-      "responsible": "Thomas Blomenhofer",
-      "note": "",
-      "start": "2026-07-13",
-      "end": "2026-07-17",
-      "allDay": true,
-      "returnedAt": null,
-      "updatedAt": "2026-07-13T11:28:07.043Z",
-      "_s": 1783893600000,
-      "_e": 1784325600000,
-      "_lane": 5
-    },
-    {
       "id": "mrj4z6yvbcmapr",
       "assetId": "mqjeejc3fdg6r4",
       "location": "Baustellen Donaustauf",
@@ -1190,7 +1174,11 @@
     {
       "id": "mrj112arx0mh6l",
       "deletedAt": "2026-07-13T11:27:50.672Z"
+    },
+    {
+      "id": "mrj4wtivq6ddub",
+      "deletedAt": "2026-07-13T11:28:24.158Z"
     }
   ],
-  "updatedAt": "2026-07-13T11:28:07.629Z"
+  "updatedAt": "2026-07-13T11:28:29.419Z"
 }
