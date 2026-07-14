@@ -753,15 +753,15 @@
     {
       "id": "mrkgxf1mzqx50f",
       "name": "HILTI Industriesauger",
-      "type": "",
+      "type": "Industriesauger",
       "group": "werkzeug",
       "identifier": "",
       "color": "#dc2626",
-      "note": "",
+      "note": "Flottengerät Stefan Adler",
       "active": true,
       "defect": false,
       "defectNote": "",
-      "updatedAt": "2026-07-14T09:50:04.248Z"
+      "updatedAt": "2026-07-14T09:50:30.562Z"
     }
   ],
   "bookings": [
@@ -1237,5 +1237,5 @@
       "deletedAt": "2026-07-13T11:28:24.158Z"
     }
   ],
-  "updatedAt": "2026-07-14T09:50:04.740Z"
+  "updatedAt": "2026-07-14T09:50:31.049Z"
 }
