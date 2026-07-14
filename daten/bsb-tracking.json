@@ -749,6 +749,19 @@
       "defect": false,
       "defectNote": "",
       "updatedAt": "2026-07-09T12:53:28.698Z"
+    },
+    {
+      "id": "mrkgxf1mzqx50f",
+      "name": "HILTI Industriesauger",
+      "type": "",
+      "group": "werkzeug",
+      "identifier": "",
+      "color": "#a8463c",
+      "note": "",
+      "active": true,
+      "defect": false,
+      "defectNote": "",
+      "updatedAt": "2026-07-14T09:48:09.706Z"
     }
   ],
   "bookings": [
@@ -1219,5 +1232,5 @@
       "deletedAt": "2026-07-13T11:28:24.158Z"
     }
   ],
-  "updatedAt": "2026-07-14T09:46:41.013Z"
+  "updatedAt": "2026-07-14T09:48:10.309Z"
 }
