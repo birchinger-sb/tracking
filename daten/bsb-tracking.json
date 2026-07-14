@@ -1080,6 +1080,15 @@
       "email": "j.schiller@birchinger-sb.de",
       "note": "",
       "updatedAt": "2026-06-18T12:24:23.078Z"
+    },
+    {
+      "id": "mrkgs43ems0qk5",
+      "name": "Gerhard Schinabeck",
+      "role": "",
+      "phone": "",
+      "email": "",
+      "note": "",
+      "updatedAt": "2026-07-14T09:44:02.234Z"
     }
   ],
   "categories": [
@@ -1198,5 +1207,5 @@
       "deletedAt": "2026-07-13T11:28:24.158Z"
     }
   ],
-  "updatedAt": "2026-07-14T07:17:16.743Z"
+  "updatedAt": "2026-07-14T09:44:02.676Z"
 }
