@@ -169,14 +169,14 @@
       "id": "wz0005",
       "name": "Wacker Neuson DPS2050H",
       "type": "Rüttelplatte",
+      "group": "werkzeug",
       "identifier": "RP 0003",
-      "color": "#C25587",
+      "color": "#f9e401",
       "note": "S/N: 11786131 · Beschaffung: 12.07.2023 · Zubehör: ohne Zubehör · Lieferant: Wacker Neuson Regenstauf · Ersatzbeschaffung für defekte kleine blaue Rüttelplatte",
       "active": true,
       "defect": false,
       "defectNote": "",
-      "group": "werkzeug",
-      "updatedAt": "2026-06-18T14:25:01.316Z"
+      "updatedAt": "2026-07-14T09:53:37.236Z"
     },
     {
       "id": "wz0006",
@@ -1254,5 +1254,5 @@
       "deletedAt": "2026-07-13T11:28:24.158Z"
     }
   ],
-  "updatedAt": "2026-07-14T09:53:25.833Z"
+  "updatedAt": "2026-07-14T09:53:37.589Z"
 }
