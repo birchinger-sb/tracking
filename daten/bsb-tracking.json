@@ -1156,6 +1156,11 @@
       "id": "mrc3vz9tpog045",
       "name": "PKW",
       "updatedAt": "2026-07-08T13:20:58.193Z"
+    },
+    {
+      "id": "mrkgxrphf23whp",
+      "name": "Industriesauger",
+      "updatedAt": "2026-07-14T09:48:26.117Z"
     }
   ],
   "tombstones": [
@@ -1232,5 +1237,5 @@
       "deletedAt": "2026-07-13T11:28:24.158Z"
     }
   ],
-  "updatedAt": "2026-07-14T09:48:10.309Z"
+  "updatedAt": "2026-07-14T09:48:26.624Z"
 }
