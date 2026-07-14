@@ -106,12 +106,12 @@
       "type": "Bagger",
       "group": "fahrzeug",
       "identifier": "",
-      "color": "#fbf418",
+      "color": "#fb7318",
       "note": "",
       "active": true,
       "defect": false,
       "defectNote": "",
-      "updatedAt": "2026-07-13T11:25:26.297Z"
+      "updatedAt": "2026-07-14T07:17:16.216Z"
     },
     {
       "id": "wz0001",
@@ -1198,5 +1198,5 @@
       "deletedAt": "2026-07-13T11:28:24.158Z"
     }
   ],
-  "updatedAt": "2026-07-14T06:57:21.055Z"
+  "updatedAt": "2026-07-14T07:17:16.743Z"
 }
