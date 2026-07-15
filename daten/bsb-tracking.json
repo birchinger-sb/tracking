@@ -774,7 +774,7 @@
       "active": true,
       "defect": false,
       "defectNote": "",
-      "updatedAt": "2026-07-15T04:57:44.015Z"
+      "updatedAt": "2026-07-15T04:57:55.705Z"
     }
   ],
   "bookings": [
@@ -1267,5 +1267,5 @@
       "deletedAt": "2026-07-13T11:28:24.158Z"
     }
   ],
-  "updatedAt": "2026-07-15T04:57:44.529Z"
+  "updatedAt": "2026-07-15T04:57:56.215Z"
 }
