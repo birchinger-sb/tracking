@@ -769,12 +769,12 @@
       "type": "",
       "group": "werkzeug",
       "identifier": "",
-      "color": "#5e6b7c",
+      "color": "#dc2626",
       "note": "",
       "active": true,
       "defect": false,
       "defectNote": "",
-      "updatedAt": "2026-07-15T04:57:00.454Z"
+      "updatedAt": "2026-07-15T04:57:44.015Z"
     }
   ],
   "bookings": [
@@ -1267,5 +1267,5 @@
       "deletedAt": "2026-07-13T11:28:24.158Z"
     }
   ],
-  "updatedAt": "2026-07-15T04:57:01.055Z"
+  "updatedAt": "2026-07-15T04:57:44.529Z"
 }
