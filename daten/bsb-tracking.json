@@ -762,6 +762,19 @@
       "defect": false,
       "defectNote": "",
       "updatedAt": "2026-07-14T09:50:30.562Z"
+    },
+    {
+      "id": "mrllyucmxia3w3",
+      "name": "Hilti Kernbohrgerät Handgeführt",
+      "type": "",
+      "group": "werkzeug",
+      "identifier": "",
+      "color": "#5e6b7c",
+      "note": "",
+      "active": true,
+      "defect": false,
+      "defectNote": "",
+      "updatedAt": "2026-07-15T04:57:00.454Z"
     }
   ],
   "bookings": [
@@ -1254,5 +1267,5 @@
       "deletedAt": "2026-07-13T11:28:24.158Z"
     }
   ],
-  "updatedAt": "2026-07-15T04:54:56.641Z"
+  "updatedAt": "2026-07-15T04:57:01.055Z"
 }
