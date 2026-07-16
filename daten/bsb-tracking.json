@@ -1070,10 +1070,14 @@
       "responsible": "Andreas Laußer",
       "note": "",
       "start": "2026-07-15T07:00",
-      "end": "2026-07-15T17:15",
+      "end": "2026-07-16T07:11",
       "allDay": false,
-      "returnedAt": null,
-      "updatedAt": "2026-07-15T04:58:41.545Z"
+      "returnedAt": "2026-07-16T05:11:17.965Z",
+      "updatedAt": "2026-07-16T05:11:17.965Z",
+      "_s": 1784091600000,
+      "_e": 1784178660000,
+      "_col": 1,
+      "_cols": 3
     },
     {
       "id": "mrn1wt6gshumei",
@@ -1293,5 +1297,5 @@
       "deletedAt": "2026-07-13T11:28:24.158Z"
     }
   ],
-  "updatedAt": "2026-07-16T05:11:06.123Z"
+  "updatedAt": "2026-07-16T05:11:18.412Z"
 }
