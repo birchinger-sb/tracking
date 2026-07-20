@@ -879,10 +879,10 @@
       "responsible": "Stefan Adler",
       "note": "Öl-Service fällig",
       "start": "2026-07-16T15:00",
-      "end": "2026-07-20T08:00",
+      "end": "2026-07-20T08:01",
       "allDay": false,
-      "returnedAt": null,
-      "updatedAt": "2026-07-09T12:56:03.674Z",
+      "returnedAt": "2026-07-20T06:01:55.159Z",
+      "updatedAt": "2026-07-20T06:01:55.159Z",
       "_s": 1784206800000,
       "_e": 1784527200000,
       "_lane": 1
@@ -1299,5 +1299,5 @@
       "deletedAt": "2026-07-13T11:28:24.158Z"
     }
   ],
-  "updatedAt": "2026-07-20T06:01:44.358Z"
+  "updatedAt": "2026-07-20T06:01:55.706Z"
 }
