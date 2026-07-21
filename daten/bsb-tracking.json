@@ -1106,6 +1106,19 @@
       "allDay": false,
       "returnedAt": "2026-07-21T04:54:47.850Z",
       "updatedAt": "2026-07-21T04:54:47.850Z"
+    },
+    {
+      "id": "mrumyetl3i2izj",
+      "assetId": "mrumr3m5pme1o7",
+      "location": "Dr. Theobald-Schrems-Straße",
+      "responsibleId": "mrumwyot43lwpp",
+      "responsible": "Herbert Meinzinger",
+      "note": "",
+      "start": "2026-07-22T08:00",
+      "end": "2026-07-28T10:00",
+      "allDay": false,
+      "returnedAt": null,
+      "updatedAt": "2026-07-21T12:34:35.529Z"
     }
   ],
   "responsibles": [
@@ -1446,5 +1459,5 @@
       "deletedAt": "2026-07-13T11:28:24.158Z"
     }
   ],
-  "updatedAt": "2026-07-21T12:33:28.420Z"
+  "updatedAt": "2026-07-21T12:34:36.059Z"
 }
