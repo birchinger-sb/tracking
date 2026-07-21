@@ -1236,6 +1236,126 @@
       "id": "mrkgxrphf23whp",
       "name": "Industriesauger",
       "updatedAt": "2026-07-14T09:48:26.117Z"
+    },
+    {
+      "id": "mrums22vm1nioq",
+      "name": "Tauchsäge Akku 18V",
+      "updatedAt": "2026-07-21T12:29:39.079Z"
+    },
+    {
+      "id": "mrums22vx7sdyp",
+      "name": "Presslufthammer",
+      "updatedAt": "2026-07-21T12:29:39.079Z"
+    },
+    {
+      "id": "mrums22v8t0bgo",
+      "name": "Stromverteilerkasten",
+      "updatedAt": "2026-07-21T12:29:39.079Z"
+    },
+    {
+      "id": "mrums22vk5qc1e",
+      "name": "Abbruchhammer",
+      "updatedAt": "2026-07-21T12:29:39.079Z"
+    },
+    {
+      "id": "mrums22vsibmwv",
+      "name": "Rüttelplatte",
+      "updatedAt": "2026-07-21T12:29:39.079Z"
+    },
+    {
+      "id": "mrums22v5o4ebv",
+      "name": "Stampfer",
+      "updatedAt": "2026-07-21T12:29:39.079Z"
+    },
+    {
+      "id": "mrums22vw38ibm",
+      "name": "Luftentfeuchter",
+      "updatedAt": "2026-07-21T12:29:39.079Z"
+    },
+    {
+      "id": "mrums22vjapwr0",
+      "name": "Stromverteiler",
+      "updatedAt": "2026-07-21T12:29:39.079Z"
+    },
+    {
+      "id": "mrums22vaiyq4z",
+      "name": "Heizlüfter",
+      "updatedAt": "2026-07-21T12:29:39.079Z"
+    },
+    {
+      "id": "mrums22vfkh81e",
+      "name": "Hochdruckreiniger",
+      "updatedAt": "2026-07-21T12:29:39.079Z"
+    },
+    {
+      "id": "mrums22v5ih6h8",
+      "name": "Naß-/Trockensauger",
+      "updatedAt": "2026-07-21T12:29:39.079Z"
+    },
+    {
+      "id": "mrums22v40jhc9",
+      "name": "Rührgerät",
+      "updatedAt": "2026-07-21T12:29:39.079Z"
+    },
+    {
+      "id": "mrums22vdpm6re",
+      "name": "Tischkreissäge",
+      "updatedAt": "2026-07-21T12:29:39.079Z"
+    },
+    {
+      "id": "mrums22vp6ziqx",
+      "name": "Thermoschneider",
+      "updatedAt": "2026-07-21T12:29:39.079Z"
+    },
+    {
+      "id": "mrums22vgjai6s",
+      "name": "Baustrahler",
+      "updatedAt": "2026-07-21T12:29:39.079Z"
+    },
+    {
+      "id": "mrums22vmk6umx",
+      "name": "Kapp- u. Gehrungssäge",
+      "updatedAt": "2026-07-21T12:29:39.079Z"
+    },
+    {
+      "id": "mrums22v07w9ep",
+      "name": "Druckluftschlauchtrommel",
+      "updatedAt": "2026-07-21T12:29:39.079Z"
+    },
+    {
+      "id": "mrums22v73b05a",
+      "name": "Tauchpumpe",
+      "updatedAt": "2026-07-21T12:29:39.079Z"
+    },
+    {
+      "id": "mrums22vgux1lo",
+      "name": "MultiMaster",
+      "updatedAt": "2026-07-21T12:29:39.079Z"
+    },
+    {
+      "id": "mrums22vh2zo4m",
+      "name": "Wasserpumpe",
+      "updatedAt": "2026-07-21T12:29:39.079Z"
+    },
+    {
+      "id": "mrums22vo05bye",
+      "name": "Druckluftkompressor",
+      "updatedAt": "2026-07-21T12:29:39.079Z"
+    },
+    {
+      "id": "mrums22v2w477m",
+      "name": "Heißluftföhn",
+      "updatedAt": "2026-07-21T12:29:39.079Z"
+    },
+    {
+      "id": "mrums22vkbi0he",
+      "name": "Akku-Schlagschrauber",
+      "updatedAt": "2026-07-21T12:29:39.079Z"
+    },
+    {
+      "id": "mrums22vl6m8o7",
+      "name": "Stemmhammer",
+      "updatedAt": "2026-07-21T12:29:39.079Z"
     }
   ],
   "tombstones": [
@@ -1312,5 +1432,5 @@
       "deletedAt": "2026-07-13T11:28:24.158Z"
     }
   ],
-  "updatedAt": "2026-07-21T12:28:54.905Z"
+  "updatedAt": "2026-07-21T12:29:39.706Z"
 }
