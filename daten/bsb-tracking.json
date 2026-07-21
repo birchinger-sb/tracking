@@ -927,13 +927,13 @@
       "responsible": "Thomas Blomenhofer",
       "note": "wurde von TB für Donaustauf reserviert für Hugo",
       "start": "2026-07-13",
-      "end": "2026-07-17",
+      "end": "2026-07-21",
       "allDay": true,
-      "returnedAt": null,
-      "updatedAt": "2026-07-09T12:56:42.168Z",
+      "returnedAt": "2026-07-21T04:55:03.536Z",
+      "updatedAt": "2026-07-21T04:55:03.536Z",
       "_s": 1783893600000,
-      "_e": 1784325600000,
-      "_lane": 2
+      "_e": 1784671200000,
+      "_lane": 3
     },
     {
       "id": "mrj12gzjtbep0k",
@@ -1299,5 +1299,5 @@
       "deletedAt": "2026-07-13T11:28:24.158Z"
     }
   ],
-  "updatedAt": "2026-07-21T04:54:48.414Z"
+  "updatedAt": "2026-07-21T04:55:04.105Z"
 }
