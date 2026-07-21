@@ -1356,6 +1356,11 @@
       "id": "mrums22vl6m8o7",
       "name": "Stemmhammer",
       "updatedAt": "2026-07-21T12:29:39.079Z"
+    },
+    {
+      "id": "mrumse1d48w2im",
+      "name": "Wandfräse",
+      "updatedAt": "2026-07-21T12:29:54.577Z"
     }
   ],
   "tombstones": [
@@ -1432,5 +1437,5 @@
       "deletedAt": "2026-07-13T11:28:24.158Z"
     }
   ],
-  "updatedAt": "2026-07-21T12:29:39.706Z"
+  "updatedAt": "2026-07-21T12:29:54.964Z"
 }
