@@ -1189,6 +1189,15 @@
       "email": "",
       "note": "",
       "updatedAt": "2026-07-14T09:44:02.234Z"
+    },
+    {
+      "id": "mrumwyot43lwpp",
+      "name": "Herbert Meinzinger",
+      "role": "",
+      "phone": "",
+      "email": "",
+      "note": "",
+      "updatedAt": "2026-07-21T12:33:27.965Z"
     }
   ],
   "categories": [
@@ -1437,5 +1446,5 @@
       "deletedAt": "2026-07-13T11:28:24.158Z"
     }
   ],
-  "updatedAt": "2026-07-21T12:30:26.914Z"
+  "updatedAt": "2026-07-21T12:33:28.420Z"
 }
