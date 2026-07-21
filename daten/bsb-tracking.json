@@ -911,13 +911,13 @@
       "responsible": "Thomas Blomenhofer",
       "note": "",
       "start": "2026-07-13",
-      "end": "2026-07-17",
+      "end": "2026-07-21",
       "allDay": true,
-      "returnedAt": null,
-      "updatedAt": "2026-07-13T09:39:26.314Z",
+      "returnedAt": "2026-07-21T04:55:20.132Z",
+      "updatedAt": "2026-07-21T04:55:20.132Z",
       "_s": 1783893600000,
-      "_e": 1784325600000,
-      "_lane": 3
+      "_e": 1784671200000,
+      "_lane": 2
     },
     {
       "id": "mrdibm7tkwpn00",
@@ -1299,5 +1299,5 @@
       "deletedAt": "2026-07-13T11:28:24.158Z"
     }
   ],
-  "updatedAt": "2026-07-21T04:55:12.396Z"
+  "updatedAt": "2026-07-21T04:55:20.870Z"
 }
