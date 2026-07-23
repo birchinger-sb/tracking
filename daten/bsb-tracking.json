@@ -30,13 +30,14 @@
       "id": "mqi0oeavv5emr6",
       "name": "HILTI Kernbohrgerät Ständergeführt",
       "type": "Werkzeug",
+      "group": "werkzeug",
       "identifier": "",
       "color": "#dc2626",
       "note": "",
       "active": true,
       "defect": false,
       "defectNote": "",
-      "updatedAt": "2026-06-18T10:04:27.165Z"
+      "updatedAt": "2026-07-23T04:50:08.611Z"
     },
     {
       "id": "mqi44szht7rzce",
@@ -1542,5 +1543,5 @@
       "deletedAt": "2026-07-13T11:28:24.158Z"
     }
   ],
-  "updatedAt": "2026-07-23T04:49:27.802Z"
+  "updatedAt": "2026-07-23T04:50:09.097Z"
 }
