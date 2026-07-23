@@ -1148,6 +1148,22 @@
       "_s": 1784782800000,
       "_e": 1785423600000,
       "_lane": 1
+    },
+    {
+      "id": "mrx0v19pan1exr",
+      "assetId": "mrw5bjy3pz1cor",
+      "location": "divers",
+      "responsibleId": "mrx0u5jki1mwja",
+      "responsible": "Jaro Smerda",
+      "note": "",
+      "start": "2026-07-23T07:00",
+      "end": "2026-07-24T17:00",
+      "allDay": false,
+      "returnedAt": null,
+      "updatedAt": "2026-07-23T04:39:24.973Z",
+      "_s": 1784782800000,
+      "_e": 1784905200000,
+      "_lane": 7
     }
   ],
   "responsibles": [
@@ -1497,5 +1513,5 @@
       "deletedAt": "2026-07-13T11:28:24.158Z"
     }
   ],
-  "updatedAt": "2026-07-23T04:38:44.302Z"
+  "updatedAt": "2026-07-23T04:39:25.441Z"
 }
