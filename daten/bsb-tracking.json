@@ -801,6 +801,19 @@
       "defect": false,
       "defectNote": "",
       "updatedAt": "2026-07-22T13:58:36.927Z"
+    },
+    {
+      "id": "mrx0zhf0iagmne",
+      "name": "Bomag BT 60",
+      "type": "Stampfer",
+      "group": "werkzeug",
+      "identifier": "ST 0002",
+      "color": "#4f8a3f",
+      "note": "",
+      "active": true,
+      "defect": false,
+      "defectNote": "",
+      "updatedAt": "2026-07-23T04:42:52.524Z"
     }
   ],
   "bookings": [
@@ -1513,5 +1526,5 @@
       "deletedAt": "2026-07-13T11:28:24.158Z"
     }
   ],
-  "updatedAt": "2026-07-23T04:39:25.441Z"
+  "updatedAt": "2026-07-23T04:42:53.032Z"
 }
