@@ -1240,6 +1240,15 @@
       "email": "",
       "note": "",
       "updatedAt": "2026-07-21T12:33:27.965Z"
+    },
+    {
+      "id": "mrx0u5jki1mwja",
+      "name": "Jaro Smerda",
+      "role": "",
+      "phone": "",
+      "email": "",
+      "note": "",
+      "updatedAt": "2026-07-23T04:38:43.856Z"
     }
   ],
   "categories": [
@@ -1488,5 +1497,5 @@
       "deletedAt": "2026-07-13T11:28:24.158Z"
     }
   ],
-  "updatedAt": "2026-07-23T04:37:49.441Z"
+  "updatedAt": "2026-07-23T04:38:44.302Z"
 }
