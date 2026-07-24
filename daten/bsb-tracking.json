@@ -815,6 +815,19 @@
       "defect": false,
       "defectNote": "",
       "updatedAt": "2026-07-23T04:42:52.524Z"
+    },
+    {
+      "id": "mryh52du89xvck",
+      "name": "Hilti Wassermanagementsystem",
+      "type": "",
+      "group": "fahrzeug",
+      "identifier": "",
+      "color": "#e90c0c",
+      "note": "",
+      "active": true,
+      "defect": false,
+      "defectNote": "",
+      "updatedAt": "2026-07-24T05:02:53.010Z"
     }
   ],
   "bookings": [
@@ -1578,5 +1591,5 @@
       "deletedAt": "2026-07-13T11:28:24.158Z"
     }
   ],
-  "updatedAt": "2026-07-24T05:02:16.563Z"
+  "updatedAt": "2026-07-24T05:02:53.513Z"
 }
