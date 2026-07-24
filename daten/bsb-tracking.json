@@ -848,12 +848,12 @@
       "type": "Sonstiges",
       "group": "werkzeug",
       "identifier": "AG 0001",
-      "color": "#4f8a3f",
+      "color": "#dc2626",
       "note": "",
       "active": true,
       "defect": false,
       "defectNote": "",
-      "updatedAt": "2026-07-24T05:37:43.612Z"
+      "updatedAt": "2026-07-24T05:37:56.108Z"
     }
   ],
   "bookings": [
@@ -1643,5 +1643,5 @@
       "deletedAt": "2026-07-13T11:28:24.158Z"
     }
   ],
-  "updatedAt": "2026-07-24T05:37:44.108Z"
+  "updatedAt": "2026-07-24T05:37:56.568Z"
 }
