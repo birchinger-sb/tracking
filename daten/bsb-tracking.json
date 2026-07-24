@@ -844,16 +844,16 @@
     },
     {
       "id": "mryidvi46uzuqg",
-      "name": "Hilti Akku-Auspressgerät Hilit Hit",
+      "name": "Hilti Akku-Auspressgerät Hilit Hit HDE 500-A22",
       "type": "Sonstiges",
       "group": "werkzeug",
       "identifier": "AG 0001",
       "color": "#dc2626",
-      "note": "",
+      "note": "SN.: 099710",
       "active": true,
       "defect": false,
       "defectNote": "",
-      "updatedAt": "2026-07-24T05:37:56.108Z"
+      "updatedAt": "2026-07-24T06:14:12.113Z"
     }
   ],
   "bookings": [
@@ -1643,5 +1643,5 @@
       "deletedAt": "2026-07-13T11:28:24.158Z"
     }
   ],
-  "updatedAt": "2026-07-24T05:38:23.725Z"
+  "updatedAt": "2026-07-24T06:14:12.603Z"
 }
