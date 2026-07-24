@@ -1536,6 +1536,11 @@
       "id": "mryhc2ar3zd9kj",
       "name": "Betonschleifer",
       "updatedAt": "2026-07-24T05:08:19.491Z"
+    },
+    {
+      "id": "mryhcd1nvk1lde",
+      "name": "Auspressgerät",
+      "updatedAt": "2026-07-24T05:08:33.419Z"
     }
   ],
   "tombstones": [
@@ -1612,5 +1617,5 @@
       "deletedAt": "2026-07-13T11:28:24.158Z"
     }
   ],
-  "updatedAt": "2026-07-24T05:08:19.883Z"
+  "updatedAt": "2026-07-24T05:08:33.978Z"
 }
