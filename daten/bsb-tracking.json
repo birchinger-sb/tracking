@@ -819,7 +819,7 @@
     {
       "id": "mryh52du89xvck",
       "name": "Hilti Wassermanagementsystem",
-      "type": "Sonstiges",
+      "type": "Druckluftkompressor",
       "group": "werkzeug",
       "identifier": "",
       "color": "#dc2626",
@@ -827,7 +827,7 @@
       "active": true,
       "defect": false,
       "defectNote": "",
-      "updatedAt": "2026-07-24T05:36:17.703Z"
+      "updatedAt": "2026-07-24T05:38:13.349Z"
     },
     {
       "id": "mryhd7bzznmqcc",
@@ -1643,5 +1643,5 @@
       "deletedAt": "2026-07-13T11:28:24.158Z"
     }
   ],
-  "updatedAt": "2026-07-24T05:37:56.568Z"
+  "updatedAt": "2026-07-24T05:38:13.830Z"
 }
