@@ -157,14 +157,14 @@
       "id": "wz0004",
       "name": "Hilti TE 1000-AVR",
       "type": "Abbruchhammer",
+      "group": "werkzeug",
       "identifier": "",
-      "color": "#7E57C2",
+      "color": "#dc2626",
       "note": "S/N: 220376 · Beschaffung: 24.11.2022 · Zubehör: 2 x Spitzmeissel, 2 x Flachmeisseö, 1 x Spatenmeissel · Lieferant: Hilti · Beschaffung für Hecht – Regendorf",
       "active": true,
       "defect": false,
       "defectNote": "",
-      "group": "werkzeug",
-      "updatedAt": "2026-06-18T14:25:01.316Z"
+      "updatedAt": "2026-07-24T05:05:22.735Z"
     },
     {
       "id": "wz0005",
@@ -1607,5 +1607,5 @@
       "deletedAt": "2026-07-13T11:28:24.158Z"
     }
   ],
-  "updatedAt": "2026-07-24T05:05:08.130Z"
+  "updatedAt": "2026-07-24T05:05:23.113Z"
 }
