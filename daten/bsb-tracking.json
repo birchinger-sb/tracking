@@ -828,6 +828,19 @@
       "defect": false,
       "defectNote": "",
       "updatedAt": "2026-07-24T05:05:32.352Z"
+    },
+    {
+      "id": "mryhd7bzznmqcc",
+      "name": "Hilti Betonschleifer DGH 130 01",
+      "type": "Betonschleifer",
+      "group": "werkzeug",
+      "identifier": "BS 0001",
+      "color": "#c25587",
+      "note": "",
+      "active": true,
+      "defect": false,
+      "defectNote": "",
+      "updatedAt": "2026-07-24T05:09:12.671Z"
     }
   ],
   "bookings": [
@@ -1617,5 +1630,5 @@
       "deletedAt": "2026-07-13T11:28:24.158Z"
     }
   ],
-  "updatedAt": "2026-07-24T05:08:33.978Z"
+  "updatedAt": "2026-07-24T05:09:13.161Z"
 }
