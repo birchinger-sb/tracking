@@ -496,13 +496,13 @@
       "name": "HM Müller Modell L3313",
       "type": "Baustrahler",
       "group": "werkzeug",
-      "identifier": "BS 0002",
+      "identifier": "BS 0001",
       "color": "#2d9a8b",
       "note": "Beschaffung: 01.11.2024 · Lieferant: Probst",
       "active": true,
       "defect": false,
       "defectNote": "",
-      "updatedAt": "2026-07-22T13:58:26.038Z"
+      "updatedAt": "2026-07-24T05:22:50.766Z"
     },
     {
       "id": "wz0031",
@@ -1630,5 +1630,5 @@
       "deletedAt": "2026-07-13T11:28:24.158Z"
     }
   ],
-  "updatedAt": "2026-07-24T05:09:44.194Z"
+  "updatedAt": "2026-07-24T05:22:51.399Z"
 }
