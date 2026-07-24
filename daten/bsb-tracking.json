@@ -835,12 +835,12 @@
       "type": "Betonschleifer",
       "group": "werkzeug",
       "identifier": "BS 0005",
-      "color": "#c25587",
+      "color": "#dc2626",
       "note": "",
       "active": true,
       "defect": false,
       "defectNote": "",
-      "updatedAt": "2026-07-24T05:35:08.701Z"
+      "updatedAt": "2026-07-24T05:36:56.694Z"
     }
   ],
   "bookings": [
@@ -1630,5 +1630,5 @@
       "deletedAt": "2026-07-13T11:28:24.158Z"
     }
   ],
-  "updatedAt": "2026-07-24T05:36:18.168Z"
+  "updatedAt": "2026-07-24T05:36:57.229Z"
 }
