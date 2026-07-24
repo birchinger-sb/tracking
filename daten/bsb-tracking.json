@@ -782,13 +782,13 @@
       "name": "Storch Duo-Wand-Fräse",
       "type": "Wandfräse",
       "group": "werkzeug",
-      "identifier": "WF0001",
+      "identifier": "WF 0001",
       "color": "#3e6fb0",
       "note": "",
       "active": true,
       "defect": false,
       "defectNote": "",
-      "updatedAt": "2026-07-21T12:30:26.080Z"
+      "updatedAt": "2026-07-24T05:01:01.414Z"
     },
     {
       "id": "mrw5bjy3pz1cor",
@@ -1562,5 +1562,5 @@
       "deletedAt": "2026-07-13T11:28:24.158Z"
     }
   ],
-  "updatedAt": "2026-07-24T04:59:13.891Z"
+  "updatedAt": "2026-07-24T05:01:01.931Z"
 }
