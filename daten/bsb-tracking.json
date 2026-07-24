@@ -1242,6 +1242,22 @@
       "_s": 1784865600000,
       "_e": 1785124800000,
       "_lane": 1
+    },
+    {
+      "id": "mryh5woqii5d1a",
+      "assetId": "mryh52du89xvck",
+      "location": "Prüfeninger Straße",
+      "responsibleId": "mqjec5589bumxj",
+      "responsible": "Andreas Laußer",
+      "note": "",
+      "start": "2026-07-24T06:00",
+      "end": "2026-07-27T06:00",
+      "allDay": false,
+      "returnedAt": null,
+      "updatedAt": "2026-07-24T05:03:32.282Z",
+      "_s": 1784865600000,
+      "_e": 1785124800000,
+      "_lane": 2
     }
   ],
   "responsibles": [
@@ -1591,5 +1607,5 @@
       "deletedAt": "2026-07-13T11:28:24.158Z"
     }
   ],
-  "updatedAt": "2026-07-24T05:02:53.513Z"
+  "updatedAt": "2026-07-24T05:03:32.774Z"
 }
