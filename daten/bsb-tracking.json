@@ -1531,6 +1531,11 @@
       "id": "mrumse1d48w2im",
       "name": "Wandfräse",
       "updatedAt": "2026-07-21T12:29:54.577Z"
+    },
+    {
+      "id": "mryhc2ar3zd9kj",
+      "name": "Betonschleifer",
+      "updatedAt": "2026-07-24T05:08:19.491Z"
     }
   ],
   "tombstones": [
@@ -1607,5 +1612,5 @@
       "deletedAt": "2026-07-13T11:28:24.158Z"
     }
   ],
-  "updatedAt": "2026-07-24T05:05:32.746Z"
+  "updatedAt": "2026-07-24T05:08:19.883Z"
 }
