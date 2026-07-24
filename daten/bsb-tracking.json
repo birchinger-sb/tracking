@@ -841,6 +841,19 @@
       "defect": false,
       "defectNote": "",
       "updatedAt": "2026-07-24T05:36:56.694Z"
+    },
+    {
+      "id": "mryidvi46uzuqg",
+      "name": "Hilti Akku-Auspressgerät Hilit Hit",
+      "type": "Sonstiges",
+      "group": "werkzeug",
+      "identifier": "AG 0001",
+      "color": "#4f8a3f",
+      "note": "",
+      "active": true,
+      "defect": false,
+      "defectNote": "",
+      "updatedAt": "2026-07-24T05:37:43.612Z"
     }
   ],
   "bookings": [
@@ -1630,5 +1643,5 @@
       "deletedAt": "2026-07-13T11:28:24.158Z"
     }
   ],
-  "updatedAt": "2026-07-24T05:36:57.229Z"
+  "updatedAt": "2026-07-24T05:37:44.108Z"
 }
