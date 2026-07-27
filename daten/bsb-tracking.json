@@ -1284,6 +1284,22 @@
       "_s": 1784865600000,
       "_e": 1785128100000,
       "_lane": 8
+    },
+    {
+      "id": "ms2r8g0mte8anb",
+      "assetId": "mryhd7bzznmqcc",
+      "location": "Dr. Theobald Schremms Straße",
+      "responsibleId": "mrumwyot43lwpp",
+      "responsible": "Herbert Meinzinger",
+      "note": "",
+      "start": "2026-07-27T08:00",
+      "end": "2026-07-30T17:30",
+      "allDay": false,
+      "returnedAt": null,
+      "updatedAt": "2026-07-27T04:56:31.510Z",
+      "_s": 1785132000000,
+      "_e": 1785425400000,
+      "_lane": 7
     }
   ],
   "responsibles": [
@@ -1643,5 +1659,5 @@
       "deletedAt": "2026-07-13T11:28:24.158Z"
     }
   ],
-  "updatedAt": "2026-07-27T04:55:36.052Z"
+  "updatedAt": "2026-07-27T04:56:32.209Z"
 }
