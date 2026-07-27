@@ -1442,6 +1442,15 @@
       "email": "",
       "note": "",
       "updatedAt": "2026-07-27T06:07:42.352Z"
+    },
+    {
+      "id": "ms2uahzle9xhfa",
+      "name": "Thomas Gürster",
+      "role": "Vorarbeiter",
+      "phone": "",
+      "email": "",
+      "note": "",
+      "updatedAt": "2026-07-27T06:22:06.225Z"
     }
   ],
   "categories": [
@@ -1700,5 +1709,5 @@
       "deletedAt": "2026-07-13T11:28:24.158Z"
     }
   ],
-  "updatedAt": "2026-07-27T06:11:37.702Z"
+  "updatedAt": "2026-07-27T06:22:06.735Z"
 }
