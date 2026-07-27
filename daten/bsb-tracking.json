@@ -1633,6 +1633,11 @@
       "id": "mryhcd1nvk1lde",
       "name": "Auspressgerät",
       "updatedAt": "2026-07-24T05:08:33.419Z"
+    },
+    {
+      "id": "ms33mwd315yudf",
+      "name": "Durchlaufmischer",
+      "updatedAt": "2026-07-27T10:43:41.271Z"
     }
   ],
   "tombstones": [
@@ -1709,5 +1714,5 @@
       "deletedAt": "2026-07-13T11:28:24.158Z"
     }
   ],
-  "updatedAt": "2026-07-27T06:22:06.735Z"
+  "updatedAt": "2026-07-27T10:43:41.785Z"
 }
