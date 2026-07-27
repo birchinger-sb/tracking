@@ -1321,14 +1321,14 @@
       "id": "ms2trhtmbrjbdu",
       "assetId": "wz0001",
       "location": "Donaustauf",
-      "responsibleId": "mqjec5589bumxj",
-      "responsible": "Andreas Laußer",
+      "responsibleId": "ms2trzf4dx5srl",
+      "responsible": "Fidan Istefri",
       "note": "",
       "start": "2026-07-27T08:00",
       "end": "2026-08-03T06:00",
       "allDay": false,
       "returnedAt": null,
-      "updatedAt": "2026-07-27T06:07:19.546Z",
+      "updatedAt": "2026-07-27T06:08:29.015Z",
       "_s": 1785132000000,
       "_e": 1785729600000,
       "_lane": 10
@@ -1700,5 +1700,5 @@
       "deletedAt": "2026-07-13T11:28:24.158Z"
     }
   ],
-  "updatedAt": "2026-07-27T06:07:42.737Z"
+  "updatedAt": "2026-07-27T06:08:29.562Z"
 }
