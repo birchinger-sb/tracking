@@ -1433,6 +1433,15 @@
       "email": "",
       "note": "",
       "updatedAt": "2026-07-23T04:38:43.856Z"
+    },
+    {
+      "id": "ms2trzf4dx5srl",
+      "name": "Fidan Istefri",
+      "role": "",
+      "phone": "",
+      "email": "",
+      "note": "",
+      "updatedAt": "2026-07-27T06:07:42.352Z"
     }
   ],
   "categories": [
@@ -1691,5 +1700,5 @@
       "deletedAt": "2026-07-13T11:28:24.158Z"
     }
   ],
-  "updatedAt": "2026-07-27T06:07:20.045Z"
+  "updatedAt": "2026-07-27T06:07:42.737Z"
 }
