@@ -118,14 +118,14 @@
       "id": "wz0001",
       "name": "FESTOOL TCS 55 KEB",
       "type": "Tauchsäge Akku 18V",
-      "identifier": "7701",
-      "color": "#3E6FB0",
+      "group": "werkzeug",
+      "identifier": "TS 0002",
+      "color": "#3e6fb0",
       "note": "S/N: 40416694 · Beschaffung: 12.07.2022 · Zubehör: 2 x 18V Akku, 1 x Schnellladegerät, 1 x Führungsschiene FS 1400/2 · Lieferant: Markmiller · zur Verwendung Zimmerer",
       "active": true,
       "defect": false,
       "defectNote": "",
-      "group": "werkzeug",
-      "updatedAt": "2026-06-18T14:25:01.316Z"
+      "updatedAt": "2026-07-27T06:11:37.313Z"
     },
     {
       "id": "wz0002",
@@ -1700,5 +1700,5 @@
       "deletedAt": "2026-07-13T11:28:24.158Z"
     }
   ],
-  "updatedAt": "2026-07-27T06:08:29.562Z"
+  "updatedAt": "2026-07-27T06:11:37.702Z"
 }
