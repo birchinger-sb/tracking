@@ -864,9 +864,9 @@
       "color": "#b07a24",
       "note": "SN: 4010401004, Bj.: 2010; Hersteller Knauf PFT GmbH & Co. KG; letzte Wartung KW 31/2026",
       "active": true,
-      "defect": false,
-      "defectNote": "",
-      "updatedAt": "2026-07-27T10:45:57.603Z"
+      "defect": true,
+      "defectNote": "Wartung bei Rygol KW 31/2026",
+      "updatedAt": "2026-07-27T10:46:36.432Z"
     }
   ],
   "bookings": [
@@ -1727,5 +1727,5 @@
       "deletedAt": "2026-07-13T11:28:24.158Z"
     }
   ],
-  "updatedAt": "2026-07-27T10:45:58.228Z"
+  "updatedAt": "2026-07-27T10:46:37.066Z"
 }
