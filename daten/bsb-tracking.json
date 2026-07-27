@@ -862,11 +862,11 @@
       "group": "werkzeug",
       "identifier": "DM 0001",
       "color": "#b07a24",
-      "note": "SN: 4010401004, Bj.: 2010; Hersteller Knauf PFT GmbH & Co. KG; letzte Wartung KW 31/2026",
+      "note": "SN: 4010401004, Bj.: 2010; Hersteller Knauf PFT GmbH & Co. KG; letzte Wartung KW 31/2026 bei Rygol",
       "active": true,
       "defect": true,
       "defectNote": "Wartung bei Rygol KW 31/2026",
-      "updatedAt": "2026-07-27T10:46:36.432Z"
+      "updatedAt": "2026-07-27T10:47:12.935Z"
     }
   ],
   "bookings": [
@@ -1727,5 +1727,5 @@
       "deletedAt": "2026-07-13T11:28:24.158Z"
     }
   ],
-  "updatedAt": "2026-07-27T10:46:37.066Z"
+  "updatedAt": "2026-07-27T10:47:13.574Z"
 }
