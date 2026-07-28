@@ -875,11 +875,11 @@
       "group": "werkzeug",
       "identifier": "RP 0004",
       "color": "#f9e401",
-      "note": "",
+      "note": "SN.: 1224422; Bj.: 1999",
       "active": true,
       "defect": false,
       "defectNote": "",
-      "updatedAt": "2026-07-28T05:24:54.375Z"
+      "updatedAt": "2026-07-28T05:25:33.316Z"
     }
   ],
   "bookings": [
@@ -1740,5 +1740,5 @@
       "deletedAt": "2026-07-13T11:28:24.158Z"
     }
   ],
-  "updatedAt": "2026-07-28T05:24:54.845Z"
+  "updatedAt": "2026-07-28T05:25:33.930Z"
 }
