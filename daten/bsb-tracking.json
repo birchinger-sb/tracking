@@ -1258,13 +1258,13 @@
       "responsible": "Thomas Blomenhofer",
       "note": "Transport Bagger",
       "start": "2026-07-24T07:00",
-      "end": "2026-07-27T17:30",
+      "end": "2026-07-28T06:35",
       "allDay": false,
-      "returnedAt": null,
-      "updatedAt": "2026-07-23T09:56:02.195Z",
+      "returnedAt": "2026-07-28T04:35:30.871Z",
+      "updatedAt": "2026-07-28T04:35:30.871Z",
       "_s": 1784869200000,
-      "_e": 1785166200000,
-      "_lane": 2
+      "_e": 1785213300000,
+      "_lane": 9
     },
     {
       "id": "mryh49ulzzij5a",
@@ -1727,5 +1727,5 @@
       "deletedAt": "2026-07-13T11:28:24.158Z"
     }
   ],
-  "updatedAt": "2026-07-28T03:55:32.196Z"
+  "updatedAt": "2026-07-28T04:35:31.321Z"
 }
