@@ -81,13 +81,14 @@
       "id": "mqjcwupni1dxxe",
       "name": "Luftentfeuchter (grau Kauf Blomenhofer)",
       "type": "Sonstiges",
+      "group": "werkzeug",
       "identifier": "",
       "color": "#5e6b7c",
       "note": "",
       "active": true,
       "defect": false,
       "defectNote": "",
-      "updatedAt": "2026-06-18T10:28:16.379Z"
+      "updatedAt": "2026-07-29T10:43:57.359Z"
     },
     {
       "id": "mqje6k1iidn4s1",
@@ -1756,5 +1757,5 @@
       "deletedAt": "2026-07-13T11:28:24.158Z"
     }
   ],
-  "updatedAt": "2026-07-29T03:51:22.372Z"
+  "updatedAt": "2026-07-29T10:43:58.443Z"
 }
