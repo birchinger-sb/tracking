@@ -923,7 +923,7 @@
     },
     {
       "id": "ms5ysyasf29rbz",
-      "name": "Pritschenwagen / Trimpl",
+      "name": "Mercedes Sprinter / Trimpl",
       "type": "Pritschenwagen",
       "group": "fahrzeug",
       "identifier": "R-BS 1054",
@@ -932,7 +932,7 @@
       "active": true,
       "defect": false,
       "defectNote": "",
-      "updatedAt": "2026-07-29T10:51:44.164Z"
+      "updatedAt": "2026-07-29T10:54:30.137Z"
     }
   ],
   "bookings": [
@@ -1809,5 +1809,5 @@
       "deletedAt": "2026-07-13T11:28:24.158Z"
     }
   ],
-  "updatedAt": "2026-07-29T10:54:20.155Z"
+  "updatedAt": "2026-07-29T10:54:31.249Z"
 }
