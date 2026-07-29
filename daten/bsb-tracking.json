@@ -907,6 +907,19 @@
       "defect": false,
       "defectNote": "",
       "updatedAt": "2026-07-29T10:47:29.876Z"
+    },
+    {
+      "id": "ms5yqxiasjcqdw",
+      "name": "Pritschenwagen / Laußer",
+      "type": "Pritschenwagen",
+      "group": "fahrzeug",
+      "identifier": "R-BS 1046",
+      "color": "#050505",
+      "note": "neue Bremsen KW 33/2026",
+      "active": true,
+      "defect": false,
+      "defectNote": "",
+      "updatedAt": "2026-07-29T10:50:09.826Z"
     }
   ],
   "bookings": [
@@ -1783,5 +1796,5 @@
       "deletedAt": "2026-07-13T11:28:24.158Z"
     }
   ],
-  "updatedAt": "2026-07-29T10:47:52.029Z"
+  "updatedAt": "2026-07-29T10:50:12.514Z"
 }
