@@ -897,7 +897,7 @@
     },
     {
       "id": "ms5ym5f3uol4i5",
-      "name": "Pritschenwagen / Schinabeck D.",
+      "name": "Mercedes Sprinter / Schinabeck D.",
       "type": "Pritschenwagen",
       "group": "fahrzeug",
       "identifier": "R-BS 1041",
@@ -906,7 +906,7 @@
       "active": true,
       "defect": false,
       "defectNote": "",
-      "updatedAt": "2026-07-29T10:50:32.968Z"
+      "updatedAt": "2026-07-29T10:54:17.842Z"
     },
     {
       "id": "ms5yqxiasjcqdw",
@@ -1809,5 +1809,5 @@
       "deletedAt": "2026-07-13T11:28:24.158Z"
     }
   ],
-  "updatedAt": "2026-07-29T10:54:06.405Z"
+  "updatedAt": "2026-07-29T10:54:20.155Z"
 }
