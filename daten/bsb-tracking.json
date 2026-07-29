@@ -888,12 +888,12 @@
       "type": "",
       "group": "fahrzeug",
       "identifier": "R-BS 1039",
-      "color": "#a8463c",
+      "color": "#050505",
       "note": "",
-      "active": true,
+      "active": false,
       "defect": false,
       "defectNote": "",
-      "updatedAt": "2026-07-29T10:44:27.169Z"
+      "updatedAt": "2026-07-29T10:45:11.687Z"
     }
   ],
   "bookings": [
@@ -1770,5 +1770,5 @@
       "deletedAt": "2026-07-13T11:28:24.158Z"
     }
   ],
-  "updatedAt": "2026-07-29T10:44:58.322Z"
+  "updatedAt": "2026-07-29T10:45:12.831Z"
 }
