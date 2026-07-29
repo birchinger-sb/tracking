@@ -1559,6 +1559,15 @@
       "email": "",
       "note": "",
       "updatedAt": "2026-07-27T06:22:06.225Z"
+    },
+    {
+      "id": "ms61bt9pfi5sms",
+      "name": "Bernhard Eigenstetter",
+      "role": "",
+      "phone": "",
+      "email": "",
+      "note": "",
+      "updatedAt": "2026-07-29T12:02:23.341Z"
     }
   ],
   "categories": [
@@ -1822,5 +1831,5 @@
       "deletedAt": "2026-07-13T11:28:24.158Z"
     }
   ],
-  "updatedAt": "2026-07-29T10:55:49.910Z"
+  "updatedAt": "2026-07-29T12:02:24.760Z"
 }
