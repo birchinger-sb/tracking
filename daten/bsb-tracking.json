@@ -910,7 +910,7 @@
     },
     {
       "id": "ms5yqxiasjcqdw",
-      "name": "Pritschenwagen / Laußer",
+      "name": "Mercedes Sprinter / Laußer",
       "type": "Pritschenwagen",
       "group": "fahrzeug",
       "identifier": "R-BS 1046",
@@ -919,7 +919,7 @@
       "active": true,
       "defect": false,
       "defectNote": "",
-      "updatedAt": "2026-07-29T10:50:09.826Z"
+      "updatedAt": "2026-07-29T10:53:47.730Z"
     },
     {
       "id": "ms5ysyasf29rbz",
@@ -1809,5 +1809,5 @@
       "deletedAt": "2026-07-13T11:28:24.158Z"
     }
   ],
-  "updatedAt": "2026-07-29T10:53:35.592Z"
+  "updatedAt": "2026-07-29T10:53:48.878Z"
 }
