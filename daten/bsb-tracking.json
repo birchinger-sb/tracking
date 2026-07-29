@@ -890,10 +890,10 @@
       "identifier": "R-BS 1039",
       "color": "#050505",
       "note": "KW 33/2026 TÜV bei Semmelmann",
-      "active": false,
+      "active": true,
       "defect": false,
       "defectNote": "",
-      "updatedAt": "2026-07-29T10:45:53.527Z"
+      "updatedAt": "2026-07-29T10:47:49.776Z"
     },
     {
       "id": "ms5ym5f3uol4i5",
@@ -1783,5 +1783,5 @@
       "deletedAt": "2026-07-13T11:28:24.158Z"
     }
   ],
-  "updatedAt": "2026-07-29T10:47:31.352Z"
+  "updatedAt": "2026-07-29T10:47:52.029Z"
 }
