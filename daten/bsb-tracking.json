@@ -933,6 +933,19 @@
       "defect": false,
       "defectNote": "",
       "updatedAt": "2026-07-29T10:54:30.137Z"
+    },
+    {
+      "id": "ms5yxr908waen2",
+      "name": "Ford Transit / Zimmerei",
+      "type": "Sonstiges",
+      "group": "fahrzeug",
+      "identifier": "R-BS 1053",
+      "color": "#050505",
+      "note": "",
+      "active": true,
+      "defect": false,
+      "defectNote": "",
+      "updatedAt": "2026-07-29T10:55:28.308Z"
     }
   ],
   "bookings": [
@@ -1809,5 +1822,5 @@
       "deletedAt": "2026-07-13T11:28:24.158Z"
     }
   ],
-  "updatedAt": "2026-07-29T10:54:31.249Z"
+  "updatedAt": "2026-07-29T10:55:30.469Z"
 }
