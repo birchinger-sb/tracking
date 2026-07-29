@@ -732,12 +732,12 @@
       "type": "PKW",
       "group": "fahrzeug",
       "identifier": "R-BS 1047",
-      "color": "#4789a0",
+      "color": "#050505",
       "note": "KW 28/2026 Bremsen vorne und hinten erneuert",
       "active": true,
       "defect": false,
       "defectNote": "",
-      "updatedAt": "2026-07-08T13:24:21.919Z"
+      "updatedAt": "2026-07-29T10:55:48.600Z"
     },
     {
       "id": "mrdi9kxdunhdk3",
@@ -1822,5 +1822,5 @@
       "deletedAt": "2026-07-13T11:28:24.158Z"
     }
   ],
-  "updatedAt": "2026-07-29T10:55:30.469Z"
+  "updatedAt": "2026-07-29T10:55:49.910Z"
 }
