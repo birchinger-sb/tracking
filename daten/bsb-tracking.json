@@ -897,16 +897,16 @@
     },
     {
       "id": "ms5ym5f3uol4i5",
-      "name": "Pritschenwagen",
+      "name": "Pritschenwagen / Schinabeck D.",
       "type": "",
       "group": "fahrzeug",
       "identifier": "R-BS 1041",
       "color": "#050505",
-      "note": "",
+      "note": "KW 33/2026 TÜV bei Semmelmann",
       "active": true,
       "defect": false,
       "defectNote": "",
-      "updatedAt": "2026-07-29T10:46:26.799Z"
+      "updatedAt": "2026-07-29T10:47:29.876Z"
     }
   ],
   "bookings": [
@@ -1783,5 +1783,5 @@
       "deletedAt": "2026-07-13T11:28:24.158Z"
     }
   ],
-  "updatedAt": "2026-07-29T10:46:28.168Z"
+  "updatedAt": "2026-07-29T10:47:31.352Z"
 }
