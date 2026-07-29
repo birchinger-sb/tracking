@@ -920,6 +920,19 @@
       "defect": false,
       "defectNote": "",
       "updatedAt": "2026-07-29T10:50:09.826Z"
+    },
+    {
+      "id": "ms5ysyasf29rbz",
+      "name": "Pritschenwagen / Trimpl",
+      "type": "Pritschenwagen",
+      "group": "fahrzeug",
+      "identifier": "R-BS 1054",
+      "color": "#050505",
+      "note": "",
+      "active": true,
+      "defect": false,
+      "defectNote": "",
+      "updatedAt": "2026-07-29T10:51:44.164Z"
     }
   ],
   "bookings": [
@@ -1796,5 +1809,5 @@
       "deletedAt": "2026-07-13T11:28:24.158Z"
     }
   ],
-  "updatedAt": "2026-07-29T10:50:46.539Z"
+  "updatedAt": "2026-07-29T10:51:46.041Z"
 }
