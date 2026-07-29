@@ -885,7 +885,7 @@
     {
       "id": "ms5yjl41esxyhl",
       "name": "Pritschenwagen / Meinzinger",
-      "type": "",
+      "type": "Pritschenwagen",
       "group": "fahrzeug",
       "identifier": "R-BS 1039",
       "color": "#050505",
@@ -893,7 +893,7 @@
       "active": true,
       "defect": false,
       "defectNote": "",
-      "updatedAt": "2026-07-29T10:47:49.776Z"
+      "updatedAt": "2026-07-29T10:50:44.317Z"
     },
     {
       "id": "ms5ym5f3uol4i5",
@@ -1796,5 +1796,5 @@
       "deletedAt": "2026-07-13T11:28:24.158Z"
     }
   ],
-  "updatedAt": "2026-07-29T10:50:34.183Z"
+  "updatedAt": "2026-07-29T10:50:46.539Z"
 }
