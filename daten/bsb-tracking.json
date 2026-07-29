@@ -894,6 +894,19 @@
       "defect": false,
       "defectNote": "",
       "updatedAt": "2026-07-29T10:45:53.527Z"
+    },
+    {
+      "id": "ms5ym5f3uol4i5",
+      "name": "Pritschenwagen",
+      "type": "",
+      "group": "fahrzeug",
+      "identifier": "R-BS 1041",
+      "color": "#050505",
+      "note": "",
+      "active": true,
+      "defect": false,
+      "defectNote": "",
+      "updatedAt": "2026-07-29T10:46:26.799Z"
     }
   ],
   "bookings": [
@@ -1770,5 +1783,5 @@
       "deletedAt": "2026-07-13T11:28:24.158Z"
     }
   ],
-  "updatedAt": "2026-07-29T10:45:54.917Z"
+  "updatedAt": "2026-07-29T10:46:28.168Z"
 }
