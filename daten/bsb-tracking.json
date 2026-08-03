@@ -1440,6 +1440,19 @@
       "_s": 1785301200000,
       "_e": 1785942000000,
       "_lane": 0
+    },
+    {
+      "id": "mscr6iohiga1jk",
+      "assetId": "mrdi9kxdunhdk3",
+      "location": "Hirtenstraße",
+      "responsibleId": "ms61bt9pfi5sms",
+      "responsible": "Bernhard Eigenstetter",
+      "note": "",
+      "start": "2026-08-03T07:00",
+      "end": "2026-08-05T17:00",
+      "allDay": false,
+      "returnedAt": null,
+      "updatedAt": "2026-08-03T04:52:43.409Z"
     }
   ],
   "responsibles": [
@@ -1831,5 +1844,5 @@
       "deletedAt": "2026-07-13T11:28:24.158Z"
     }
   ],
-  "updatedAt": "2026-08-03T04:51:47.369Z"
+  "updatedAt": "2026-08-03T04:53:12.806Z"
 }
