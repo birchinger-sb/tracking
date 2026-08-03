@@ -970,12 +970,12 @@
       "responsible": "Thomas Blomenhofer",
       "note": "",
       "start": "2026-06-18",
-      "end": "2026-07-29",
+      "end": "2026-07-31",
       "allDay": true,
       "returnedAt": null,
-      "updatedAt": "2026-07-29T03:51:14.036Z",
+      "updatedAt": "2026-08-03T04:51:30.197Z",
       "_s": 1781733600000,
-      "_e": 1785362400000,
+      "_e": 1785535200000,
       "_lane": 0
     },
     {
@@ -1114,12 +1114,12 @@
       "responsible": "Thomas Blomenhofer",
       "note": "",
       "start": "2026-07-13",
-      "end": "2026-07-29",
+      "end": "2026-07-31",
       "allDay": true,
       "returnedAt": null,
-      "updatedAt": "2026-07-29T03:51:15.796Z",
+      "updatedAt": "2026-08-03T04:51:30.744Z",
       "_s": 1783893600000,
-      "_e": 1785362400000,
+      "_e": 1785535200000,
       "_lane": 2
     },
     {
@@ -1130,12 +1130,12 @@
       "responsible": "Stefan Weikl",
       "note": "",
       "start": "2026-07-01",
-      "end": "2026-07-29",
+      "end": "2026-07-30",
       "allDay": true,
       "returnedAt": null,
-      "updatedAt": "2026-07-29T03:51:20.159Z",
+      "updatedAt": "2026-08-03T04:51:16.900Z",
       "_s": 1782856800000,
-      "_e": 1785362400000,
+      "_e": 1785448800000,
       "_lane": 1
     },
     {
@@ -1162,12 +1162,12 @@
       "responsible": "Thomas Blomenhofer",
       "note": "",
       "start": "2026-07-13",
-      "end": "2026-07-29",
+      "end": "2026-07-30",
       "allDay": true,
       "returnedAt": null,
-      "updatedAt": "2026-07-29T03:51:21.329Z",
+      "updatedAt": "2026-08-03T04:51:22.272Z",
       "_s": 1783893600000,
-      "_e": 1785362400000,
+      "_e": 1785448800000,
       "_lane": 3
     },
     {
@@ -1289,13 +1289,13 @@
       "responsible": "Herbert Meinzinger",
       "note": "",
       "start": "2026-07-23T07:00",
-      "end": "2026-07-30T17:00",
+      "end": "2026-07-31T17:00",
       "allDay": false,
       "returnedAt": null,
-      "updatedAt": "2026-07-23T04:37:48.986Z",
+      "updatedAt": "2026-08-03T04:51:26.363Z",
       "_s": 1784782800000,
-      "_e": 1785423600000,
-      "_lane": 1
+      "_e": 1785510000000,
+      "_lane": 5
     },
     {
       "id": "mrx0v19pan1exr",
@@ -1385,13 +1385,13 @@
       "responsible": "Herbert Meinzinger",
       "note": "",
       "start": "2026-07-27T08:00",
-      "end": "2026-07-30T17:30",
+      "end": "2026-07-31T17:30",
       "allDay": false,
       "returnedAt": null,
-      "updatedAt": "2026-07-27T04:56:31.510Z",
+      "updatedAt": "2026-08-03T04:51:27.978Z",
       "_s": 1785132000000,
-      "_e": 1785425400000,
-      "_lane": 7
+      "_e": 1785511800000,
+      "_lane": 8
     },
     {
       "id": "ms2r9h5p5okmko",
@@ -1831,5 +1831,5 @@
       "deletedAt": "2026-07-13T11:28:24.158Z"
     }
   ],
-  "updatedAt": "2026-07-29T12:02:24.760Z"
+  "updatedAt": "2026-08-03T04:51:32.205Z"
 }
