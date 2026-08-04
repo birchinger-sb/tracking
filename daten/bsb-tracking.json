@@ -1506,14 +1506,14 @@
       "id": "mseeizoqcce665",
       "assetId": "mqjbnxs9zssp1r",
       "location": "Brunnleite",
-      "responsibleId": "mqjegc3g94zrmw",
-      "responsible": "Stefan Adler",
+      "responsibleId": "mseejbu6o0md22",
+      "responsible": "Hans Hecht",
       "note": "",
       "start": "2026-08-04T06:00",
       "end": "2026-08-04T17:30",
       "allDay": false,
       "returnedAt": null,
-      "updatedAt": "2026-08-04T08:34:02.666Z",
+      "updatedAt": "2026-08-04T08:34:29.054Z",
       "_s": 1785816000000,
       "_e": 1785857400000,
       "_lane": 10
@@ -1917,5 +1917,5 @@
       "deletedAt": "2026-07-13T11:28:24.158Z"
     }
   ],
-  "updatedAt": "2026-08-04T08:34:19.653Z"
+  "updatedAt": "2026-08-04T08:34:30.206Z"
 }
