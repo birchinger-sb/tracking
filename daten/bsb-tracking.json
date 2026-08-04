@@ -1453,6 +1453,22 @@
       "allDay": false,
       "returnedAt": null,
       "updatedAt": "2026-08-03T04:52:43.409Z"
+    },
+    {
+      "id": "mse5pugd8n10fz",
+      "assetId": "mrw5bjy3pz1cor",
+      "location": "diverse",
+      "responsibleId": "mrx0u5jki1mwja",
+      "responsible": "Jaro Smerda",
+      "note": "",
+      "start": "2026-08-04",
+      "end": "2026-08-06",
+      "allDay": true,
+      "returnedAt": null,
+      "updatedAt": "2026-08-04T04:27:25.933Z",
+      "_s": 1785794400000,
+      "_e": 1786053600000,
+      "_lane": 0
     }
   ],
   "responsibles": [
@@ -1844,5 +1860,5 @@
       "deletedAt": "2026-07-13T11:28:24.158Z"
     }
   ],
-  "updatedAt": "2026-08-04T04:11:21.543Z"
+  "updatedAt": "2026-08-04T04:27:32.014Z"
 }
