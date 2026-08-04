@@ -1645,6 +1645,15 @@
       "email": "",
       "note": "",
       "updatedAt": "2026-07-29T12:02:23.341Z"
+    },
+    {
+      "id": "mseejbu6o0md22",
+      "name": "Hans Hecht",
+      "role": "",
+      "phone": "",
+      "email": "",
+      "note": "",
+      "updatedAt": "2026-08-04T08:34:18.414Z"
     }
   ],
   "categories": [
@@ -1908,5 +1917,5 @@
       "deletedAt": "2026-07-13T11:28:24.158Z"
     }
   ],
-  "updatedAt": "2026-08-04T08:34:04.150Z"
+  "updatedAt": "2026-08-04T08:34:19.653Z"
 }
