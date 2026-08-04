@@ -1517,6 +1517,22 @@
       "_s": 1785816000000,
       "_e": 1785857400000,
       "_lane": 10
+    },
+    {
+      "id": "mseekpsr9gm6y0",
+      "assetId": "mqjbnxs9zssp1r",
+      "location": "Donaustauf",
+      "responsibleId": "mrkgs43ems0qk5",
+      "responsible": "Gerhard Schinabeck",
+      "note": "",
+      "start": "2026-08-06T06:00",
+      "end": "2026-08-06T17:30",
+      "allDay": false,
+      "returnedAt": null,
+      "updatedAt": "2026-08-04T08:35:23.163Z",
+      "_s": 1785988800000,
+      "_e": 1786030200000,
+      "_lane": 1
     }
   ],
   "responsibles": [
@@ -1917,5 +1933,5 @@
       "deletedAt": "2026-07-13T11:28:24.158Z"
     }
   ],
-  "updatedAt": "2026-08-04T08:34:30.206Z"
+  "updatedAt": "2026-08-04T08:35:24.456Z"
 }
