@@ -967,11 +967,11 @@
       "group": "werkzeug",
       "identifier": "TS 0003",
       "color": "#3e6fb0",
-      "note": "",
+      "note": "Drucktaster erneuert 04.08.2026",
       "active": true,
       "defect": false,
       "defectNote": "",
-      "updatedAt": "2026-08-05T07:27:00.635Z"
+      "updatedAt": "2026-08-05T07:27:27.994Z"
     }
   ],
   "bookings": [
@@ -2007,5 +2007,5 @@
       "deletedAt": "2026-07-13T11:28:24.158Z"
     }
   ],
-  "updatedAt": "2026-08-05T07:27:01.831Z"
+  "updatedAt": "2026-08-05T07:27:29.181Z"
 }
