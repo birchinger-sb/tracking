@@ -952,13 +952,13 @@
       "name": "Heisser Draht im Blauen Koffer",
       "type": "Thermoschneider",
       "group": "werkzeug",
-      "identifier": "TS 0002",
+      "identifier": "TS 0004",
       "color": "#3e6fb0",
       "note": "",
       "active": true,
       "defect": false,
       "defectNote": "",
-      "updatedAt": "2026-08-05T07:26:28.097Z"
+      "updatedAt": "2026-08-05T07:30:56.625Z"
     },
     {
       "id": "msfrkmxnprvleq",
@@ -2007,5 +2007,5 @@
       "deletedAt": "2026-07-13T11:28:24.158Z"
     }
   ],
-  "updatedAt": "2026-08-05T07:27:29.181Z"
+  "updatedAt": "2026-08-05T07:30:58.035Z"
 }
