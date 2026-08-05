@@ -1477,14 +1477,14 @@
       "responsibleId": "mrx0u5jki1mwja",
       "responsible": "Jaro Smerda",
       "note": "",
-      "start": "2026-08-04",
-      "end": "2026-08-06",
-      "allDay": true,
+      "start": "2026-08-04T06:30",
+      "end": "2026-08-05T07:00",
+      "allDay": false,
       "returnedAt": null,
-      "updatedAt": "2026-08-04T04:28:33.190Z",
-      "_s": 1785794400000,
-      "_e": 1786053600000,
-      "_lane": 5
+      "updatedAt": "2026-08-05T07:07:30.810Z",
+      "_s": 1785817800000,
+      "_e": 1785906000000,
+      "_lane": 6
     },
     {
       "id": "mse5rs7ifmezy5",
@@ -1933,5 +1933,5 @@
       "deletedAt": "2026-07-13T11:28:24.158Z"
     }
   ],
-  "updatedAt": "2026-08-05T07:05:15.060Z"
+  "updatedAt": "2026-08-05T07:07:32.312Z"
 }
