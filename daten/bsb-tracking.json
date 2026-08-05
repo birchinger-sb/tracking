@@ -959,6 +959,19 @@
       "defect": false,
       "defectNote": "",
       "updatedAt": "2026-08-05T07:26:28.097Z"
+    },
+    {
+      "id": "msfrkmxnprvleq",
+      "name": "Heisser Draht blau ohne Koffer",
+      "type": "Thermoschneider",
+      "group": "werkzeug",
+      "identifier": "TS 0003",
+      "color": "#3e6fb0",
+      "note": "",
+      "active": true,
+      "defect": false,
+      "defectNote": "",
+      "updatedAt": "2026-08-05T07:27:00.635Z"
     }
   ],
   "bookings": [
@@ -1994,5 +2007,5 @@
       "deletedAt": "2026-07-13T11:28:24.158Z"
     }
   ],
-  "updatedAt": "2026-08-05T07:26:29.462Z"
+  "updatedAt": "2026-08-05T07:27:01.831Z"
 }
