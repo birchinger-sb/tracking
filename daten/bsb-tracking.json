@@ -946,6 +946,19 @@
       "defect": false,
       "defectNote": "",
       "updatedAt": "2026-07-29T10:55:28.308Z"
+    },
+    {
+      "id": "msfqxbpjxt7tcl",
+      "name": "Heisser Draht im Blauen Koffer",
+      "type": "Thermoschneider",
+      "group": "werkzeug",
+      "identifier": "",
+      "color": "#3e6fb0",
+      "note": "",
+      "active": true,
+      "defect": false,
+      "defectNote": "",
+      "updatedAt": "2026-08-05T07:08:52.999Z"
     }
   ],
   "bookings": [
@@ -1933,5 +1946,5 @@
       "deletedAt": "2026-07-13T11:28:24.158Z"
     }
   ],
-  "updatedAt": "2026-08-05T07:07:38.386Z"
+  "updatedAt": "2026-08-05T07:08:54.413Z"
 }
