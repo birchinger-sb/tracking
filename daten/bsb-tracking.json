@@ -996,12 +996,12 @@
       "responsible": "Thomas Blomenhofer",
       "note": "",
       "start": "2026-06-18",
-      "end": "2026-08-04",
+      "end": "2026-08-05",
       "allDay": true,
       "returnedAt": null,
-      "updatedAt": "2026-08-05T04:15:46.201Z",
+      "updatedAt": "2026-08-06T12:32:57.072Z",
       "_s": 1781733600000,
-      "_e": 1785880800000,
+      "_e": 1785967200000,
       "_lane": 0
     },
     {
@@ -1315,12 +1315,12 @@
       "responsible": "Herbert Meinzinger",
       "note": "",
       "start": "2026-07-23T07:00",
-      "end": "2026-08-05T17:00",
+      "end": "2026-08-06T17:00",
       "allDay": false,
       "returnedAt": null,
-      "updatedAt": "2026-08-05T04:08:22.298Z",
+      "updatedAt": "2026-08-06T12:32:58.577Z",
       "_s": 1784782800000,
-      "_e": 1785942000000,
+      "_e": 1786028400000,
       "_lane": 4
     },
     {
@@ -1459,13 +1459,13 @@
       "responsible": "Stefan Weikl",
       "note": "",
       "start": "2026-07-29T07:00",
-      "end": "2026-08-05T17:00",
+      "end": "2026-08-06T17:00",
       "allDay": false,
       "returnedAt": null,
-      "updatedAt": "2026-07-28T11:02:57.834Z",
+      "updatedAt": "2026-08-06T12:33:00.363Z",
       "_s": 1785301200000,
-      "_e": 1785942000000,
-      "_lane": 0
+      "_e": 1786028400000,
+      "_lane": 7
     },
     {
       "id": "mscr6iohiga1jk",
@@ -2007,5 +2007,5 @@
       "deletedAt": "2026-07-13T11:28:24.158Z"
     }
   ],
-  "updatedAt": "2026-08-06T12:32:25.632Z"
+  "updatedAt": "2026-08-06T12:33:01.118Z"
 }
