@@ -46,11 +46,11 @@
       "group": "fahrzeug",
       "identifier": "",
       "color": "#fb5c18",
-      "note": "",
+      "note": "KW 36/2026 wurden beide Ketten gewechselt",
       "active": true,
       "defect": false,
       "defectNote": "",
-      "updatedAt": "2026-07-13T11:20:54.273Z"
+      "updatedAt": "2026-09-01T05:53:18.762Z"
     },
     {
       "id": "mqjbnxs9zssp1r",
@@ -2156,5 +2156,5 @@
       "deletedAt": "2026-07-13T11:28:24.158Z"
     }
   ],
-  "updatedAt": "2026-09-01T05:52:18.711Z"
+  "updatedAt": "2026-09-01T05:53:19.229Z"
 }
