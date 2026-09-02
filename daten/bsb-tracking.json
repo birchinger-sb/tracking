@@ -1140,10 +1140,10 @@
       "responsible": "Thomas Blomenhofer",
       "note": "",
       "start": "2026-07-13",
-      "end": "2026-08-07",
+      "end": "2026-08-22",
       "allDay": true,
       "returnedAt": null,
-      "updatedAt": "2026-09-02T12:00:21.237Z",
+      "updatedAt": "2026-09-02T12:00:23.877Z",
       "_s": 1783893600000,
       "_e": 1785967200000,
       "_lane": 2
@@ -2175,5 +2175,5 @@
       "deletedAt": "2026-07-13T11:28:24.158Z"
     }
   ],
-  "updatedAt": "2026-09-02T12:00:21.309Z"
+  "updatedAt": "2026-09-02T12:00:23.943Z"
 }
