@@ -1814,6 +1814,22 @@
       "_s": 1788408000000,
       "_e": 1788499800000,
       "_lane": 12
+    },
+    {
+      "id": "mtmiohi5mwru73",
+      "assetId": "mqjeejc3fdg6r4",
+      "location": "Donaustauf",
+      "responsibleId": "mqjdn82mqw69bu",
+      "responsible": "Thomas Blomenhofer",
+      "note": "",
+      "start": "2026-09-04T07:00",
+      "end": "2026-09-11T13:00",
+      "allDay": false,
+      "returnedAt": null,
+      "updatedAt": "2026-09-04T05:32:09.245Z",
+      "_s": 1788498000000,
+      "_e": 1789124400000,
+      "_lane": 1
     }
   ],
   "responsibles": [
@@ -2214,5 +2230,5 @@
       "deletedAt": "2026-07-13T11:28:24.158Z"
     }
   ],
-  "updatedAt": "2026-09-04T05:31:33.076Z"
+  "updatedAt": "2026-09-04T05:32:09.734Z"
 }
