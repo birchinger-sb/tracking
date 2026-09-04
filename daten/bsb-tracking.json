@@ -109,11 +109,11 @@
       "group": "fahrzeug",
       "identifier": "",
       "color": "#fb7318",
-      "note": "",
+      "note": "KW35/26 wurde komplett überholt und überprüft durch Krieger",
       "active": true,
       "defect": false,
       "defectNote": "",
-      "updatedAt": "2026-07-14T07:17:16.216Z"
+      "updatedAt": "2026-09-04T05:31:32.537Z"
     },
     {
       "id": "wz0001",
@@ -2214,5 +2214,5 @@
       "deletedAt": "2026-07-13T11:28:24.158Z"
     }
   ],
-  "updatedAt": "2026-09-04T05:30:28.001Z"
+  "updatedAt": "2026-09-04T05:31:33.076Z"
 }
