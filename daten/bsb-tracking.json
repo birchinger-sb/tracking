@@ -1858,6 +1858,19 @@
       "allDay": false,
       "returnedAt": null,
       "updatedAt": "2026-09-04T07:56:32.760Z"
+    },
+    {
+      "id": "mttqf8let3gyv1",
+      "assetId": "mttqcyy0x8c92s",
+      "location": "Etterzhausen",
+      "responsibleId": "mqjgypf4v9no1i",
+      "responsible": "Stefan Weikl",
+      "note": "",
+      "start": "2026-09-09T07:00",
+      "end": "2026-09-15T06:00",
+      "allDay": false,
+      "returnedAt": null,
+      "updatedAt": "2026-09-09T06:43:17.954Z"
     }
   ],
   "responsibles": [
@@ -2258,5 +2271,5 @@
       "deletedAt": "2026-07-13T11:28:24.158Z"
     }
   ],
-  "updatedAt": "2026-09-09T06:41:32.689Z"
+  "updatedAt": "2026-09-09T06:43:18.635Z"
 }
