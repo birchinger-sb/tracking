@@ -972,6 +972,19 @@
       "defect": false,
       "defectNote": "",
       "updatedAt": "2026-08-05T07:27:27.994Z"
+    },
+    {
+      "id": "mttqcyy0x8c92s",
+      "name": "Bobcat",
+      "type": "",
+      "group": "fahrzeug",
+      "identifier": "",
+      "color": "#080708",
+      "note": "",
+      "active": true,
+      "defect": false,
+      "defectNote": "",
+      "updatedAt": "2026-09-09T06:41:32.136Z"
     }
   ],
   "bookings": [
@@ -2245,5 +2258,5 @@
       "deletedAt": "2026-07-13T11:28:24.158Z"
     }
   ],
-  "updatedAt": "2026-09-09T06:40:47.951Z"
+  "updatedAt": "2026-09-09T06:41:32.689Z"
 }
