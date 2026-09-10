@@ -1888,11 +1888,11 @@
       "responsibleId": "mqjh0mz6al8lm1",
       "responsible": "Bernhard Eigenstetter",
       "note": "",
-      "start": "2026-09-10T07:00",
+      "start": "2026-09-10T06:00",
       "end": "2026-09-18T10:00",
       "allDay": false,
       "returnedAt": null,
-      "updatedAt": "2026-09-10T04:38:43.456Z"
+      "updatedAt": "2026-09-10T04:39:57.388Z"
     }
   ],
   "responsibles": [
@@ -2293,5 +2293,5 @@
       "deletedAt": "2026-07-13T11:28:24.158Z"
     }
   ],
-  "updatedAt": "2026-09-10T04:38:43.974Z"
+  "updatedAt": "2026-09-10T04:39:57.934Z"
 }
