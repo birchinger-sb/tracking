@@ -1898,14 +1898,14 @@
       "id": "mtv2s5hkct9bnx",
       "assetId": "mrx0zhf0iagmne",
       "location": "Guttenbergstraße",
-      "responsibleId": "mqjec5589bumxj",
-      "responsible": "Andreas Laußer",
+      "responsibleId": "mtv2skccls6wbg",
+      "responsible": "Schinabeck Gerhard",
       "note": "",
       "start": "2026-09-10T07:16",
       "end": "2026-09-18T06:00",
       "allDay": false,
       "returnedAt": null,
-      "updatedAt": "2026-09-10T05:17:02.024Z"
+      "updatedAt": "2026-09-10T05:17:37.946Z"
     }
   ],
   "responsibles": [
@@ -2315,5 +2315,5 @@
       "deletedAt": "2026-07-13T11:28:24.158Z"
     }
   ],
-  "updatedAt": "2026-09-10T05:17:21.697Z"
+  "updatedAt": "2026-09-10T05:17:38.408Z"
 }
