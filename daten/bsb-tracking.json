@@ -1893,6 +1893,19 @@
       "allDay": false,
       "returnedAt": null,
       "updatedAt": "2026-09-10T04:39:57.388Z"
+    },
+    {
+      "id": "mtv2s5hkct9bnx",
+      "assetId": "mrx0zhf0iagmne",
+      "location": "Guttenbergstraße",
+      "responsibleId": "mqjec5589bumxj",
+      "responsible": "Andreas Laußer",
+      "note": "",
+      "start": "2026-09-10T07:16",
+      "end": "2026-09-18T06:00",
+      "allDay": false,
+      "returnedAt": null,
+      "updatedAt": "2026-09-10T05:17:02.024Z"
     }
   ],
   "responsibles": [
@@ -2293,5 +2306,5 @@
       "deletedAt": "2026-07-13T11:28:24.158Z"
     }
   ],
-  "updatedAt": "2026-09-10T05:15:51.734Z"
+  "updatedAt": "2026-09-10T05:17:02.566Z"
 }
