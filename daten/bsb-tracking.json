@@ -1866,10 +1866,13 @@
       "responsible": "Stefan Weikl",
       "note": "",
       "start": "2026-09-09T07:00",
-      "end": "2026-09-15T06:00",
+      "end": "2026-09-14T06:00",
       "allDay": false,
       "returnedAt": null,
-      "updatedAt": "2026-09-09T06:43:17.954Z"
+      "updatedAt": "2026-09-14T13:45:15.624Z",
+      "_s": 1788930000000,
+      "_e": 1789358400000,
+      "_lane": 6
     },
     {
       "id": "mtv1cvn4megmuo",
@@ -2321,5 +2324,5 @@
       "deletedAt": "2026-07-13T11:28:24.158Z"
     }
   ],
-  "updatedAt": "2026-09-14T12:56:57.741Z"
+  "updatedAt": "2026-09-14T13:45:16.598Z"
 }
