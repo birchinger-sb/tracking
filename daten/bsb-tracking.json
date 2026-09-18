@@ -1931,6 +1931,22 @@
       "_s": 1789372800000,
       "_e": 1790755200000,
       "_lane": 0
+    },
+    {
+      "id": "mu6ic944obkzfh",
+      "assetId": "wz0034",
+      "location": "Lappersdorferstraße",
+      "responsibleId": "mqjgypf4v9no1i",
+      "responsible": "Stefan Weikl",
+      "note": "",
+      "start": "2026-09-18T07:00",
+      "end": "2026-09-25T13:00",
+      "allDay": false,
+      "returnedAt": null,
+      "updatedAt": "2026-09-18T05:18:02.020Z",
+      "_s": 1789707600000,
+      "_e": 1790334000000,
+      "_lane": 1
     }
   ],
   "responsibles": [
@@ -2340,5 +2356,5 @@
       "deletedAt": "2026-07-13T11:28:24.158Z"
     }
   ],
-  "updatedAt": "2026-09-18T05:16:31.268Z"
+  "updatedAt": "2026-09-18T05:18:02.795Z"
 }
