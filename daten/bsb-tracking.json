@@ -1153,13 +1153,13 @@
       "responsible": "Thomas Blomenhofer",
       "note": "",
       "start": "2026-07-13",
-      "end": "2026-09-14",
+      "end": "2026-09-15",
       "allDay": true,
       "returnedAt": null,
-      "updatedAt": "2026-09-14T08:34:23.074Z",
+      "updatedAt": "2026-09-18T05:15:42.303Z",
       "_s": 1783893600000,
-      "_e": 1789423200000,
-      "_lane": 0
+      "_e": 1789509600000,
+      "_lane": 1
     },
     {
       "id": "mrj152zwsbi3ep",
@@ -2340,5 +2340,5 @@
       "deletedAt": "2026-07-13T11:28:24.158Z"
     }
   ],
-  "updatedAt": "2026-09-14T13:46:16.305Z"
+  "updatedAt": "2026-09-18T05:15:42.927Z"
 }
