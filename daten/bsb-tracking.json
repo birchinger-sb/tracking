@@ -1898,10 +1898,13 @@
       "responsible": "Bernhard Eigenstetter",
       "note": "",
       "start": "2026-09-10T06:00",
-      "end": "2026-09-18T10:00",
+      "end": "2026-09-19T10:00",
       "allDay": false,
       "returnedAt": null,
-      "updatedAt": "2026-09-10T04:39:57.388Z"
+      "updatedAt": "2026-09-18T08:29:40.418Z",
+      "_s": 1789012800000,
+      "_e": 1789804800000,
+      "_lane": 8
     },
     {
       "id": "mtv2s5hkct9bnx",
@@ -2356,5 +2359,5 @@
       "deletedAt": "2026-07-13T11:28:24.158Z"
     }
   ],
-  "updatedAt": "2026-09-18T08:29:39.432Z"
+  "updatedAt": "2026-09-18T08:29:41.234Z"
 }
