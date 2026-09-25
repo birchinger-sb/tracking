@@ -1914,10 +1914,13 @@
       "responsible": "Schinabeck Gerhard",
       "note": "",
       "start": "2026-09-10T07:16",
-      "end": "2026-09-18T06:00",
+      "end": "2026-09-25T07:52",
       "allDay": false,
-      "returnedAt": null,
-      "updatedAt": "2026-09-10T05:17:37.946Z"
+      "returnedAt": "2026-09-25T05:52:15.199Z",
+      "updatedAt": "2026-09-25T05:52:15.200Z",
+      "_s": 1789017360000,
+      "_e": 1790315520000,
+      "_lane": 1
     },
     {
       "id": "mu1aqff6m3oj6w",
@@ -2359,5 +2362,5 @@
       "deletedAt": "2026-07-13T11:28:24.158Z"
     }
   ],
-  "updatedAt": "2026-09-25T05:51:58.630Z"
+  "updatedAt": "2026-09-25T05:52:15.620Z"
 }
