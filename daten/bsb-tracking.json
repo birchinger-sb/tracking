@@ -998,6 +998,19 @@
       "defect": false,
       "defectNote": "",
       "updatedAt": "2026-09-30T12:03:40.384Z"
+    },
+    {
+      "id": "muo29hbfffmr6g",
+      "name": "Steintischsäge Clipper CST 120 Uno",
+      "type": "Steinsäge",
+      "group": "werkzeug",
+      "identifier": "SS 0003",
+      "color": "#f08205",
+      "note": "Beschaffung durch Oli Birchinger bei Sonderaktion von Raab Karcher",
+      "active": false,
+      "defect": false,
+      "defectNote": "",
+      "updatedAt": "2026-09-30T12:07:49.995Z"
     }
   ],
   "bookings": [
@@ -2453,5 +2466,5 @@
       "deletedAt": "2026-09-30T05:18:10.336Z"
     }
   ],
-  "updatedAt": "2026-09-30T12:03:41.408Z"
+  "updatedAt": "2026-09-30T12:07:50.942Z"
 }
