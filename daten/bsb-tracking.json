@@ -2321,6 +2321,11 @@
       "id": "ms33mwd315yudf",
       "name": "Durchlaufmischer",
       "updatedAt": "2026-07-27T10:43:41.271Z"
+    },
+    {
+      "id": "munpzkcdpkjwa5",
+      "name": "Steinsäge",
+      "updatedAt": "2026-09-30T06:24:11.965Z"
     }
   ],
   "tombstones": [
@@ -2401,5 +2406,5 @@
       "deletedAt": "2026-09-30T05:18:10.336Z"
     }
   ],
-  "updatedAt": "2026-09-30T05:18:10.874Z"
+  "updatedAt": "2026-09-30T06:24:13.096Z"
 }
