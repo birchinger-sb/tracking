@@ -2355,6 +2355,11 @@
       "id": "munpzkcdpkjwa5",
       "name": "Steinsäge",
       "updatedAt": "2026-09-30T06:24:11.965Z"
+    },
+    {
+      "id": "muo1wq3ul8vc27",
+      "name": "Stromzählerkasten",
+      "updatedAt": "2026-09-30T11:57:54.859Z"
     }
   ],
   "tombstones": [
@@ -2435,5 +2440,5 @@
       "deletedAt": "2026-09-30T05:18:10.336Z"
     }
   ],
-  "updatedAt": "2026-09-30T06:28:40.120Z"
+  "updatedAt": "2026-09-30T11:57:55.834Z"
 }
