@@ -2043,6 +2043,22 @@
       "_s": 1790748000000,
       "_e": 1791547200000,
       "_lane": 4
+    },
+    {
+      "id": "muo2c6mwhd6kl2",
+      "assetId": "muo29hbfffmr6g",
+      "location": "Etterzhausen",
+      "responsibleId": "mrumwyot43lwpp",
+      "responsible": "Herbert Meinzinger",
+      "note": "Ausgegeben mit Stöpsel 4 Beinen und Anschlagwinkel",
+      "start": "2026-10-01",
+      "end": "2026-10-09",
+      "allDay": true,
+      "returnedAt": null,
+      "updatedAt": "2026-09-30T12:09:56.120Z",
+      "_s": 1790805600000,
+      "_e": 1791583200000,
+      "_lane": 0
     }
   ],
   "responsibles": [
@@ -2466,5 +2482,5 @@
       "deletedAt": "2026-09-30T05:18:10.336Z"
     }
   ],
-  "updatedAt": "2026-09-30T12:08:11.978Z"
+  "updatedAt": "2026-09-30T12:09:57.276Z"
 }
