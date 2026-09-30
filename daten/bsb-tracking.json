@@ -978,13 +978,13 @@
       "name": "Clipper Jumbo 900",
       "type": "Steinsäge",
       "group": "werkzeug",
-      "identifier": "SS 0001",
+      "identifier": "SS 0002",
       "color": "#4f8a3f",
       "note": "",
       "active": true,
       "defect": false,
       "defectNote": "",
-      "updatedAt": "2026-09-30T06:26:35.948Z"
+      "updatedAt": "2026-09-30T06:27:06.266Z"
     }
   ],
   "bookings": [
@@ -2419,5 +2419,5 @@
       "deletedAt": "2026-09-30T05:18:10.336Z"
     }
   ],
-  "updatedAt": "2026-09-30T06:26:37.630Z"
+  "updatedAt": "2026-09-30T06:27:07.375Z"
 }
