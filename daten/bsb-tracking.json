@@ -1007,10 +1007,10 @@
       "identifier": "SS 0003",
       "color": "#f08205",
       "note": "Beschaffung durch Oli Birchinger bei Sonderaktion von Raab Karcher",
-      "active": false,
+      "active": true,
       "defect": false,
       "defectNote": "",
-      "updatedAt": "2026-09-30T12:07:49.995Z"
+      "updatedAt": "2026-09-30T12:08:11.234Z"
     }
   ],
   "bookings": [
@@ -2466,5 +2466,5 @@
       "deletedAt": "2026-09-30T05:18:10.336Z"
     }
   ],
-  "updatedAt": "2026-09-30T12:07:50.942Z"
+  "updatedAt": "2026-09-30T12:08:11.978Z"
 }
