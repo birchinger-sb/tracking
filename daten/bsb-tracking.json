@@ -985,6 +985,19 @@
       "defect": false,
       "defectNote": "",
       "updatedAt": "2026-09-30T06:27:33.630Z"
+    },
+    {
+      "id": "muo22xx4tb8iw5",
+      "name": "Zählerkasten Strom",
+      "type": "Stromzählerkasten",
+      "group": "werkzeug",
+      "identifier": "SV 0001",
+      "color": "#b07a24",
+      "note": "Steidele Zählerkasten, Fabrik-Nr.: 148171, Beschaffung Däschler 09/2026 Stomzählerkasten für 1 x Stromzähler, 1 x Hauptschlter und 1 x Anschlusssicherungen",
+      "active": true,
+      "defect": false,
+      "defectNote": "",
+      "updatedAt": "2026-09-30T12:02:44.920Z"
     }
   ],
   "bookings": [
@@ -2440,5 +2453,5 @@
       "deletedAt": "2026-09-30T05:18:10.336Z"
     }
   ],
-  "updatedAt": "2026-09-30T11:58:20.700Z"
+  "updatedAt": "2026-09-30T12:02:45.847Z"
 }
