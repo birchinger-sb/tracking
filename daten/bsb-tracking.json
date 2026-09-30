@@ -1953,6 +1953,22 @@
       "_s": 1789707600000,
       "_e": 1790334000000,
       "_lane": 1
+    },
+    {
+      "id": "munnf5marac9yc",
+      "assetId": "msfrkmxnprvleq",
+      "location": "Brunnleite",
+      "responsibleId": "mqjgzttsmv8l0u",
+      "responsible": "Johann Hecht",
+      "note": "",
+      "start": "2026-09-17",
+      "end": "2026-10-02",
+      "allDay": true,
+      "returnedAt": null,
+      "updatedAt": "2026-09-30T05:12:20.531Z",
+      "_s": 1789596000000,
+      "_e": 1790978400000,
+      "_lane": 1
     }
   ],
   "responsibles": [
@@ -2362,5 +2378,5 @@
       "deletedAt": "2026-07-13T11:28:24.158Z"
     }
   ],
-  "updatedAt": "2026-09-25T05:53:19.398Z"
+  "updatedAt": "2026-09-30T05:12:21.078Z"
 }
