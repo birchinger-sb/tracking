@@ -2091,6 +2091,22 @@
       "_s": 1790827200000,
       "_e": 1791547200000,
       "_lane": 12
+    },
+    {
+      "id": "muphwc5vo4n1i1",
+      "assetId": "mrx0zhf0iagmne",
+      "location": "Metzgerweg",
+      "responsibleId": "mqjh0mz6al8lm1",
+      "responsible": "Bernhard Eigenstetter",
+      "note": "",
+      "start": "2026-09-28T07:00",
+      "end": "2026-10-09T14:00",
+      "allDay": false,
+      "returnedAt": null,
+      "updatedAt": "2026-10-01T12:13:16.819Z",
+      "_s": 1790571600000,
+      "_e": 1791547200000,
+      "_lane": 11
     }
   ],
   "responsibles": [
@@ -2514,5 +2530,5 @@
       "deletedAt": "2026-09-30T05:18:10.336Z"
     }
   ],
-  "updatedAt": "2026-10-01T12:12:36.615Z"
+  "updatedAt": "2026-10-01T12:13:17.340Z"
 }
