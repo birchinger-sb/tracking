@@ -2075,6 +2075,22 @@
       "_s": 1791151200000,
       "_e": 1792188000000,
       "_lane": 0
+    },
+    {
+      "id": "muphvgpo3g7l0i",
+      "assetId": "wz0006",
+      "location": "Hirtenstraße",
+      "responsibleId": "mqjec5589bumxj",
+      "responsible": "Andreas Laußer",
+      "note": "",
+      "start": "2026-10-01T06:00",
+      "end": "2026-10-09T14:00",
+      "allDay": false,
+      "returnedAt": null,
+      "updatedAt": "2026-10-01T12:12:36.060Z",
+      "_s": 1790827200000,
+      "_e": 1791547200000,
+      "_lane": 12
     }
   ],
   "responsibles": [
@@ -2498,5 +2514,5 @@
       "deletedAt": "2026-09-30T05:18:10.336Z"
     }
   ],
-  "updatedAt": "2026-10-01T07:49:51.831Z"
+  "updatedAt": "2026-10-01T12:12:36.615Z"
 }
