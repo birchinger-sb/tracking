@@ -2059,6 +2059,22 @@
       "_s": 1790805600000,
       "_e": 1791583200000,
       "_lane": 0
+    },
+    {
+      "id": "mup8fpc7mc9spr",
+      "assetId": "mqi0n3d4hit7rv",
+      "location": "Hirtenstraße 13",
+      "responsibleId": "mqjec5589bumxj",
+      "responsible": "Andreas Laußer",
+      "note": "",
+      "start": "2026-10-05",
+      "end": "2026-10-16",
+      "allDay": true,
+      "returnedAt": null,
+      "updatedAt": "2026-10-01T07:48:24.200Z",
+      "_s": 1791151200000,
+      "_e": 1792188000000,
+      "_lane": 0
     }
   ],
   "responsibles": [
@@ -2482,5 +2498,5 @@
       "deletedAt": "2026-09-30T05:18:10.336Z"
     }
   ],
-  "updatedAt": "2026-09-30T12:09:57.276Z"
+  "updatedAt": "2026-10-01T07:48:26.695Z"
 }
