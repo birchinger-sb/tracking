@@ -1987,14 +1987,14 @@
       "responsibleId": "mqjgzttsmv8l0u",
       "responsible": "Johann Hecht",
       "note": "",
-      "start": "2026-09-17",
-      "end": "2026-10-02",
-      "allDay": true,
+      "start": "2026-09-17T08:00",
+      "end": "2026-10-01T06:00",
+      "allDay": false,
       "returnedAt": null,
-      "updatedAt": "2026-09-30T05:12:20.531Z",
-      "_s": 1789596000000,
-      "_e": 1790978400000,
-      "_lane": 1
+      "updatedAt": "2026-10-01T12:15:31.599Z",
+      "_s": 1789624800000,
+      "_e": 1790827200000,
+      "_lane": 8
     },
     {
       "id": "munngcovpyg9nf",
@@ -2546,5 +2546,5 @@
       "deletedAt": "2026-09-30T05:18:10.336Z"
     }
   ],
-  "updatedAt": "2026-10-01T12:14:50.054Z"
+  "updatedAt": "2026-10-01T12:15:32.107Z"
 }
