@@ -69,13 +69,14 @@
       "id": "mqjcsa64dyxrra",
       "name": "Kubota Bagger KX 101-3 /  3,5 to",
       "type": "Bagger",
+      "group": "fahrzeug",
       "identifier": "",
       "color": "#fb5c18",
-      "note": "",
+      "note": "KW40 2026 Service und abdichten Hauptarm und Humusschaufel bei Krieger",
       "active": true,
       "defect": false,
       "defectNote": "",
-      "updatedAt": "2026-06-18T11:02:02.833Z"
+      "updatedAt": "2026-10-05T04:23:54.164Z"
     },
     {
       "id": "mqjcwupni1dxxe",
@@ -2546,5 +2547,5 @@
       "deletedAt": "2026-09-30T05:18:10.336Z"
     }
   ],
-  "updatedAt": "2026-10-05T04:10:23.395Z"
+  "updatedAt": "2026-10-05T04:23:54.805Z"
 }
