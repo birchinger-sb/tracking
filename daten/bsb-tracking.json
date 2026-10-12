@@ -1012,6 +1012,19 @@
       "defect": false,
       "defectNote": "",
       "updatedAt": "2026-09-30T12:08:11.234Z"
+    },
+    {
+      "id": "mv4zq937lh23p2",
+      "name": "Pritschenwagen",
+      "type": "",
+      "group": "fahrzeug",
+      "identifier": "",
+      "color": "#a8463c",
+      "note": "",
+      "active": true,
+      "defect": false,
+      "defectNote": "",
+      "updatedAt": "2026-10-12T08:28:58.627Z"
     }
   ],
   "bookings": [
@@ -2586,5 +2599,5 @@
       "deletedAt": "2026-09-30T05:18:10.336Z"
     }
   ],
-  "updatedAt": "2026-10-12T04:53:28.981Z"
+  "updatedAt": "2026-10-12T08:28:59.393Z"
 }
