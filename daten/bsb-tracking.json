@@ -1015,16 +1015,16 @@
     },
     {
       "id": "mv4zq937lh23p2",
-      "name": "Pritschenwagen",
-      "type": "",
+      "name": "Mercedes Sprinter Eigenstetter",
+      "type": "Pritschenwagen",
       "group": "fahrzeug",
-      "identifier": "",
-      "color": "#a8463c",
-      "note": "",
-      "active": true,
+      "identifier": "R-BS 1049",
+      "color": "#050505",
+      "note": "Tüv fällig 07/2027, KW 40/26 war Fahrzeug beim Service",
+      "active": false,
       "defect": false,
       "defectNote": "",
-      "updatedAt": "2026-10-12T08:28:58.627Z"
+      "updatedAt": "2026-10-12T08:31:31.629Z"
     }
   ],
   "bookings": [
@@ -2599,5 +2599,5 @@
       "deletedAt": "2026-09-30T05:18:10.336Z"
     }
   ],
-  "updatedAt": "2026-10-12T08:28:59.393Z"
+  "updatedAt": "2026-10-12T08:31:32.236Z"
 }
