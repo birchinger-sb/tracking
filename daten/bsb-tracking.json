@@ -2066,13 +2066,13 @@
       "responsible": "Herbert Meinzinger",
       "note": "Ausgegeben mit Stöpsel 4 Beinen und Anschlagwinkel",
       "start": "2026-10-01",
-      "end": "2026-10-15",
+      "end": "2026-10-16",
       "allDay": true,
       "returnedAt": null,
-      "updatedAt": "2026-10-15T03:47:46.812Z",
+      "updatedAt": "2026-10-16T04:42:52.154Z",
       "_s": 1790805600000,
-      "_e": 1792101600000,
-      "_lane": 9
+      "_e": 1792188000000,
+      "_lane": 10
     },
     {
       "id": "mup8fpc7mc9spr",
@@ -2602,5 +2602,5 @@
       "deletedAt": "2026-09-30T05:18:10.336Z"
     }
   ],
-  "updatedAt": "2026-10-16T04:42:50.821Z"
+  "updatedAt": "2026-10-16T04:42:52.563Z"
 }
