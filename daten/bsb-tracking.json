@@ -2146,10 +2146,13 @@
       "responsible": "Andreas Laußer",
       "note": "",
       "start": "2026-10-05T06:00",
-      "end": "2026-10-16T17:00",
+      "end": "2026-10-22T17:00",
       "allDay": false,
       "returnedAt": null,
-      "updatedAt": "2026-10-05T04:24:25.891Z"
+      "updatedAt": "2026-10-19T04:40:17.309Z",
+      "_s": 1791172800000,
+      "_e": 1792681200000,
+      "_lane": 3
     },
     {
       "id": "muw6rhxjhqfsz9",
@@ -2602,5 +2605,5 @@
       "deletedAt": "2026-09-30T05:18:10.336Z"
     }
   ],
-  "updatedAt": "2026-10-19T04:39:13.667Z"
+  "updatedAt": "2026-10-19T04:40:17.935Z"
 }
