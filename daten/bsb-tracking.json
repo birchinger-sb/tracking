@@ -541,9 +541,9 @@
       "color": "#f9e401",
       "note": "S/N: 0732304084087, BJ 06/2004, Lieferant: unbekannt\n09.07.26 Dieselleitungen durchgescheuert - wurden erneuert AS",
       "active": true,
-      "defect": true,
+      "defect": false,
       "defectNote": "Meldung 07.10. LA - Kabel durchgescheuert",
-      "updatedAt": "2026-10-07T12:35:03.431Z"
+      "updatedAt": "2026-10-20T04:04:34.232Z"
     },
     {
       "id": "wz0034",
@@ -2605,5 +2605,5 @@
       "deletedAt": "2026-09-30T05:18:10.336Z"
     }
   ],
-  "updatedAt": "2026-10-19T05:29:24.988Z"
+  "updatedAt": "2026-10-20T04:04:34.697Z"
 }
