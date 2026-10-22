@@ -2182,6 +2182,22 @@
       "allDay": false,
       "returnedAt": "2026-10-08T09:20:11.274Z",
       "updatedAt": "2026-10-08T09:20:11.274Z"
+    },
+    {
+      "id": "mvjgyfb6u8u0jh",
+      "assetId": "mqjeejc3fdg6r4",
+      "location": "Metzgerweg",
+      "responsibleId": "ms61bt9pfi5sms",
+      "responsible": "Bernhard Eigenstetter",
+      "note": "",
+      "start": "2026-10-21T08:00",
+      "end": "2026-11-12T17:00",
+      "allDay": false,
+      "returnedAt": null,
+      "updatedAt": "2026-10-22T11:39:59.874Z",
+      "_s": 1792562400000,
+      "_e": 1794499200000,
+      "_lane": 2
     }
   ],
   "responsibles": [
@@ -2605,5 +2621,5 @@
       "deletedAt": "2026-09-30T05:18:10.336Z"
     }
   ],
-  "updatedAt": "2026-10-22T11:38:59.015Z"
+  "updatedAt": "2026-10-22T11:40:00.496Z"
 }
