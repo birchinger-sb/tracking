@@ -2198,6 +2198,22 @@
       "_s": 1792562400000,
       "_e": 1794499200000,
       "_lane": 2
+    },
+    {
+      "id": "mvq7gvejoi1za5",
+      "assetId": "mrdi9kxdunhdk3",
+      "location": "Nürnberger Straße",
+      "responsibleId": "mrumwyot43lwpp",
+      "responsible": "Herbert Meinzinger",
+      "note": "mit Übergangsstück und top gereinigt übergeben",
+      "start": "2026-10-26T06:00",
+      "end": "2026-10-28T17:00",
+      "allDay": false,
+      "returnedAt": null,
+      "updatedAt": "2026-10-27T04:48:47.611Z",
+      "_s": 1792990800000,
+      "_e": 1793203200000,
+      "_lane": 8
     }
   ],
   "responsibles": [
@@ -2621,5 +2637,5 @@
       "deletedAt": "2026-09-30T05:18:10.336Z"
     }
   ],
-  "updatedAt": "2026-10-26T06:04:10.558Z"
+  "updatedAt": "2026-10-27T04:48:48.234Z"
 }
