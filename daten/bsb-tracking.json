@@ -2207,12 +2207,12 @@
       "responsible": "Herbert Meinzinger",
       "note": "mit Übergangsstück und top gereinigt übergeben",
       "start": "2026-10-26T06:00",
-      "end": "2026-10-28T17:00",
+      "end": "2026-10-27T06:00",
       "allDay": false,
       "returnedAt": null,
-      "updatedAt": "2026-10-27T04:48:47.611Z",
+      "updatedAt": "2026-10-27T05:45:24.339Z",
       "_s": 1792990800000,
-      "_e": 1793203200000,
+      "_e": 1793077200000,
       "_lane": 8
     }
   ],
@@ -2637,5 +2637,5 @@
       "deletedAt": "2026-09-30T05:18:10.336Z"
     }
   ],
-  "updatedAt": "2026-10-27T04:48:48.234Z"
+  "updatedAt": "2026-10-27T05:45:25.085Z"
 }
