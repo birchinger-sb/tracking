@@ -2214,6 +2214,22 @@
       "_s": 1792990800000,
       "_e": 1793079900000,
       "_lane": 8
+    },
+    {
+      "id": "mw343ppwuub6oa",
+      "assetId": "wz0008",
+      "location": "Nürnberger Straße",
+      "responsibleId": "mqjdn82mqw69bu",
+      "responsible": "Thomas Blomenhofer",
+      "note": "Ausgegeben mit einer Kabeltrommel",
+      "start": "2026-11-05T06:00",
+      "end": "2026-11-20T18:00",
+      "allDay": false,
+      "returnedAt": null,
+      "updatedAt": "2026-11-05T05:35:35.156Z",
+      "_s": 1793854800000,
+      "_e": 1795194000000,
+      "_lane": 1
     }
   ],
   "responsibles": [
@@ -2637,5 +2653,5 @@
       "deletedAt": "2026-09-30T05:18:10.336Z"
     }
   ],
-  "updatedAt": "2026-10-29T08:19:28.169Z"
+  "updatedAt": "2026-11-05T05:35:35.702Z"
 }
