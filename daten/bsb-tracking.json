@@ -2230,6 +2230,22 @@
       "_s": 1793854800000,
       "_e": 1795194000000,
       "_lane": 1
+    },
+    {
+      "id": "mw346iz8gkbibc",
+      "assetId": "mrx0zhf0iagmne",
+      "location": "von der Tann Straße",
+      "responsibleId": "mrumwyot43lwpp",
+      "responsible": "Herbert Meinzinger",
+      "note": "",
+      "start": "2026-11-05T06:00",
+      "end": "2026-11-20T18:00",
+      "allDay": false,
+      "returnedAt": null,
+      "updatedAt": "2026-11-05T05:37:46.389Z",
+      "_s": 1793854800000,
+      "_e": 1795194000000,
+      "_lane": 3
     }
   ],
   "responsibles": [
@@ -2653,5 +2669,5 @@
       "deletedAt": "2026-09-30T05:18:10.336Z"
     }
   ],
-  "updatedAt": "2026-11-05T05:36:30.803Z"
+  "updatedAt": "2026-11-05T05:37:46.907Z"
 }
