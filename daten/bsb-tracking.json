@@ -2257,6 +2257,22 @@
       "_s": 1794466800000,
       "_e": 1796029200000,
       "_lane": 1
+    },
+    {
+      "id": "mwiv1clbcr9ddj",
+      "assetId": "muo29hbfffmr6g",
+      "location": "v.d. Tann Straße",
+      "responsibleId": "mrumwyot43lwpp",
+      "responsible": "Herbert Meinzinger",
+      "note": "",
+      "start": "2026-11-12T10:00",
+      "end": "2026-11-20T17:00",
+      "allDay": false,
+      "returnedAt": null,
+      "updatedAt": "2026-11-16T06:06:07.103Z",
+      "_s": 1794474000000,
+      "_e": 1795190400000,
+      "_lane": 12
     }
   ],
   "responsibles": [
@@ -2680,5 +2696,5 @@
       "deletedAt": "2026-09-30T05:18:10.336Z"
     }
   ],
-  "updatedAt": "2026-11-16T06:05:04.379Z"
+  "updatedAt": "2026-11-16T06:06:08.090Z"
 }
