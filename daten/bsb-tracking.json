@@ -1033,11 +1033,11 @@
       "group": "werkzeug",
       "identifier": "SH 0002",
       "color": "#fb0410",
-      "note": "Kaufgerät SN.: 220376; Gerät in KW 46 ohne Funktion Service wurde gemacht in KW 47;",
+      "note": "Kaufgerät SN.: 220376; Gerät in KW 46/2026 ohne Funktion Service wurde gemacht in KW 47/2026;",
       "active": true,
       "defect": false,
       "defectNote": "",
-      "updatedAt": "2026-11-18T06:30:26.371Z"
+      "updatedAt": "2026-11-18T10:03:17.127Z"
     }
   ],
   "bookings": [
@@ -2728,5 +2728,5 @@
       "deletedAt": "2026-09-30T05:18:10.336Z"
     }
   ],
-  "updatedAt": "2026-11-18T06:30:26.971Z"
+  "updatedAt": "2026-11-18T10:03:17.919Z"
 }
