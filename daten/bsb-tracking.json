@@ -59,11 +59,11 @@
       "group": "fahrzeug",
       "identifier": "R-BS 1045",
       "color": "#475569",
-      "note": "15. bis 20.06.26 Werkstatt (Turbolader-Krümmer defekt und hintere Bremsen erneuert)",
+      "note": "15. bis 20.06.26 Werkstatt (Turbolader-Krümmer defekt und hintere Bremsen erneuert); KW 46/2026 Injektoren defekt Reparatur durch Semmelmann;",
       "active": true,
       "defect": false,
       "defectNote": "",
-      "updatedAt": "2026-06-22T07:42:50.488Z"
+      "updatedAt": "2026-11-19T06:15:06.194Z"
     },
     {
       "id": "mqjcsa64dyxrra",
@@ -2728,5 +2728,5 @@
       "deletedAt": "2026-09-30T05:18:10.336Z"
     }
   ],
-  "updatedAt": "2026-11-19T06:14:08.500Z"
+  "updatedAt": "2026-11-19T06:15:06.883Z"
 }
