@@ -924,7 +924,7 @@
     },
     {
       "id": "ms5yxr908waen2",
-      "name": "Ford Transit / Zimmerei",
+      "name": "Ford Transit / Weickl",
       "type": "Sonstiges",
       "group": "fahrzeug",
       "identifier": "R-BS 1053",
@@ -933,7 +933,7 @@
       "active": true,
       "defect": false,
       "defectNote": "",
-      "updatedAt": "2026-07-29T10:55:28.308Z"
+      "updatedAt": "2026-11-19T06:15:32.543Z"
     },
     {
       "id": "msfqxbpjxt7tcl",
@@ -2728,5 +2728,5 @@
       "deletedAt": "2026-09-30T05:18:10.336Z"
     }
   ],
-  "updatedAt": "2026-11-19T06:15:06.883Z"
+  "updatedAt": "2026-11-19T06:15:32.976Z"
 }
