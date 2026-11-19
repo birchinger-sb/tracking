@@ -614,14 +614,14 @@
       "id": "wz0040",
       "name": "Fein FMM350Q",
       "type": "MultiMaster",
+      "group": "werkzeug",
       "identifier": "MM 0001",
-      "color": "#5E6B7C",
+      "color": "#5e6b7c",
       "note": "S/N: 2015-04.025401 · Beschaffung: unbekannt · Lieferant: unbekannt",
       "active": true,
-      "defect": false,
-      "defectNote": "",
-      "group": "werkzeug",
-      "updatedAt": "2026-06-18T14:25:01.316Z"
+      "defect": true,
+      "defectNote": "ohne Funktion",
+      "updatedAt": "2026-11-19T06:13:22.468Z"
     },
     {
       "id": "wz0041",
@@ -2728,5 +2728,5 @@
       "deletedAt": "2026-09-30T05:18:10.336Z"
     }
   ],
-  "updatedAt": "2026-11-18T10:03:17.919Z"
+  "updatedAt": "2026-11-19T06:13:23.068Z"
 }
