@@ -916,11 +916,11 @@
       "group": "fahrzeug",
       "identifier": "R-BS 1054",
       "color": "#050505",
-      "note": "",
+      "note": "KW 47/2026 neue Starterbatterie",
       "active": true,
       "defect": false,
       "defectNote": "",
-      "updatedAt": "2026-10-12T08:31:49.707Z"
+      "updatedAt": "2026-11-19T06:14:07.735Z"
     },
     {
       "id": "ms5yxr908waen2",
@@ -2728,5 +2728,5 @@
       "deletedAt": "2026-09-30T05:18:10.336Z"
     }
   ],
-  "updatedAt": "2026-11-19T06:13:23.068Z"
+  "updatedAt": "2026-11-19T06:14:08.500Z"
 }
