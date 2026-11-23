@@ -2234,13 +2234,13 @@
       "responsible": "Thomas Blomenhofer",
       "note": "Ausgegeben mit einer Kabeltrommel",
       "start": "2026-11-05T06:00",
-      "end": "2026-11-20T18:00",
+      "end": "2026-11-27T18:00",
       "allDay": false,
       "returnedAt": null,
-      "updatedAt": "2026-11-05T05:35:35.156Z",
+      "updatedAt": "2026-11-23T04:56:42.009Z",
       "_s": 1793854800000,
-      "_e": 1795194000000,
-      "_lane": 1
+      "_e": 1795798800000,
+      "_lane": 4
     },
     {
       "id": "mw346iz8gkbibc",
@@ -2728,5 +2728,5 @@
       "deletedAt": "2026-09-30T05:18:10.336Z"
     }
   ],
-  "updatedAt": "2026-11-23T04:56:24.736Z"
+  "updatedAt": "2026-11-23T04:56:42.440Z"
 }
