@@ -156,19 +156,6 @@
       "updatedAt": "2026-06-18T14:25:01.316Z"
     },
     {
-      "id": "wz0004",
-      "name": "Hilti TE 1000-AVR",
-      "type": "Abbruchhammer",
-      "group": "werkzeug",
-      "identifier": "",
-      "color": "#dc2626",
-      "note": "S/N: 220376 · Beschaffung: 24.11.2022 · Zubehör: 2 x Spitzmeissel, 2 x Flachmeisseö, 1 x Spatenmeissel · Lieferant: Hilti · Beschaffung für Hecht – Regendorf",
-      "active": true,
-      "defect": false,
-      "defectNote": "",
-      "updatedAt": "2026-07-24T05:05:22.735Z"
-    },
-    {
       "id": "wz0005",
       "name": "Wacker Neuson DPS2050H",
       "type": "Rüttelplatte",
@@ -2755,7 +2742,11 @@
     {
       "id": "wz0037",
       "deletedAt": "2026-09-30T05:18:10.336Z"
+    },
+    {
+      "id": "wz0004",
+      "deletedAt": "2026-11-23T10:45:33.186Z"
     }
   ],
-  "updatedAt": "2026-11-23T10:45:25.333Z"
+  "updatedAt": "2026-11-23T10:45:33.635Z"
 }
