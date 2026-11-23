@@ -604,11 +604,11 @@
       "group": "werkzeug",
       "identifier": "MM 0001",
       "color": "#5e6b7c",
-      "note": "S/N: 2015-04.025401 · Beschaffung: unbekannt · Lieferant: unbekannt",
+      "note": "S/N: 2015-04.025401 · Beschaffung: unbekannt · Lieferant: unbekannt\nAusgemustert KW46/2026",
       "active": true,
       "defect": true,
       "defectNote": "ohne Funktion",
-      "updatedAt": "2026-11-19T06:13:22.468Z"
+      "updatedAt": "2026-11-23T10:46:11.149Z"
     },
     {
       "id": "wz0041",
@@ -2748,5 +2748,5 @@
       "deletedAt": "2026-11-23T10:45:33.186Z"
     }
   ],
-  "updatedAt": "2026-11-23T10:45:33.635Z"
+  "updatedAt": "2026-11-23T10:46:11.749Z"
 }
