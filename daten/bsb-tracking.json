@@ -2282,13 +2282,13 @@
       "responsible": "Herbert Meinzinger",
       "note": "",
       "start": "2026-11-12T10:00",
-      "end": "2026-11-20T17:00",
+      "end": "2026-11-27T17:00",
       "allDay": false,
       "returnedAt": null,
-      "updatedAt": "2026-11-16T06:06:07.103Z",
+      "updatedAt": "2026-11-23T04:56:24.055Z",
       "_s": 1794474000000,
-      "_e": 1795190400000,
-      "_lane": 12
+      "_e": 1795795200000,
+      "_lane": 5
     },
     {
       "id": "mwk9rdrb2jtkbq",
@@ -2728,5 +2728,5 @@
       "deletedAt": "2026-09-30T05:18:10.336Z"
     }
   ],
-  "updatedAt": "2026-11-23T04:56:12.602Z"
+  "updatedAt": "2026-11-23T04:56:24.736Z"
 }
