@@ -1033,11 +1033,11 @@
       "group": "werkzeug",
       "identifier": "SH 0002",
       "color": "#fb0410",
-      "note": "Kaufgerät SN.: 220376; Gerät in KW 46/2026 ohne Funktion Service wurde gemacht in KW 47/2026; Beschaffung: 24.11.2022 · Zubehör: 2 x Spitzmeissel, 2 x Flachmeisseö, 1 x Spatenmeissel · Lieferant: Hilti · Beschaffung für Hecht – Regendorf",
+      "note": "Kaufgerät SN.: 220376; Gerät in KW 46/2026 ohne Funktion Service wurde gemacht in KW 47/2026; Beschaffung: 24.11.2022 · Zubehör: 2 x Spitzmeissel, 2 x Flachmeissel, 1 x Spatenmeissel · Lieferant: Hilti · Beschaffung für Hecht – Regendorf",
       "active": true,
       "defect": false,
       "defectNote": "",
-      "updatedAt": "2026-11-23T10:45:02.480Z"
+      "updatedAt": "2026-11-23T10:45:24.741Z"
     },
     {
       "id": "mwt4x5llw43uay",
@@ -2757,5 +2757,5 @@
       "deletedAt": "2026-09-30T05:18:10.336Z"
     }
   ],
-  "updatedAt": "2026-11-23T10:45:03.054Z"
+  "updatedAt": "2026-11-23T10:45:25.333Z"
 }
