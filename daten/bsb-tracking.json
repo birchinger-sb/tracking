@@ -1038,6 +1038,19 @@
       "defect": false,
       "defectNote": "",
       "updatedAt": "2026-11-18T10:03:17.127Z"
+    },
+    {
+      "id": "mwt4x5llw43uay",
+      "name": "Bosch Akku-Multi-Cutter Akku 18 V",
+      "type": "MultiMaster",
+      "group": "werkzeug",
+      "identifier": "MM 0002",
+      "color": "#3e6fb0",
+      "note": "Beschaffung durch Oli von Raab Karcher KW47/2026; Garantie 5 Jahre; Registrierung bei Bosch durch Laura; SN.: 622012068 02/2026; Zubehör: 1 Ladegerät, 1 Akku 18V - 5,5 Ah; 1 Akku 18V - 4,0 Ah;",
+      "active": true,
+      "defect": false,
+      "defectNote": "",
+      "updatedAt": "2026-11-23T10:40:29.337Z"
     }
   ],
   "bookings": [
@@ -2744,5 +2757,5 @@
       "deletedAt": "2026-09-30T05:18:10.336Z"
     }
   ],
-  "updatedAt": "2026-11-23T06:18:12.803Z"
+  "updatedAt": "2026-11-23T10:40:29.910Z"
 }
