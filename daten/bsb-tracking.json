@@ -2321,6 +2321,22 @@
       "_s": 1795410000000,
       "_e": 1796313600000,
       "_lane": 2
+    },
+    {
+      "id": "mwvrxtr444sw67",
+      "assetId": "mqje6k1iidn4s1",
+      "location": "Brunnleite",
+      "responsibleId": "mseejbu6o0md22",
+      "responsible": "Hans Hecht",
+      "note": "",
+      "start": "2026-10-01",
+      "end": "2026-11-30",
+      "allDay": true,
+      "returnedAt": null,
+      "updatedAt": "2026-11-25T07:00:24.160Z",
+      "_s": 1790805600000,
+      "_e": 1796079600000,
+      "_lane": 1
     }
   ],
   "responsibles": [
@@ -2748,5 +2764,5 @@
       "deletedAt": "2026-11-23T10:45:33.186Z"
     }
   ],
-  "updatedAt": "2026-11-25T06:59:33.249Z"
+  "updatedAt": "2026-11-25T07:00:24.768Z"
 }
